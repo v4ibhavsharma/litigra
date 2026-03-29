@@ -25,9 +25,8 @@
                         {{ if .Params.abstract }}
                             <p class="blog-card-abstract">{{ .Params.abstract }}</p>
                         {{ else }}
-                            <p class="blog-card-abstract">{{ .Summary | plainify | truncate 160 }}</p>
+                            <p class="blog-card-abstract">{{ .Summary | plainify | truncate 120 }}</p>
                         {{ end }}
-                        <span class="blog-card-read">Read article</span>
                     </article>
                 </a>
             {{ end }}
