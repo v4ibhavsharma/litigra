@@ -25,4 +25,4 @@ The High Court dismissed the contempt petition with costs of Rs. 1,00,000/-, pay
 
 *Vaibhav Sharma, Advocate, appeared for the Ld. Judicial Officer.*
 
-<a href="/images/uploads/cocp-final-order.pdf" download style="display:inline-block;margin-top:1.5rem;padding:0.75rem 1.5rem;background:#000;color:#fff;font-family:var(--font-primary);font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;">Download Judgment (PDF)</a>
+<a href="/images/uploads/cocp-final-order.pdf" target="_blank" rel="noopener" download style="display:inline-block;margin-top:1.5rem;padding:0.75rem 1.5rem;background:#000;color:#fff;font-family:var(--font-primary);font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;">Download Judgment (PDF)</a>

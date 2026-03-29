@@ -35,4 +35,4 @@ The second appeal was allowed. The concurrent findings of the Courts below on is
 
 *The above discussion is for informational purposes only and does not constitute legal advice.*
 
-[Download the full judgment (PDF)](/images/uploads/lakhi-ram-v-babu-ram-rsa-893-1991.pdf)
+<a href="/images/uploads/lakhi-ram-v-babu-ram-rsa-893-1991.pdf" target="_blank" rel="noopener" download style="display:inline-block;margin-top:1.5rem;padding:0.75rem 1.5rem;background:#000;color:#fff;font-family:var(--font-primary);font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;">Download Judgment (PDF)</a>

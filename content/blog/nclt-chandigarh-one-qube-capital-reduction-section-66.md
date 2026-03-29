@@ -31,4 +31,4 @@ The Tribunal confirmed the reduction, noting that the Company was solvent, no cr
 
 *Vaibhav Sharma, Advocate, appeared for the Petitioner Company.*
 
-<a href="/images/uploads/oqrpl-final-order.pdf" download style="display:inline-block;margin-top:1.5rem;padding:0.75rem 1.5rem;background:#000;color:#fff;font-family:var(--font-primary);font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;">Download Judgment (PDF)</a>
+<a href="/images/uploads/oqrpl-final-order.pdf" target="_blank" rel="noopener" download style="display:inline-block;margin-top:1.5rem;padding:0.75rem 1.5rem;background:#000;color:#fff;font-family:var(--font-primary);font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;">Download Judgment (PDF)</a>
