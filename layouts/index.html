@@ -1,0 +1,121 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1 class="hero-title">LITIGRA</h1>
+        <p class="hero-subtitle">LITIGATION AND ADVISORY PRACTICE, CHANDIGARH</p>
+    </div>
+</section>
+
+<!-- About Preview Section -->
+<section class="about-preview section-padding">
+    <div class="container">
+        <div class="about-preview-layout">
+            <div class="about-preview-left">
+                <h2 class="section-title">ABOUT</h2>
+            </div>
+            <div class="about-preview-right">
+                <p>The firm was established in Chandigarh. It handles disputes and advisory matters across civil, commercial, corporate, constitutional, and criminal law. The team includes practitioners with experience in government, corporate, and courtroom practice.</p>
+                <p>Each matter is handled according to its specific requirements. The firm invests in understanding the facts, the applicable law, and the client's objectives before formulating a strategy.</p>
+                <a href="{{ .Site.BaseURL }}about/" class="link-arrow">READ MORE →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Practice Preview Section -->
+<section class="practice-preview section-padding">
+    <div class="container">
+        <h2 class="section-title">PRACTICE</h2>
+        <div class="practice-grid">
+            <div class="practice-card">
+                <h3>CIVIL LITIGATION</h3>
+                <p>Suits, injunctions, recovery proceedings, and appellate matters.</p>
+            </div>
+            <div class="practice-card">
+                <h3>CORPORATE & COMMERCIAL</h3>
+                <p>Shareholder disputes, breach of contract, and commercial arbitration.</p>
+            </div>
+            <div class="practice-card">
+                <h3>CONSTITUTIONAL LAW</h3>
+                <p>Fundamental rights, writ jurisdiction, and public interest matters.</p>
+            </div>
+            <div class="practice-card">
+                <h3>CRIMINAL DEFENCE</h3>
+                <p>White-collar crime, economic offences, and regulatory proceedings.</p>
+            </div>
+            <div class="practice-card">
+                <h3>INTELLECTUAL PROPERTY</h3>
+                <p>Trademarks, copyrights, patents, and trade secret disputes.</p>
+            </div>
+            <div class="practice-card">
+                <h3>REAL ESTATE & PROPERTY</h3>
+                <p>Title disputes, land acquisition, and RERA proceedings.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="{{ .Site.BaseURL }}practice-areas/" class="link-arrow">ALL PRACTICE AREAS →</a>
+        </div>
+    </div>
+</section>
+
+<!-- People Preview Section -->
+<section class="people-preview section-padding">
+    <div class="container">
+        <h2 class="section-title">PEOPLE</h2>
+        <div class="people-grid">
+            {{ range first 3 (where (where .Site.RegularPages "Type" "team") ".Params.role_group" "partner") }}
+                <div class="team-preview-item">
+                    <a href="{{ .Permalink }}" class="team-preview-link">
+                        <div class="team-image-placeholder"></div>
+                        <h3>{{ .Title }}</h3>
+                        {{ if .Params.designation }}
+                            <p class="team-role">{{ .Params.designation }}</p>
+                        {{ end }}
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+        <div class="text-center">
+            <a href="{{ .Site.BaseURL }}team/" class="link-arrow">ALL PEOPLE →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Writing Preview Section -->
+<section class="writing-preview section-padding">
+    <div class="container">
+        <h2 class="section-title">WRITING</h2>
+        <div class="writing-list">
+            {{ $index := 0 }}
+            {{ range first 2 (where .Site.RegularPages "Type" "blog") }}
+                {{ $index = add $index 1 }}
+                <div class="writing-item">
+                    <span class="writing-number">{{ printf "%02d" $index }}</span>
+                    <div class="writing-content">
+                        <h3 class="writing-title">{{ .Title }}</h3>
+                        <p class="writing-date">{{ .PublishDate.Format "January 2, 2006" }}</p>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+        <div class="text-center">
+            <a href="{{ .Site.BaseURL }}blog/" class="link-arrow">ALL WRITING →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Strip -->
+<section class="cta-banner">
+    <div class="container">
+        <h2>CONTACT</h2>
+        <p class="contact-strip">
+            {{ with .Site.Params.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+            {{ if and .Site.Params.email .Site.Params.phone }} · {{ end }}
+            {{ with .Site.Params.phone }}{{ . }}{{ end }}
+        </p>
+    </div>
+</section>
+
+{{ end }}

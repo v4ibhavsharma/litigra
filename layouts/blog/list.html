@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+<section class="page-header">
+    <div class="container">
+        <h1>WRITING</h1>
+        <p class="page-subtitle">ARTICLES, ANALYSIS, AND INSIGHTS</p>
+    </div>
+</section>
+
+<section class="page-content section-padding">
+    <div class="container">
+        <div class="blog-list">
+            {{ range .Paginator.Pages }}
+                <article class="blog-item">
+                    {{ if .Params.categories }}
+                        {{ range first 1 .Params.categories }}
+                            <p class="blog-category">{{ . }}</p>
+                        {{ end }}
+                    {{ else if .Params.category }}
+                        <p class="blog-category">{{ .Params.category }}</p>
+                    {{ end }}
+                    <h3 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <div class="blog-meta">
+                        <span class="blog-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
+                        {{ if .Params.author }}
+                            <span class="blog-author">{{ .Params.author }}</span>
+                        {{ end }}
+                    </div>
+                    <p class="blog-summary">{{ .Summary }}</p>
+                    <a href="{{ .Permalink }}" class="link-arrow">READ →</a>
+                </article>
+            {{ end }}
+        </div>
+
+        <!-- Pagination -->
+        {{ if gt .Paginator.TotalPages 1 }}
+            <div class="pagination">
+                {{ if .Paginator.HasPrev }}
+                    <a href="{{ .Paginator.Prev.URL }}" class="pagination-link">← Previous</a>
+                {{ end }}
+
+                {{ range .Paginator.Pagers }}
+                    <a href="{{ .URL }}" class="pagination-link{{ if eq . $.Paginator }} active{{ end }}">{{ .PageNumber }}</a>
+                {{ end }}
+
+                {{ if .Paginator.HasNext }}
+                    <a href="{{ .Paginator.Next.URL }}" class="pagination-link">Next →</a>
+                {{ end }}
+            </div>
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}

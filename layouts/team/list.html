@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+<section class="page-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+            <p class="page-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<section class="page-content section-padding">
+    <div class="container">
+
+        {{ $pages := .Pages.ByWeight }}
+
+        {{ $mentors := where $pages ".Params.role_group" "mentor" }}
+        {{ if $mentors }}
+        <div class="team-group">
+            <h2 class="team-group-label">MENTORS</h2>
+            {{ range $mentors }}
+            <a href="{{ .Permalink }}" class="team-list-item">
+                <div class="team-list-info">
+                    <h3 class="team-list-name">{{ .Title }}</h3>
+                    <span class="team-list-designation">{{ .Params.designation }}</span>
+                </div>
+                {{ with .Params.brief }}
+                    <p class="team-list-brief">{{ . }}</p>
+                {{ end }}
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        {{ $partners := where $pages ".Params.role_group" "partner" }}
+        {{ if $partners }}
+        <div class="team-group">
+            <h2 class="team-group-label">PARTNERS</h2>
+            {{ range $partners }}
+            <a href="{{ .Permalink }}" class="team-list-item">
+                <div class="team-list-info">
+                    <h3 class="team-list-name">{{ .Title }}</h3>
+                    <span class="team-list-designation">{{ .Params.designation }}</span>
+                </div>
+                {{ with .Params.brief }}
+                    <p class="team-list-brief">{{ . }}</p>
+                {{ end }}
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        {{ $seniors := where $pages ".Params.role_group" "senior_associate" }}
+        {{ if $seniors }}
+        <div class="team-group">
+            <h2 class="team-group-label">SENIOR ASSOCIATES</h2>
+            {{ range $seniors }}
+            <a href="{{ .Permalink }}" class="team-list-item">
+                <div class="team-list-info">
+                    <h3 class="team-list-name">{{ .Title }}</h3>
+                    <span class="team-list-designation">{{ .Params.designation }}</span>
+                </div>
+                {{ with .Params.brief }}
+                    <p class="team-list-brief">{{ . }}</p>
+                {{ end }}
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        {{ $associates := where $pages ".Params.role_group" "associate" }}
+        {{ if $associates }}
+        <div class="team-group">
+            <h2 class="team-group-label">ASSOCIATES</h2>
+            {{ range $associates }}
+            <a href="{{ .Permalink }}" class="team-list-item">
+                <div class="team-list-info">
+                    <h3 class="team-list-name">{{ .Title }}</h3>
+                    <span class="team-list-designation">{{ .Params.designation }}</span>
+                </div>
+                {{ with .Params.brief }}
+                    <p class="team-list-brief">{{ . }}</p>
+                {{ end }}
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+
+    </div>
+</section>
+
+{{ end }}

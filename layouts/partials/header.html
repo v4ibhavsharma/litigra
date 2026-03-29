@@ -1,0 +1,51 @@
+<header>
+    <div class="header-container">
+        <div class="logo-section">
+            <a href="{{ .Site.BaseURL }}" class="logo-text">LITIGRA</a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+            {{ if .Site.Menus.main }}
+                {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}" class="nav-link{{ if eq .URL $.Page.RelPermalink }} active{{ end }}">
+                        {{ .Name }}
+                    </a>
+                {{ end }}
+            {{ else }}
+                <a href="{{ .Site.BaseURL }}" class="nav-link{{ if eq "/" $.Page.RelPermalink }} active{{ end }}">HOME</a>
+                <a href="{{ .Site.BaseURL }}about/" class="nav-link{{ if eq "/about/" $.Page.RelPermalink }} active{{ end }}">ABOUT</a>
+                <a href="{{ .Site.BaseURL }}practice-areas/" class="nav-link{{ if eq "/practice-areas/" $.Page.RelPermalink }} active{{ end }}">PRACTICE</a>
+                <a href="{{ .Site.BaseURL }}team/" class="nav-link{{ if eq "/team/" $.Page.RelPermalink }} active{{ end }}">PEOPLE</a>
+                <a href="{{ .Site.BaseURL }}blog/" class="nav-link{{ if eq "/blog/" $.Page.RelPermalink }} active{{ end }}">WRITING</a>
+                <a href="{{ .Site.BaseURL }}contact/" class="nav-link{{ if eq "/contact/" $.Page.RelPermalink }} active{{ end }}">CONTACT</a>
+            {{ end }}
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <button class="mobile-nav-close" aria-label="Close menu">×</button>
+        <div class="mobile-nav-content">
+            {{ if .Site.Menus.main }}
+                {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}" class="mobile-nav-link">{{ .Name }}</a>
+                {{ end }}
+            {{ else }}
+                <a href="{{ .Site.BaseURL }}" class="mobile-nav-link">HOME</a>
+                <a href="{{ .Site.BaseURL }}about/" class="mobile-nav-link">ABOUT</a>
+                <a href="{{ .Site.BaseURL }}practice-areas/" class="mobile-nav-link">PRACTICE</a>
+                <a href="{{ .Site.BaseURL }}team/" class="mobile-nav-link">PEOPLE</a>
+                <a href="{{ .Site.BaseURL }}blog/" class="mobile-nav-link">WRITING</a>
+                <a href="{{ .Site.BaseURL }}contact/" class="mobile-nav-link">CONTACT</a>
+            {{ end }}
+        </div>
+    </nav>
+</header>
