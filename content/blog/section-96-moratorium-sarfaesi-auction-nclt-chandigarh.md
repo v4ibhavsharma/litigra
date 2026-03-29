@@ -37,4 +37,4 @@ The Tribunal dismissed the application, holding that the Applicant's rights stoo
 
 ---
 
-*The above discussion is for informational purposes only and does not constitute legal advice.*
+*Vaibhav Sharma, Advocate, appeared for the Respondent Bank.*

@@ -918,6 +918,18 @@ header {
     margin: 2rem 0;
 }
 
+.article-disclaimer {
+    margin-top: 2.5rem;
+    padding: 1.25rem 1.5rem;
+    background: #f7f7f7;
+    border-left: 3px solid var(--color-black);
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--color-text-body);
+    line-height: 1.6;
+    font-style: italic;
+}
+
 .article-body em {
     font-style: italic;
     color: var(--color-text-body);

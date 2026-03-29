@@ -35,4 +35,4 @@ The second appeal was allowed. The concurrent findings of the Courts below on is
 
 ---
 
-*The above discussion is for informational purposes only and does not constitute legal advice.*
+*Vaibhav Sharma, Advocate, appeared for the Appellants.*

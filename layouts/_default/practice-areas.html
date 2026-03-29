@@ -1,0 +1,206 @@
+{{ define "main" }}
+
+<section class="pa-hero">
+    <div class="pa-hero-inner">
+        <h1 class="pa-hero-title">Practice Areas</h1>
+        <p class="pa-hero-sub">Litigation and advisory work across courts and tribunals</p>
+    </div>
+</section>
+
+<section class="pa-section">
+    <div class="container">
+        <div class="pa-grid">
+
+            <div class="pa-card">
+                <div class="pa-card-num">01</div>
+                <h3>Civil Litigation</h3>
+                <p>Representation in civil suits, injunctions, recovery proceedings, and appellate matters before courts and tribunals.</p>
+            </div>
+
+            <div class="pa-card">
+                <div class="pa-card-num">02</div>
+                <h3>Corporate & Commercial</h3>
+                <p>Shareholder disputes, breach of contract, joint venture disagreements, and commercial arbitration.</p>
+            </div>
+
+            <div class="pa-card">
+                <div class="pa-card-num">03</div>
+                <h3>Constitutional Law</h3>
+                <p>Matters involving fundamental rights, writ jurisdiction, and public interest before the High Courts and Supreme Court.</p>
+            </div>
+
+            <div class="pa-card">
+                <div class="pa-card-num">04</div>
+                <h3>Criminal Defence</h3>
+                <p>White-collar crime, economic offences, and regulatory proceedings before criminal courts and tribunals.</p>
+            </div>
+
+            <div class="pa-card">
+                <div class="pa-card-num">05</div>
+                <h3>Intellectual Property</h3>
+                <p>Disputes relating to trademarks, copyrights, patents, and trade secrets, including infringement and passing-off actions.</p>
+            </div>
+
+            <div class="pa-card">
+                <div class="pa-card-num">06</div>
+                <h3>Real Estate & Property</h3>
+                <p>Title disputes, land acquisition matters, and proceedings under the Real Estate Regulation Act.</p>
+            </div>
+
+            <div class="pa-card">
+                <div class="pa-card-num">07</div>
+                <h3>Labour & Employment</h3>
+                <p>Industrial disputes, employment contracts, and workplace regulatory compliance.</p>
+            </div>
+
+            <div class="pa-card">
+                <div class="pa-card-num">08</div>
+                <h3>Taxation</h3>
+                <p>Direct and indirect tax disputes, assessment challenges, and appellate proceedings before tax tribunals.</p>
+            </div>
+
+            <div class="pa-card">
+                <div class="pa-card-num">09</div>
+                <h3>Family Law</h3>
+                <p>Matrimonial disputes, custody matters, maintenance, and succession proceedings.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+/* Practice Areas Hero */
+.pa-hero {
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 5rem 2rem 3rem;
+}
+.pa-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.pa-hero-title {
+    font-family: var(--font-primary);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+}
+.pa-hero-sub {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+}
+
+/* Practice Areas Grid */
+.pa-section {
+    padding: 3rem 0 4rem;
+    background: var(--color-white);
+}
+.pa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+.pa-card {
+    border: 1px solid var(--color-border);
+    padding: 2rem 1.75rem;
+    position: relative;
+    transition: background 0.35s ease, color 0.35s ease, transform 0.35s ease;
+    cursor: default;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+.pa-card:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+    transform: scale(1.03);
+    z-index: 2;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+.pa-card-num {
+    font-family: var(--font-primary);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: rgba(0,0,0,0.25);
+    margin-bottom: 1.25rem;
+    transition: color 0.35s ease;
+}
+.pa-card:hover .pa-card-num {
+    color: rgba(255,255,255,0.35);
+}
+.pa-card h3 {
+    font-family: var(--font-primary);
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+    transition: color 0.35s ease;
+}
+.pa-card:hover h3 {
+    color: var(--color-white);
+}
+.pa-card p {
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--color-text-body);
+    margin-bottom: 0;
+    transition: color 0.35s ease;
+}
+.pa-card:hover p {
+    color: rgba(255,255,255,0.8);
+}
+
+/* Scroll-reveal animation */
+.pa-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: paReveal 0.5s ease forwards;
+}
+.pa-card:nth-child(1) { animation-delay: 0.05s; }
+.pa-card:nth-child(2) { animation-delay: 0.1s; }
+.pa-card:nth-child(3) { animation-delay: 0.15s; }
+.pa-card:nth-child(4) { animation-delay: 0.2s; }
+.pa-card:nth-child(5) { animation-delay: 0.25s; }
+.pa-card:nth-child(6) { animation-delay: 0.3s; }
+.pa-card:nth-child(7) { animation-delay: 0.35s; }
+.pa-card:nth-child(8) { animation-delay: 0.4s; }
+.pa-card:nth-child(9) { animation-delay: 0.45s; }
+
+@keyframes paReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .pa-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .pa-hero {
+        padding: 4rem 1.5rem 2.5rem;
+    }
+    .pa-grid {
+        grid-template-columns: 1fr;
+    }
+    .pa-card {
+        padding: 1.5rem 1.25rem;
+    }
+}
+</style>
+
+{{ end }}
