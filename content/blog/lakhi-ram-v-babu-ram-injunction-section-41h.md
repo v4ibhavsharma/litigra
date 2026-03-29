@@ -35,4 +35,4 @@ The second appeal was allowed. The concurrent findings of the Courts below on is
 
 ---
 
-*Vaibhav Sharma, Advocate, appeared for the Appellants.*
+*Mr. Vaibhav Sharma and Mr. Harit Narang, Advocates, appeared for the Appellants.*
