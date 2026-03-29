@@ -67,7 +67,7 @@
         <div class="people-grid">
             {{ range first 3 (where (where .Site.RegularPages "Type" "team") ".Params.role_group" "partner") }}
                 <div class="team-preview-item">
-                    <a href="{{ .Permalink }}" class="team-preview-link">
+                    <a href="{{ .RelPermalink }}" class="team-preview-link">
                         <div class="team-image-placeholder"></div>
                         <h3>{{ .Title }}</h3>
                         {{ if .Params.designation }}

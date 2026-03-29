@@ -19,7 +19,7 @@
         <div class="team-group">
             <h2 class="team-group-label">MENTORS</h2>
             {{ range $mentors }}
-            <a href="{{ .Permalink }}" class="team-list-item">
+            <a href="{{ .RelPermalink }}" class="team-list-item">
                 <div class="team-list-info">
                     <h3 class="team-list-name">{{ .Title }}</h3>
                     <span class="team-list-designation">{{ .Params.designation }}</span>
@@ -37,7 +37,7 @@
         <div class="team-group">
             <h2 class="team-group-label">PARTNERS</h2>
             {{ range $partners }}
-            <a href="{{ .Permalink }}" class="team-list-item">
+            <a href="{{ .RelPermalink }}" class="team-list-item">
                 <div class="team-list-info">
                     <h3 class="team-list-name">{{ .Title }}</h3>
                     <span class="team-list-designation">{{ .Params.designation }}</span>
@@ -55,7 +55,7 @@
         <div class="team-group">
             <h2 class="team-group-label">SENIOR ASSOCIATES</h2>
             {{ range $seniors }}
-            <a href="{{ .Permalink }}" class="team-list-item">
+            <a href="{{ .RelPermalink }}" class="team-list-item">
                 <div class="team-list-info">
                     <h3 class="team-list-name">{{ .Title }}</h3>
                     <span class="team-list-designation">{{ .Params.designation }}</span>
@@ -73,7 +73,7 @@
         <div class="team-group">
             <h2 class="team-group-label">ASSOCIATES</h2>
             {{ range $associates }}
-            <a href="{{ .Permalink }}" class="team-list-item">
+            <a href="{{ .RelPermalink }}" class="team-list-item">
                 <div class="team-list-info">
                     <h3 class="team-list-name">{{ .Title }}</h3>
                     <span class="team-list-designation">{{ .Params.designation }}</span>

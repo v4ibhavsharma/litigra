@@ -19,7 +19,7 @@
                     {{ else if .Params.category }}
                         <p class="blog-category">{{ .Params.category }}</p>
                     {{ end }}
-                    <h3 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <h3 class="article-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
                     <div class="blog-meta">
                         <span class="blog-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
                         {{ if .Params.author }}
@@ -27,7 +27,7 @@
                         {{ end }}
                     </div>
                     <p class="blog-summary">{{ .Summary }}</p>
-                    <a href="{{ .Permalink }}" class="link-arrow">READ →</a>
+                    <a href="{{ .RelPermalink }}" class="link-arrow">READ →</a>
                 </article>
             {{ end }}
         </div>
