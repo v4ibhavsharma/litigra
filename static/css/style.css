@@ -862,7 +862,7 @@ header {
 }
 
 .article-body h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -881,7 +881,7 @@ header {
 }
 
 .article-body h3 {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: 600;
     text-transform: none;
     letter-spacing: normal;
@@ -891,15 +891,15 @@ header {
 }
 
 .article-body p {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: 300;
     color: var(--color-text-body);
     margin-bottom: 1.25rem;
-    line-height: 1.8;
+    line-height: 1.85;
 }
 
 .article-body p:first-of-type {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--color-text-secondary);
 }
 
