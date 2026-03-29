@@ -1,7 +1,7 @@
 <header>
     <div class="header-container">
         <div class="logo-section">
-            <a href="{{ .Site.BaseURL }}" class="logo-text">LITIGRA</a>
+            <a href="{{ "/" | relURL }}" class="logo-text">LITIGRA</a>
         </div>
 
         <!-- Desktop Navigation -->
@@ -13,12 +13,12 @@
                     </a>
                 {{ end }}
             {{ else }}
-                <a href="{{ .Site.BaseURL }}" class="nav-link{{ if eq "/" $.Page.RelPermalink }} active{{ end }}">HOME</a>
-                <a href="{{ .Site.BaseURL }}about/" class="nav-link{{ if eq "/about/" $.Page.RelPermalink }} active{{ end }}">ABOUT</a>
-                <a href="{{ .Site.BaseURL }}practice-areas/" class="nav-link{{ if eq "/practice-areas/" $.Page.RelPermalink }} active{{ end }}">PRACTICE</a>
-                <a href="{{ .Site.BaseURL }}team/" class="nav-link{{ if eq "/team/" $.Page.RelPermalink }} active{{ end }}">PEOPLE</a>
-                <a href="{{ .Site.BaseURL }}blog/" class="nav-link{{ if eq "/blog/" $.Page.RelPermalink }} active{{ end }}">WRITING</a>
-                <a href="{{ .Site.BaseURL }}contact/" class="nav-link{{ if eq "/contact/" $.Page.RelPermalink }} active{{ end }}">CONTACT</a>
+                <a href="{{ "/" | relURL }}" class="nav-link{{ if eq "/" $.Page.RelPermalink }} active{{ end }}">HOME</a>
+                <a href="{{ "about/" | relURL }}" class="nav-link{{ if eq "/about/" $.Page.RelPermalink }} active{{ end }}">ABOUT</a>
+                <a href="{{ "practice-areas/" | relURL }}" class="nav-link{{ if eq "/practice-areas/" $.Page.RelPermalink }} active{{ end }}">PRACTICE</a>
+                <a href="{{ "team/" | relURL }}" class="nav-link{{ if eq "/team/" $.Page.RelPermalink }} active{{ end }}">PEOPLE</a>
+                <a href="{{ "blog/" | relURL }}" class="nav-link{{ if eq "/blog/" $.Page.RelPermalink }} active{{ end }}">WRITING</a>
+                <a href="{{ "contact/" | relURL }}" class="nav-link{{ if eq "/contact/" $.Page.RelPermalink }} active{{ end }}">CONTACT</a>
             {{ end }}
         </nav>
 
@@ -39,12 +39,12 @@
                     <a href="{{ .URL }}" class="mobile-nav-link">{{ .Name }}</a>
                 {{ end }}
             {{ else }}
-                <a href="{{ .Site.BaseURL }}" class="mobile-nav-link">HOME</a>
-                <a href="{{ .Site.BaseURL }}about/" class="mobile-nav-link">ABOUT</a>
-                <a href="{{ .Site.BaseURL }}practice-areas/" class="mobile-nav-link">PRACTICE</a>
-                <a href="{{ .Site.BaseURL }}team/" class="mobile-nav-link">PEOPLE</a>
-                <a href="{{ .Site.BaseURL }}blog/" class="mobile-nav-link">WRITING</a>
-                <a href="{{ .Site.BaseURL }}contact/" class="mobile-nav-link">CONTACT</a>
+                <a href="{{ "/" | relURL }}" class="mobile-nav-link">HOME</a>
+                <a href="{{ "about/" | relURL }}" class="mobile-nav-link">ABOUT</a>
+                <a href="{{ "practice-areas/" | relURL }}" class="mobile-nav-link">PRACTICE</a>
+                <a href="{{ "team/" | relURL }}" class="mobile-nav-link">PEOPLE</a>
+                <a href="{{ "blog/" | relURL }}" class="mobile-nav-link">WRITING</a>
+                <a href="{{ "contact/" | relURL }}" class="mobile-nav-link">CONTACT</a>
             {{ end }}
         </div>
     </nav>

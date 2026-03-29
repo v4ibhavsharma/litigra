@@ -1,4 +1,5 @@
 baseURL = "https://litigra.com/"
+relativeURLs = true
 languageCode = "en-us"
 title = "Litigra"
 [pagination]
