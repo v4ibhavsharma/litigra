@@ -6,31 +6,21 @@ layout: "single"
 
 <div class="contact-layout">
   <div class="contact-details">
-    <p><strong>Address</strong><br>SCO XX, Sector 17<br>Chandigarh 160017, India</p>
-    <p><strong>Telephone</strong><br>+91 XXX XXX XXXX</p>
-    <p><strong>Email</strong><br><a href="mailto:contact@litigra.com">contact@litigra.com</a></p>
-  </div>
-  <div class="contact-form">
-    <h2>ENQUIRIES</h2>
-    <p>For general enquiries, please write to <a href="mailto:contact@litigra.com">contact@litigra.com</a> or use the form below.</p>
-    <form action="#" method="POST">
-      <div class="form-group">
-        <label for="name">NAME</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="phone">TELEPHONE</label>
-        <input type="tel" id="phone" name="phone">
-      </div>
-      <div class="form-group">
-        <label for="message">MESSAGE</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-gold">SUBMIT</button>
-    </form>
+    <div class="contact-block">
+      <h3>CHAMBER</h3>
+      <p>Lawyers' Chamber No. 2, Above SBI<br>Punjab & Haryana High Court<br>Chandigarh</p>
+    </div>
+    <div class="contact-block">
+      <h3>CHANDIGARH</h3>
+      <p>#62, Sector 2<br>Chandigarh</p>
+    </div>
+    <div class="contact-block">
+      <h3>MOHALI</h3>
+      <p>#1608, Sector 60<br>Mohali</p>
+    </div>
+    <div class="contact-block">
+      <h3>EMAIL</h3>
+      <p><a href="mailto:contact@litigra.com">contact@litigra.com</a></p>
+    </div>
   </div>
 </div>

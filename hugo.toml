@@ -9,7 +9,9 @@ title = "Litigra"
   description = "Litigation and advisory practice, Chandigarh."
   phone = "+91 XXX XXX XXXX"
   email = "contact@litigra.com"
-  address = "SCO XX, Sector 17, Chandigarh 160017, India"
+  address_chamber = "Lawyers' Chamber No. 2, Above SBI, Punjab & Haryana High Court, Chandigarh"
+  address_chandigarh = "#62, Sector 2, Chandigarh"
+  address_mohali = "#1608, Sector 60, Mohali"
 
 [menus]
   [[menus.main]]
