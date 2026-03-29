@@ -741,10 +741,21 @@ header {
     margin-bottom: 2rem;
 }
 
+.cta-banner a {
+    color: var(--color-white);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.cta-banner a:hover {
+    color: rgba(255,255,255,0.7);
+}
+
 .cta-banner .btn {
     border: 2px solid var(--color-white);
     color: var(--color-white);
     background: transparent;
+    text-decoration: none;
 }
 
 .cta-banner .btn:hover {
