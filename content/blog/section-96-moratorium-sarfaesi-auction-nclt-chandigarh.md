@@ -6,6 +6,7 @@ categories: ["Case Note"]
 tags: ["IBC", "Section 96", "SARFAESI", "NCLT", "Personal Guarantor", "Moratorium"]
 draft: false
 abstract: "The NCLT Chandigarh Bench held that where an e-auction has been conducted and sale confirmed before the filing of an application under Section 94 of the IBC, the interim moratorium under Section 96 cannot reverse or stall the concluded sale."
+judgment_pdf: "/images/uploads/section96-sarfaesi-nclt-chandigarh-order.pdf"
 ---
 
 In **I.A. No. 1743/2024 in CP (IB) No. 148/Chd/Chd/2024, Ashwini Kumar Oberoi v. District Magistrate, Jagadhri & State Bank of India** (order dated 25.03.2026), the NCLT Chandigarh Bench dismissed an application by a personal guarantor seeking to restrain SARFAESI recovery proceedings on the ground of interim moratorium under Section 96 of the Insolvency and Bankruptcy Code, 2016. The Tribunal held that where the e-auction had been conducted and the sale confirmed before the filing of the application under Section 94 of the Code, the interim moratorium could not have the effect of reversing or stalling a concluded sale.
@@ -37,5 +38,3 @@ The Tribunal dismissed the application, holding that the Applicant's rights stoo
 ---
 
 *The above discussion is for informational purposes only and does not constitute legal advice.*
-
-<a href="/images/uploads/section96-sarfaesi-nclt-chandigarh-order.pdf" target="_blank" rel="noopener" download style="display:inline-block;margin-top:1.5rem;padding:0.75rem 1.5rem;background:#000;color:#fff;font-family:var(--font-primary);font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;">Download Order (PDF)</a>

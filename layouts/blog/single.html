@@ -1,39 +1,99 @@
 {{ define "main" }}
 
-<section class="article-header">
+<section class="article-hero">
+    <div class="article-hero-inner">
+        {{ if .Params.categories }}
+            {{ range first 1 .Params.categories }}
+                <span class="article-hero-cat">{{ . }}</span>
+            {{ end }}
+        {{ end }}
+        <h1 class="article-hero-title">{{ .Title }}</h1>
+        {{ if .Params.abstract }}
+            <p class="article-hero-abstract">{{ .Params.abstract }}</p>
+        {{ end }}
+        <div class="article-hero-meta">
+            <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
+            {{ if .Params.author }}
+                <span>{{ .Params.author }}</span>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="article-layout">
     <div class="container">
-        <div class="article-meta">
-            {{ if .Params.categories }}
-                {{ range first 1 .Params.categories }}
-                    <p class="article-category">{{ . }}</p>
+        <div class="article-layout-grid">
+            <aside class="article-sidebar" id="article-sidebar">
+                <div class="sidebar-label">Sections</div>
+                <nav class="sidebar-nav" id="sidebar-nav">
+                    <!-- Auto-populated by JS from h2 headings -->
+                </nav>
+                {{ if .Params.judgment_pdf }}
+                    <a href="{{ .Params.judgment_pdf }}" target="_blank" rel="noopener" class="sidebar-download">Download Judgment</a>
                 {{ end }}
-            {{ else if .Params.category }}
-                <p class="article-category">{{ .Params.category }}</p>
-            {{ end }}
-            <h1 class="article-title">{{ .Title }}</h1>
-            {{ if .Params.abstract }}
-                <p class="article-abstract">{{ .Params.abstract }}</p>
-            {{ end }}
-            <div class="article-info">
-                <span class="article-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
-                {{ if .Params.author }}
-                    <span class="article-author">{{ .Params.author }}</span>
-                {{ end }}
+                <a href="{{ "blog/" | relURL }}" class="sidebar-back">&larr; All Articles</a>
+            </aside>
+
+            <div class="article-body" id="article-body">
+                {{ .Content }}
             </div>
         </div>
     </div>
 </section>
 
-<section class="article-content">
-    <div class="container">
-        <div class="article-body">
-            {{ .Content }}
-        </div>
+<script>
+(function() {
+    var body = document.getElementById('article-body');
+    var nav = document.getElementById('sidebar-nav');
+    if (!body || !nav) return;
 
-        <div class="back-link">
-            <a href="{{ "blog/" | relURL }}">← BACK TO WRITING</a>
-        </div>
-    </div>
-</section>
+    var headings = body.querySelectorAll('h2');
+    if (headings.length === 0) return;
+
+    headings.forEach(function(h, i) {
+        // Ensure each h2 has an id for anchor linking
+        if (!h.id) {
+            h.id = 'section-' + (i + 1);
+        }
+        var a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent;
+        a.className = 'sidebar-link';
+        nav.appendChild(a);
+    });
+
+    // Highlight active section on scroll
+    var links = nav.querySelectorAll('.sidebar-link');
+    function onScroll() {
+        var scrollPos = window.scrollY + 120;
+        var current = 0;
+        headings.forEach(function(h, i) {
+            if (h.offsetTop <= scrollPos) {
+                current = i;
+            }
+        });
+        links.forEach(function(l, i) {
+            if (i === current) {
+                l.classList.add('active');
+            } else {
+                l.classList.remove('active');
+            }
+        });
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    // Smooth scroll on click
+    links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({ top: target.offsetTop - 100, behavior: 'smooth' });
+            }
+        });
+    });
+})();
+</script>
 
 {{ end }}
