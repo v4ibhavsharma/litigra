@@ -9,26 +9,27 @@
 
 <section class="page-content section-padding">
     <div class="container">
-        <div class="blog-list">
+        <div class="blog-grid-cards">
             {{ range .Paginator.Pages }}
-                <article class="blog-item">
-                    {{ if .Params.categories }}
-                        {{ range first 1 .Params.categories }}
-                            <p class="blog-category">{{ . }}</p>
+                <a href="{{ .RelPermalink }}" class="blog-card-link">
+                    <article class="blog-card-item">
+                        <div class="blog-card-top">
+                            {{ if .Params.categories }}
+                                {{ range first 1 .Params.categories }}
+                                    <span class="blog-card-category">{{ . }}</span>
+                                {{ end }}
+                            {{ end }}
+                            <span class="blog-card-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
+                        </div>
+                        <h3 class="blog-card-title">{{ .Title }}</h3>
+                        {{ if .Params.abstract }}
+                            <p class="blog-card-abstract">{{ .Params.abstract }}</p>
+                        {{ else }}
+                            <p class="blog-card-abstract">{{ .Summary | plainify | truncate 160 }}</p>
                         {{ end }}
-                    {{ else if .Params.category }}
-                        <p class="blog-category">{{ .Params.category }}</p>
-                    {{ end }}
-                    <h3 class="article-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                    <div class="blog-meta">
-                        <span class="blog-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
-                        {{ if .Params.author }}
-                            <span class="blog-author">{{ .Params.author }}</span>
-                        {{ end }}
-                    </div>
-                    <p class="blog-summary">{{ .Summary }}</p>
-                    <a href="{{ .RelPermalink }}" class="link-arrow">READ →</a>
-                </article>
+                        <span class="blog-card-read">Read article</span>
+                    </article>
+                </a>
             {{ end }}
         </div>
 

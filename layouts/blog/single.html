@@ -2,19 +2,24 @@
 
 <section class="article-header">
     <div class="container">
-        {{ if .Params.categories }}
-            {{ range first 1 .Params.categories }}
-                <p class="article-category">{{ . }}</p>
-            {{ end }}
-        {{ else if .Params.category }}
-            <p class="article-category">{{ .Params.category }}</p>
-        {{ end }}
-        <h1 class="article-title">{{ .Title }}</h1>
         <div class="article-meta">
-            <span class="article-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
-            {{ if .Params.author }}
-                <span class="article-author">{{ .Params.author }}</span>
+            {{ if .Params.categories }}
+                {{ range first 1 .Params.categories }}
+                    <p class="article-category">{{ . }}</p>
+                {{ end }}
+            {{ else if .Params.category }}
+                <p class="article-category">{{ .Params.category }}</p>
             {{ end }}
+            <h1 class="article-title">{{ .Title }}</h1>
+            {{ if .Params.abstract }}
+                <p class="article-abstract">{{ .Params.abstract }}</p>
+            {{ end }}
+            <div class="article-info">
+                <span class="article-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
+                {{ if .Params.author }}
+                    <span class="article-author">{{ .Params.author }}</span>
+                {{ end }}
+            </div>
         </div>
     </div>
 </section>

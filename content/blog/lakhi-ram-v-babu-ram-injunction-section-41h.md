@@ -5,6 +5,7 @@ categories: ["Case Note"]
 tags: ["Injunction", "Section 41(h)", "Punjab and Haryana High Court", "Specific Relief Act"]
 author: "Vaibhav Sharma"
 draft: false
+abstract: "The Punjab and Haryana High Court allowed a second appeal and dismissed a suit for permanent injunction simpliciter, holding it barred under Section 41(h) of the Specific Relief Act where both title and possession were in dispute."
 ---
 
 In **Lakhi Ram and Others v. Babu Ram (since deceased) through Legal Heirs and Another** (RSA-893-1991(O&M), decided on 27.03.2026), the Punjab and Haryana High Court allowed a second appeal, set aside concurrent findings of the trial Court and the lower appellate Court, and dismissed the plaintiff's suit for permanent injunction simpliciter, holding it barred under Section 41(h) of the Specific Relief Act, 1963.
