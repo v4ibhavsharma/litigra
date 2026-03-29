@@ -3,6 +3,7 @@ backend:
   repo: v4ibhavsharma/litigra
   branch: main
   base_url: https://litigra-oauth.vaibhav-bb7.workers.dev
+  site_domain: litigra.com
   auth_endpoint: /auth
 
 media_folder: static/images/uploads
