@@ -20,7 +20,7 @@ layout: "single"
     </div>
     <div class="contact-block">
       <h3>EMAIL</h3>
-      <p><a href="mailto:contact@litigra.com">contact@litigra.com</a></p>
+      <p><a href="mailto:office@litigra.com">office@litigra.com</a></p>
     </div>
   </div>
 
