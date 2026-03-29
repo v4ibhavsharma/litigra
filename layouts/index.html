@@ -4,22 +4,54 @@
 <section class="hero">
     <div class="container">
         <h1 class="hero-title">LITIGRA</h1>
-        <p class="hero-subtitle">LITIGATION AND ADVISORY PRACTICE, CHANDIGARH</p>
+        <p class="hero-subtitle">LITIGATION AND ADVISORY PRACTICE</p>
     </div>
 </section>
 
-<!-- About Preview Section -->
-<section class="about-preview section-padding">
+<!-- Credentials Strip -->
+<section class="credentials-strip">
     <div class="container">
-        <div class="about-preview-layout">
-            <div class="about-preview-left">
-                <h2 class="section-title">ABOUT</h2>
+        <div class="credentials-grid">
+            <div class="credential">
+                <span class="credential-label">Supreme Court of India</span>
             </div>
-            <div class="about-preview-right">
-                <p>Litigra is a litigation and advisory practice based in Chandigarh. The firm handles disputes and advisory matters across civil, commercial, corporate, constitutional, and criminal law.</p>
-                <p>The team brings experience from government service, corporate practice, and courtroom advocacy across the Supreme Court, High Courts, and tribunals.</p>
-                <a href="{{ "/" | relURL }}about/" class="link-arrow">READ MORE →</a>
+            <div class="credential">
+                <span class="credential-label">Punjab & Haryana High Court</span>
             </div>
+            <div class="credential">
+                <span class="credential-label">NCLT / NCLAT</span>
+            </div>
+            <div class="credential">
+                <span class="credential-label">Tribunals & Commissions</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Writing - Article Grid -->
+<section class="home-writing section-padding">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="section-title">LATEST</h2>
+            <a href="{{ "/" | relURL }}blog/" class="section-link">All Writing &rarr;</a>
+        </div>
+        <div class="home-article-grid">
+            {{ range first 4 (where .Site.RegularPages "Type" "blog") }}
+                <a href="{{ .RelPermalink }}" class="home-article-card">
+                    <div class="home-article-top">
+                        {{ if .Params.categories }}
+                            {{ range first 1 .Params.categories }}
+                                <span class="home-article-cat">{{ . }}</span>
+                            {{ end }}
+                        {{ end }}
+                        <span class="home-article-date">{{ .PublishDate.Format "Jan 2006" }}</span>
+                    </div>
+                    <h3 class="home-article-title">{{ .Title }}</h3>
+                    {{ if .Params.abstract }}
+                        <p class="home-article-abstract">{{ .Params.abstract }}</p>
+                    {{ end }}
+                </a>
+            {{ end }}
         </div>
     </div>
 </section>
@@ -27,81 +59,35 @@
 <!-- Practice Preview Section -->
 <section class="practice-preview section-padding">
     <div class="container">
-        <h2 class="section-title">PRACTICE</h2>
+        <div class="home-section-header">
+            <h2 class="section-title">PRACTICE</h2>
+            <a href="{{ "/" | relURL }}practice-areas/" class="section-link">All Areas &rarr;</a>
+        </div>
         <div class="practice-grid">
             <div class="practice-card">
-                <h3>CIVIL LITIGATION</h3>
+                <h3>Civil Litigation</h3>
                 <p>Suits, injunctions, recovery proceedings, and appellate matters.</p>
             </div>
             <div class="practice-card">
-                <h3>CORPORATE & COMMERCIAL</h3>
+                <h3>Corporate & Commercial</h3>
                 <p>Shareholder disputes, breach of contract, and commercial arbitration.</p>
             </div>
             <div class="practice-card">
-                <h3>CONSTITUTIONAL LAW</h3>
+                <h3>Constitutional Law</h3>
                 <p>Fundamental rights, writ jurisdiction, and public interest matters.</p>
             </div>
             <div class="practice-card">
-                <h3>CRIMINAL DEFENCE</h3>
+                <h3>Criminal Defence</h3>
                 <p>White-collar crime, economic offences, and regulatory proceedings.</p>
             </div>
             <div class="practice-card">
-                <h3>INTELLECTUAL PROPERTY</h3>
+                <h3>Intellectual Property</h3>
                 <p>Trademarks, copyrights, patents, and trade secret disputes.</p>
             </div>
             <div class="practice-card">
-                <h3>REAL ESTATE & PROPERTY</h3>
+                <h3>Real Estate & Property</h3>
                 <p>Title disputes, land acquisition, and RERA proceedings.</p>
             </div>
-        </div>
-        <div class="text-center">
-            <a href="{{ "/" | relURL }}practice-areas/" class="link-arrow">ALL PRACTICE AREAS →</a>
-        </div>
-    </div>
-</section>
-
-<!-- People Preview Section -->
-<section class="people-preview section-padding">
-    <div class="container">
-        <h2 class="section-title">PEOPLE</h2>
-        <div class="people-grid">
-            {{ range first 3 (where (where .Site.RegularPages "Type" "team") ".Params.role_group" "partner") }}
-                <div class="team-preview-item">
-                    <a href="{{ .RelPermalink }}" class="team-preview-link">
-                        <div class="team-image-placeholder"></div>
-                        <h3>{{ .Title }}</h3>
-                        {{ if .Params.designation }}
-                            <p class="team-role">{{ .Params.designation }}</p>
-                        {{ end }}
-                    </a>
-                </div>
-            {{ end }}
-        </div>
-        <div class="text-center">
-            <a href="{{ "/" | relURL }}team/" class="link-arrow">ALL PEOPLE →</a>
-        </div>
-    </div>
-</section>
-
-<!-- Writing Preview Section -->
-<section class="writing-preview section-padding">
-    <div class="container">
-        <h2 class="section-title">WRITING</h2>
-        <div class="writing-list">
-            {{ $index := 0 }}
-            {{ range first 2 (where .Site.RegularPages "Type" "blog") }}
-                {{ $index = add $index 1 }}
-                <div class="writing-item">
-                    <span class="writing-number">{{ printf "%02d" $index }}</span>
-                    <div class="writing-content">
-                        <h3 class="writing-title">{{ .Title }}</h3>
-                        <p class="writing-date">{{ .PublishDate.Format "January 2, 2006" }}</p>
-                    </div>
-                </div>
-            {{ end }}
-        </div>
-        <div class="text-center">
-            <a href="{{ "/" | relURL }}blog/" class="link-arrow">ALL WRITING →</a>
         </div>
     </div>
 </section>
