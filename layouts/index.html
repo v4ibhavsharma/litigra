@@ -98,8 +98,6 @@
         <h2>CONTACT</h2>
         <p class="contact-strip">
             {{ with .Site.Params.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
-            {{ if and .Site.Params.email .Site.Params.phone }} · {{ end }}
-            {{ with .Site.Params.phone }}{{ . }}{{ end }}
         </p>
     </div>
 </section>

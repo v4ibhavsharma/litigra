@@ -14,4 +14,4 @@ The firm handles matters across civil, commercial, corporate, constitutional, an
 
 ## TEAM
 
-The firm's practitioners bring experience from government service, corporate practice, and courtroom advocacy. This range of backgrounds allows the firm to approach matters from multiple perspectives.
+The firm's practitioners have held roles as Additional Advocate General and Deputy Advocate General and as standing counsel for statutory bodies, alongside experience in corporate practice and courtroom advocacy across the Supreme Court, High Courts, and tribunals.
