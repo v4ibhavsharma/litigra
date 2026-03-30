@@ -1,0 +1,99 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Litigra",
+  "description": "{{ .Site.Params.description }}",
+  "url": "https://litigra.com",
+  "email": "{{ .Site.Params.email }}",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ .Site.Params.address_chamber }}",
+      "addressLocality": "Chandigarh",
+      "addressCountry": "IN"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ .Site.Params.address_chandigarh }}",
+      "addressLocality": "Chandigarh",
+      "addressCountry": "IN"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ .Site.Params.address_mohali }}",
+      "addressLocality": "Mohali",
+      "addressRegion": "Punjab",
+      "addressCountry": "IN"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Chandigarh"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Punjab"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Haryana"
+    }
+  ],
+  "knowsAbout": ["Civil Litigation", "Corporate Law", "Constitutional Law", "Criminal Defence", "Intellectual Property", "Real Estate Law", "Commercial Arbitration"],
+  "priceRange": "$$"
+}
+</script>
+{{ end }}
+
+{{ if eq .Type "blog" }}
+{{ if not .IsSection }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Params.abstract | default .Description }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{ if .Params.lastmod }}"dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",{{ end }}
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Params.author | default "Litigra" }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Litigra",
+    "url": "https://litigra.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }{{ if .Params.tags }},
+  "keywords": "{{ delimit .Params.tags ", " }}"{{ end }}
+}
+</script>
+{{ end }}
+{{ end }}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://litigra.com/"
+    }{{ if not .IsHome }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }{{ end }}
+  ]
+}
+</script>

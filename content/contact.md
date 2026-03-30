@@ -2,6 +2,7 @@
 title: "CONTACT"
 type: "page"
 layout: "single"
+description: "Contact Litigra at our Chandigarh, High Court, or Mohali offices. Reach us at office@litigra.com."
 ---
 
 <div class="contact-layout">

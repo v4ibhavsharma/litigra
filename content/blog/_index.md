@@ -1,4 +1,4 @@
 ---
 title: "WRITING"
-description: "Commentary and updates on legal developments."
+description: "Articles, case notes, and analysis on Indian litigation, corporate law, and regulatory developments by Litigra, Chandigarh."
 ---
