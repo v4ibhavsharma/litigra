@@ -19,8 +19,9 @@
     --color-text-light: #EEEEEE;
     --color-border: #EEEEEE;
 
-    /* Typography - ONE typeface */
+    /* Typography */
     --font-primary: 'Outfit', sans-serif;
+    --font-serif: 'Source Serif 4', Georgia, serif;
 
     /* Sizing */
     --container-width: 1200px;
@@ -859,9 +860,11 @@ header {
 .article-body {
     max-width: 750px;
     line-height: 1.8;
+    font-family: var(--font-serif);
 }
 
 .article-body h2 {
+    font-family: var(--font-primary);
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -881,6 +884,7 @@ header {
 }
 
 .article-body h3 {
+    font-family: var(--font-primary);
     font-size: 1.05rem;
     font-weight: 600;
     text-transform: none;
@@ -891,6 +895,7 @@ header {
 }
 
 .article-body p {
+    font-family: var(--font-serif);
     font-size: 1.05rem;
     font-weight: 300;
     color: var(--color-text-body);
@@ -919,6 +924,7 @@ header {
 }
 
 .article-disclaimer {
+    font-family: var(--font-primary);
     margin-top: 2.5rem;
     padding: 1.25rem 1.5rem;
     background: #f7f7f7;
@@ -2166,6 +2172,29 @@ footer {
 /* ========================================
    Print Styles
    ======================================== */
+
+/* ========================================
+   Scroll Reveal Animations
+   ======================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
 
 @media print {
     .hamburger,

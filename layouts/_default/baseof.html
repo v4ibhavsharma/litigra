@@ -9,7 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
@@ -63,6 +63,31 @@
                     header.classList.remove('scrolled');
                 }
             });
+
+            // Scroll-reveal for section headings
+            var revealTargets = document.querySelectorAll('.section-title, .page-header h1, .page-subtitle, .home-section-header, .credentials-strip .credential');
+            revealTargets.forEach(function(el) {
+                el.classList.add('reveal');
+            });
+
+            if ('IntersectionObserver' in window) {
+                var observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15 });
+
+                revealTargets.forEach(function(el) {
+                    observer.observe(el);
+                });
+            } else {
+                revealTargets.forEach(function(el) {
+                    el.classList.add('visible');
+                });
+            }
         });
     </script>
 </body>
