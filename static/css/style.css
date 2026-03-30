@@ -897,8 +897,8 @@ header {
 .article-body p {
     font-family: var(--font-serif);
     font-size: 1.05rem;
-    font-weight: 300;
-    color: var(--color-text-body);
+    font-weight: 400;
+    color: var(--color-text-secondary);
     margin-bottom: 1.25rem;
     line-height: 1.85;
 }
