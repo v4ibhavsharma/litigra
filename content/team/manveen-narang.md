@@ -1,7 +1,7 @@
 ---
 title: "Manveen Narang"
-designation: "Senior Associate"
-role_group: "senior_associate"
+designation: "Associate Partner"
+role_group: "associate_partner"
 weight: 2
 brief: "Litigation practice spanning civil, commercial, and regulatory matters."
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Adarsh Dubey"
-designation: "Senior Associate"
-role_group: "senior_associate"
+designation: "Associate Partner"
+role_group: "associate_partner"
 weight: 3
 brief: "Formerly practised at the Allahabad High Court before joining the firm in Chandigarh."
 draft: false

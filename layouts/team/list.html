@@ -50,10 +50,10 @@
         </div>
         {{ end }}
 
-        {{ $seniors := where $pages ".Params.role_group" "senior_associate" }}
+        {{ $seniors := where $pages ".Params.role_group" "associate_partner" }}
         {{ if $seniors }}
         <div class="team-group">
-            <h2 class="team-group-label">SENIOR ASSOCIATES</h2>
+            <h2 class="team-group-label">ASSOCIATE PARTNERS</h2>
             {{ range $seniors }}
             <a href="{{ .RelPermalink }}" class="team-list-item">
                 <div class="team-list-info">

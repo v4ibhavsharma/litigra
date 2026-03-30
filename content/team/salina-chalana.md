@@ -1,7 +1,7 @@
 ---
 title: "Salina Chalana"
-designation: "Senior Associate"
-role_group: "senior_associate"
+designation: "Associate Partner"
+role_group: "associate_partner"
 weight: 1
 brief: "Over 10 years of experience in litigation practice."
 draft: false
