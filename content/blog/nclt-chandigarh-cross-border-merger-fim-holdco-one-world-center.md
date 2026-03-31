@@ -1,5 +1,5 @@
 ---
-title: "NCLT Chandigarh Approves Cross-Border Merger of Mauritius Companies FIM Holdco I Limited and Ariston Investments Sub A Limited with One World Center Private Limited"
+title: "NCLT Chandigarh Approves Cross-Border Merger of Mauritius Companies with Indian Company Under Section 234 of the Companies Act Read with FEMA Regulations"
 date: 2025-03-01
 categories: ["Company"]
 tags: ["Cross-Border Merger", "NCLT", "Section 234", "FEMA", "Companies Act"]

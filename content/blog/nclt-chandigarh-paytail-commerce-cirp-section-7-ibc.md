@@ -1,5 +1,5 @@
 ---
-title: "NCLT Chandigarh Admits CIRP Against Paytail Commerce Private Limited Under Section 7 of the Insolvency and Bankruptcy Code for Default of Rs. 1,04,50,000/-"
+title: "CIRP Admitted Under Section 7 of the Insolvency and Bankruptcy Code Where Debt and Default Are Undisputed: NCLT Chandigarh"
 date: 2024-08-16
 categories: ["Insolvency"]
 tags: ["IBC", "Section 7", "CIRP", "NCLT", "Insolvency"]

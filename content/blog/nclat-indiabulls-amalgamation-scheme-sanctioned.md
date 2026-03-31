@@ -1,5 +1,5 @@
 ---
-title: "NCLAT Sanctions Amalgamation Scheme of Indiabulls Real Estate Limited, Holds Tribunal Should Not Interfere with Commercial Wisdom of Shareholders"
+title: "Tribunal Should Not Interfere with Commercial Wisdom of Shareholders in Approving Amalgamation Scheme Under Sections 230 to 232: NCLAT Sanctions Indiabulls Real Estate Merger"
 date: 2025-01-11
 categories: ["Company"]
 tags: ["Amalgamation", "NCLAT", "Companies Act", "Section 230-232"]
