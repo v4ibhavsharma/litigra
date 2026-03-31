@@ -20,6 +20,10 @@ description: "Contact Litigra at our Chandigarh, High Court, or Mohali offices. 
       <p>#1608, Sector 60<br>Mohali</p>
     </div>
     <div class="contact-block">
+      <h3>PHONE</h3>
+      <p><a href="tel:+919872170870">+91 98721 70870</a></p>
+    </div>
+    <div class="contact-block">
       <h3>EMAIL</h3>
       <p><a href="mailto:office@litigra.com">office@litigra.com</a></p>
     </div>
