@@ -1,0 +1,6 @@
+{{ define "main" }}
+
+{{/* Redirect /categories/ to /blog/ since visitors should use the main writing page */}}
+<meta http-equiv="refresh" content="0; url={{ "blog/" | relURL }}" />
+
+{{ end }}

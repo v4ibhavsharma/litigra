@@ -10,24 +10,31 @@
 <section class="page-content section-padding">
     <div class="container">
 
-        {{/* Collect all categories from ALL blog posts */}}
+        {{/* Build the list of all categories used across the blog */}}
         {{ $allCats := slice }}
-        {{ range .Pages }}
+        {{ $blogSection := .Site.GetPage "/blog" }}
+        {{ range $blogSection.Pages }}
             {{ range .Params.categories }}
                 {{ $allCats = $allCats | append . }}
             {{ end }}
         {{ end }}
         {{ $uniqueCats := $allCats | uniq | sort }}
 
+        {{/* Current category: use the term title, urlized for comparison */}}
+        {{ $currentCat := .Title | urlize }}
+
         <div class="blog-filter-bar">
-            <a href="{{ "blog/" | relURL }}" class="blog-filter-pill active">All</a>
+            <a href="{{ "blog/" | relURL }}" class="blog-filter-pill">All</a>
             {{ range $uniqueCats }}
-                <a href="{{ printf "categories/%s/" (. | urlize) | relURL }}" class="blog-filter-pill">{{ . }}</a>
+                {{ $catSlug := . | urlize }}
+                <a href="{{ printf "categories/%s/" $catSlug | relURL }}"
+                   class="blog-filter-pill{{ if eq $catSlug $currentCat }} active{{ end }}">{{ . }}</a>
             {{ end }}
         </div>
 
-        {{ $paginator := .Paginate (.Pages.ByDate.Reverse) 8 }}
+        {{ $paginator := .Paginate .Pages 8 }}
 
+        {{ if gt (len $paginator.Pages) 0 }}
         <div class="blog-grid-cards">
             {{ range $paginator.Pages }}
                 {{ $cat := "" }}
@@ -52,6 +59,9 @@
                 </a>
             {{ end }}
         </div>
+        {{ else }}
+        <p class="blog-no-results">No articles in this category yet.</p>
+        {{ end }}
 
         {{ if gt $paginator.TotalPages 1 }}
         <nav class="blog-pagination" aria-label="Blog pages">
