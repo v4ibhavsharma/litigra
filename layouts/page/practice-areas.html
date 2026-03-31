@@ -259,13 +259,15 @@
 /* Recent article teaser inside card */
 .pa-card-recent {
     margin-top: auto;
-    padding-top: 1.25rem;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem -1.75rem -2rem;
+    background: #f5f5f5;
     border-top: 1px solid var(--color-border);
-    margin-top: 1.25rem;
-    transition: border-color 0.35s ease;
+    transition: background 0.35s ease, border-color 0.35s ease;
 }
 .pa-card-link:hover .pa-card-recent {
-    border-color: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.15);
 }
 .pa-card-recent-label {
     font-family: var(--font-primary);
@@ -273,7 +275,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.35);
     display: block;
     margin-bottom: 0.35rem;
     transition: color 0.35s ease;
@@ -333,6 +335,10 @@
     }
     .pa-card {
         padding: 1.5rem 1.25rem;
+    }
+    .pa-card-recent {
+        margin: 1.25rem -1.25rem -1.5rem;
+        padding: 0.9rem 1.25rem;
     }
 }
 </style>
