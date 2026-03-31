@@ -2,7 +2,7 @@
 title: "Interim Moratorium Under Section 96 IBC Cannot Unsettle a Confirmed SARFAESI Auction: NCLT Chandigarh"
 date: 2026-03-29
 author: "Vaibhav Sharma"
-categories: ["Case Note"]
+categories: ["Insolvency"]
 tags: ["IBC", "Section 96", "SARFAESI", "NCLT", "Personal Guarantor", "Moratorium"]
 draft: false
 abstract: "The NCLT Chandigarh Bench held that where an e-auction has been conducted and sale confirmed before the filing of an application under Section 94 of the IBC, the interim moratorium under Section 96 cannot reverse or stall the concluded sale."

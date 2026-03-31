@@ -1,7 +1,7 @@
 ---
 title: "Suit for Permanent Injunction Simpliciter Not Maintainable Where Title and Possession are in Dispute"
 date: 2026-03-29
-categories: ["Case Note"]
+categories: ["Civil"]
 tags: ["Injunction", "Section 41(h)", "Punjab and Haryana High Court", "Specific Relief Act"]
 author: "Vaibhav Sharma"
 draft: false

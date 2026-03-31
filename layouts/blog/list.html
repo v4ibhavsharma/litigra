@@ -9,15 +9,34 @@
 
 <section class="page-content section-padding">
     <div class="container">
-        <div class="blog-grid-cards">
-            {{ range .Paginator.Pages }}
-                <a href="{{ .RelPermalink }}" class="blog-card-link">
+
+        {{/* Collect all categories from blog posts */}}
+        {{ $allCats := slice }}
+        {{ range .Pages }}
+            {{ range .Params.categories }}
+                {{ $allCats = $allCats | append . }}
+            {{ end }}
+        {{ end }}
+        {{ $uniqueCats := $allCats | uniq | sort }}
+
+        <div class="blog-filter-bar" id="blog-filter-bar">
+            <button class="blog-filter-pill active" data-category="all">All</button>
+            {{ range $uniqueCats }}
+                <button class="blog-filter-pill" data-category="{{ . | urlize }}">{{ . }}</button>
+            {{ end }}
+        </div>
+
+        <div class="blog-grid-cards" id="blog-grid">
+            {{ range .Pages.ByDate.Reverse }}
+                {{ $cat := "" }}
+                {{ if .Params.categories }}
+                    {{ $cat = index .Params.categories 0 }}
+                {{ end }}
+                <a href="{{ .RelPermalink }}" class="blog-card-link" data-category="{{ $cat | urlize }}">
                     <article class="blog-card-item">
                         <div class="blog-card-top">
-                            {{ if .Params.categories }}
-                                {{ range first 1 .Params.categories }}
-                                    <span class="blog-card-category">{{ . }}</span>
-                                {{ end }}
+                            {{ if $cat }}
+                                <span class="blog-card-category">{{ $cat }}</span>
                             {{ end }}
                             <span class="blog-card-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
                         </div>
@@ -32,23 +51,42 @@
             {{ end }}
         </div>
 
-        <!-- Pagination -->
-        {{ if gt .Paginator.TotalPages 1 }}
-            <div class="pagination">
-                {{ if .Paginator.HasPrev }}
-                    <a href="{{ .Paginator.Prev.URL }}" class="pagination-link">← Previous</a>
-                {{ end }}
+        <p class="blog-no-results" id="blog-no-results" style="display: none;">No articles in this category yet.</p>
 
-                {{ range .Paginator.Pagers }}
-                    <a href="{{ .URL }}" class="pagination-link{{ if eq . $.Paginator }} active{{ end }}">{{ .PageNumber }}</a>
-                {{ end }}
-
-                {{ if .Paginator.HasNext }}
-                    <a href="{{ .Paginator.Next.URL }}" class="pagination-link">Next →</a>
-                {{ end }}
-            </div>
-        {{ end }}
     </div>
 </section>
+
+<script>
+(function() {
+    var bar = document.getElementById('blog-filter-bar');
+    var grid = document.getElementById('blog-grid');
+    var noResults = document.getElementById('blog-no-results');
+    if (!bar || !grid) return;
+
+    var pills = bar.querySelectorAll('.blog-filter-pill');
+    var cards = grid.querySelectorAll('.blog-card-link');
+
+    pills.forEach(function(pill) {
+        pill.addEventListener('click', function() {
+            pills.forEach(function(p) { p.classList.remove('active'); });
+            pill.classList.add('active');
+
+            var cat = pill.getAttribute('data-category');
+            var visible = 0;
+
+            cards.forEach(function(card) {
+                if (cat === 'all' || card.getAttribute('data-category') === cat) {
+                    card.style.display = '';
+                    visible++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            noResults.style.display = visible === 0 ? '' : 'none';
+        });
+    });
+})();
+</script>
 
 {{ end }}

@@ -1,7 +1,7 @@
 ---
 title: "Consensual Relationship Between Adults Cannot Be Converted Into Rape on False Promise of Marriage Where Prosecutrix Was a Married Woman"
 date: 2026-03-24
-categories: ["Case Note"]
+categories: ["Criminal"]
 tags: ["Section 376", "Section 482", "Punjab and Haryana High Court", "Supreme Court", "Quashing", "IT Act"]
 author: "Vaibhav Sharma"
 draft: false

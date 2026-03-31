@@ -1194,6 +1194,51 @@ header {
 }
 
 /* ========================================
+   Blog Filter Bar
+   ======================================== */
+
+.blog-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.blog-filter-pill {
+    font-family: var(--font-primary);
+    font-size: 0.65rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-text-body);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.blog-filter-pill:hover {
+    border-color: var(--color-black);
+    color: var(--color-black);
+}
+
+.blog-filter-pill.active {
+    background: var(--color-black);
+    color: var(--color-white);
+    border-color: var(--color-black);
+}
+
+.blog-no-results {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--color-text-body);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+/* ========================================
    Blog Grid - Card Layout
    ======================================== */
 
@@ -1943,6 +1988,16 @@ footer {
 
     .page-header h1 {
         font-size: clamp(2rem, 6vw, 4rem);
+    }
+
+    .blog-filter-bar {
+        gap: 0.35rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .blog-filter-pill {
+        font-size: 0.6rem;
+        padding: 0.3rem 0.75rem;
     }
 
     .blog-grid-cards {

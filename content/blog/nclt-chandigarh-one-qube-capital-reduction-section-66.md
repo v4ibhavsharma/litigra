@@ -2,7 +2,7 @@
 title: "NCLT Chandigarh Approves Utilisation of Securities Premium to Set Off Accumulated Losses of Rs. 99.59 Crores"
 date: 2026-03-29
 author: "Vaibhav Sharma"
-categories: ["Case Note"]
+categories: ["Company"]
 tags: ["NCLT", "Companies Act", "Section 66", "Capital Reduction", "Securities Premium"]
 draft: false
 abstract: "The NCLT Chandigarh Bench confirmed the reduction of share capital of a foreign-owned private company under Section 66 of the Companies Act, 2013, permitting it to utilise Rs. 99.59 crores from its securities premium account to set off accumulated losses."

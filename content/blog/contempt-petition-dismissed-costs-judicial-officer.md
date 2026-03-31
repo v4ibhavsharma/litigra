@@ -2,7 +2,7 @@
 title: "Frivolous Contempt Petition Against Judicial Officer Dismissed with Rs. 1,00,000/- Costs: Punjab and Haryana High Court"
 date: 2026-03-29
 author: "Vaibhav Sharma"
-categories: ["Case Note"]
+categories: ["Civil"]
 tags: ["Contempt", "Punjab and Haryana High Court", "Judicial Officers", "Costs"]
 draft: false
 abstract: "The Punjab and Haryana High Court dismissed a contempt petition filed against a Judicial Officer and imposed costs of Rs. 1,00,000/- on the petitioner, holding the petition to be a gross abuse of the process of law."

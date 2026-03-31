@@ -19,7 +19,9 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "author", widget: "string", default: "Vaibhav Sharma" }
-      - { label: "Categories", name: "categories", widget: "list", default: ["Article"] }
+      - { label: "Category", name: "categories", widget: "select", options: ["Criminal", "Civil", "Constitutional", "Criminal Tax", "Insolvency", "Company"], default: ["Civil"], multiple: true }
       - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Abstract", name: "abstract", widget: "text", required: false, hint: "A 2-3 line summary for the hero banner and listing cards." }
+      - { label: "Judgment PDF", name: "judgment_pdf", widget: "file", required: false, hint: "Upload the judgment or order PDF." }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }

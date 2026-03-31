@@ -1,7 +1,7 @@
 ---
 title: "Criminal Complaint Against Serving Police Officer Quashed for Want of Sanction Under Section 197 Cr.P.C."
 date: 2023-12-08
-categories: ["Case Note"]
+categories: ["Criminal"]
 tags: ["Section 197", "Cr.P.C.", "Punjab and Haryana High Court", "Sanction for Prosecution", "Police Officer"]
 author: "Vaibhav Sharma"
 draft: false
