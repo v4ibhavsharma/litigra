@@ -1,7 +1,7 @@
 ---
 title: "Family Pension Denied for Failure to Complete One Year Continuous Service Under Rule 6.17 of the Punjab Civil Services Rules: Punjab and Haryana High Court"
 date: 2025-09-13
-categories: ["Civil"]
+categories: ["Service Law"]
 tags: ["Family Pension", "Punjab Civil Services Rules", "Punjab and Haryana High Court", "Service Law"]
 author: Litigra Editorial Team
 draft: false

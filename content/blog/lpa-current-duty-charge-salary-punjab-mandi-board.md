@@ -1,7 +1,7 @@
 ---
 title: "No Entitlement to Salary of Higher Post During Current Duty Charge When Employee Was Not Eligible for Promotion: Punjab and Haryana High Court Allows LPA of Punjab Mandi Board"
 date: 2025-05-07
-categories: ["Civil"]
+categories: ["Service Law"]
 tags: ["Service Law", "Current Duty Charge", "Punjab Mandi Board", "Punjab and Haryana High Court"]
 author: "Litigra Editorial Team"
 draft: false
