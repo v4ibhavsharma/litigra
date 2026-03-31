@@ -35,4 +35,4 @@ The judgment exemplifies how procedural law and substantive corporate law must w
 
 ---
 
-*Munisha Gandhi, Senior Advocate, Vaibhav Sharma, Advocate, and Salina Chalana, Advocate, appeared for the Petitioners.*
+*Ms. Munisha Gandhi, Senior Advocate, Mr. Vaibhav Sharma, Advocate, and Ms. Salina Chalana, Advocate, appeared for the Petitioners, that is, FIM Holdco I Limited, Ariston Investments Sub A Limited, and One World Center Private Limited.*

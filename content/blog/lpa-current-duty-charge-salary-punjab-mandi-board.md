@@ -39,4 +39,4 @@ This judgment provides important guidance for service matters involving current 
 
 ---
 
-*Vaibhav Sharma, Advocate, appeared for the Appellants.*
+*Mr. Vaibhav Sharma, Advocate, appeared for the Appellants, that is, the Punjab State Agricultural Marketing Board.*

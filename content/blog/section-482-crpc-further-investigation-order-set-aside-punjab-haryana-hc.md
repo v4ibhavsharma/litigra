@@ -35,4 +35,4 @@ This judgment advances an important principle in criminal procedure: the distinc
 
 ---
 
-*Vaibhav Sharma, Advocate, appeared for the Petitioner.*
+*Mr. Vaibhav Sharma, Advocate, appeared for the Petitioner, that is, Mr. Amarpreet Singh.*

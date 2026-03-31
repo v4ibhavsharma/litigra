@@ -41,4 +41,4 @@ Justice Brar's decision underscores several important principles in service law.
 
 ---
 
-*Vaibhav appeared for Respondents No. 2 to 5.*
+*Mr. Vaibhav Sharma, Advocate, appeared for Respondents No. 2 to 5.*

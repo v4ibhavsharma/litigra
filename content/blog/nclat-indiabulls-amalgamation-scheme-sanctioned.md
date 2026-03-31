@@ -33,4 +33,4 @@ The Appellate Tribunal's reversal of the lower Tribunal's decision underscores a
 
 ---
 
-*Ms. Munisha Gandhi, Senior Advocate, with Ms. Salina Chalana, Advocate, appeared for Appellant No. 1; Vaibhav Sharma, Advocate, appeared for Appellant Nos. 2 and 3.*
+*Ms. Munisha Gandhi, Senior Advocate, with Ms. Salina Chalana, Advocate, appeared for Appellant No. 1, that is, the Department of Income Tax; Mr. Vaibhav Sharma, Advocate, appeared for Appellant Nos. 2 and 3.*

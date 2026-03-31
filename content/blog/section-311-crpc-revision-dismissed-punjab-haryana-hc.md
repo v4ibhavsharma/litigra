@@ -33,4 +33,4 @@ This decision reinforces the principle that while Indian criminal procedure is d
 
 ---
 
-*Ms. Vaibhav appeared for Respondent No. 1.*
+*Mr. Vaibhav Sharma, Advocate, appeared for Respondent No. 1, that is, Smt. Mridula Bhardwaj.*
