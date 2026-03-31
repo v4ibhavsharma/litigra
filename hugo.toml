@@ -3,7 +3,7 @@ relativeURLs = true
 languageCode = "en-us"
 title = "Litigra"
 [pagination]
-  pagerSize = 6
+  pagerSize = 10
 
 [params]
   description = "Litigation and advisory practice, Chandigarh."

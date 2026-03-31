@@ -1322,6 +1322,46 @@ header {
 }
 
 /* ========================================
+   Blog Pagination
+   ======================================== */
+
+.blog-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.blog-pagination-btn {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-black);
+    text-decoration: none;
+    padding: 0.6rem 1.4rem;
+    border: 1px solid var(--color-black);
+    transition: background 0.2s, color 0.2s;
+}
+
+.blog-pagination-btn:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.blog-pagination-info {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--color-text-body);
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
    Article Hero Banner (Inverted)
    ======================================== */
 

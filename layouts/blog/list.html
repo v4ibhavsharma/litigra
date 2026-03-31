@@ -10,7 +10,7 @@
 <section class="page-content section-padding">
     <div class="container">
 
-        {{/* Collect all categories from blog posts */}}
+        {{/* Collect all categories from ALL blog posts (not just current page) */}}
         {{ $allCats := slice }}
         {{ range .Pages }}
             {{ range .Params.categories }}
@@ -26,8 +26,10 @@
             {{ end }}
         </div>
 
+        {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+
         <div class="blog-grid-cards" id="blog-grid">
-            {{ range .Pages.ByDate.Reverse }}
+            {{ range $paginator.Pages }}
                 {{ $cat := "" }}
                 {{ if .Params.categories }}
                     {{ $cat = index .Params.categories 0 }}
@@ -52,6 +54,18 @@
         </div>
 
         <p class="blog-no-results" id="blog-no-results" style="display: none;">No articles in this category yet.</p>
+
+        {{ if gt $paginator.TotalPages 1 }}
+        <nav class="blog-pagination" aria-label="Blog pages">
+            {{ if $paginator.HasPrev }}
+                <a href="{{ $paginator.Prev.URL | relURL }}" class="blog-pagination-btn">&larr; Newer</a>
+            {{ end }}
+            <span class="blog-pagination-info">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+            {{ if $paginator.HasNext }}
+                <a href="{{ $paginator.Next.URL | relURL }}" class="blog-pagination-btn">Older &rarr;</a>
+            {{ end }}
+        </nav>
+        {{ end }}
 
     </div>
 </section>
