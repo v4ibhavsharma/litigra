@@ -1,7 +1,7 @@
 ---
 title: "Interest Cannot Be Imposed on Advance Sales Tax Without Wilful Default: Punjab and Haryana High Court Quashes Notice Under Section 25(5) of the Haryana General Sales Tax Act in Escorts Limited"
 date: 2023-02-06
-categories: ["Civil"]
+categories: ["Tax"]
 tags: ["Sales Tax", "Haryana GST Act", "Section 25(5)", "Punjab and Haryana High Court"]
 author: "Litigra Editorial Team"
 draft: false
