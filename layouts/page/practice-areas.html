@@ -39,14 +39,14 @@
                 </div>
             </a>
 
-            {{/* 02 Corporate & Commercial — category: Company */}}
+            {{/* 02 Mergers & Acquisitions — category: Company */}}
             {{ $cat = "company" }}
             {{ $latest = index $latestByCategory $cat }}
             <a href="{{ printf "categories/%s/" $cat | relURL }}" class="pa-card-link">
                 <div class="pa-card">
                     <div class="pa-card-num">02</div>
-                    <h3>Corporate & Commercial</h3>
-                    <p>Amalgamation schemes, capital reductions, cross-border mergers, and shareholder disputes before the NCLT, NCLAT, and High Courts.</p>
+                    <h3>Mergers & Acquisitions</h3>
+                    <p>Amalgamation schemes, capital reductions, cross-border mergers, and corporate restructuring before the NCLT and NCLAT.</p>
                     {{ with $latest }}
                     <div class="pa-card-recent">
                         <span class="pa-card-recent-label">Recent</span>
@@ -56,12 +56,22 @@
                 </div>
             </a>
 
-            {{/* 03 Constitutional Law — no category yet */}}
-            <div class="pa-card">
-                <div class="pa-card-num">03</div>
-                <h3>Constitutional Law</h3>
-                <p>Fundamental rights, writ jurisdiction, and public interest matters before the High Courts and the Supreme Court of India.</p>
-            </div>
+            {{/* 03 Insolvency & Restructuring — category: Insolvency */}}
+            {{ $cat = "insolvency" }}
+            {{ $latest = index $latestByCategory $cat }}
+            <a href="{{ printf "categories/%s/" $cat | relURL }}" class="pa-card-link">
+                <div class="pa-card">
+                    <div class="pa-card-num">03</div>
+                    <h3>Insolvency & Restructuring</h3>
+                    <p>CIRP proceedings, moratorium disputes, resolution plans, and the intersection of IBC with secured creditor rights before the NCLT.</p>
+                    {{ with $latest }}
+                    <div class="pa-card-recent">
+                        <span class="pa-card-recent-label">Recent</span>
+                        <span class="pa-card-recent-title">{{ .Title | truncate 80 }}</span>
+                    </div>
+                    {{ end }}
+                </div>
+            </a>
 
             {{/* 04 Criminal Defence — category: Criminal */}}
             {{ $cat = "criminal" }}
@@ -80,22 +90,12 @@
                 </div>
             </a>
 
-            {{/* 05 Insolvency & Restructuring — category: Insolvency */}}
-            {{ $cat = "insolvency" }}
-            {{ $latest = index $latestByCategory $cat }}
-            <a href="{{ printf "categories/%s/" $cat | relURL }}" class="pa-card-link">
-                <div class="pa-card">
-                    <div class="pa-card-num">05</div>
-                    <h3>Insolvency & Restructuring</h3>
-                    <p>CIRP proceedings, moratorium disputes, resolution plans, and the intersection of IBC with secured creditor rights before the NCLT.</p>
-                    {{ with $latest }}
-                    <div class="pa-card-recent">
-                        <span class="pa-card-recent-label">Recent</span>
-                        <span class="pa-card-recent-title">{{ .Title | truncate 80 }}</span>
-                    </div>
-                    {{ end }}
-                </div>
-            </a>
+            {{/* 05 Constitutional Law — no category yet */}}
+            <div class="pa-card">
+                <div class="pa-card-num">05</div>
+                <h3>Constitutional Law</h3>
+                <p>Fundamental rights, writ jurisdiction, and public interest matters before the High Courts and the Supreme Court of India.</p>
+            </div>
 
             {{/* 06 Service Law — category: Service Law */}}
             {{ $cat = "service-law" }}
@@ -136,13 +136,6 @@
                 <div class="pa-card-num">08</div>
                 <h3>Real Estate & Property</h3>
                 <p>Title disputes, land acquisition matters, and proceedings under the Real Estate Regulation Act.</p>
-            </div>
-
-            {{/* 09 Family Law — no category yet */}}
-            <div class="pa-card">
-                <div class="pa-card-num">09</div>
-                <h3>Family Law</h3>
-                <p>Matrimonial disputes, custody matters, maintenance, and succession proceedings.</p>
             </div>
 
         </div>
@@ -311,7 +304,6 @@
 .pa-grid > :nth-child(6) { animation-delay: 0.3s; }
 .pa-grid > :nth-child(7) { animation-delay: 0.35s; }
 .pa-grid > :nth-child(8) { animation-delay: 0.4s; }
-.pa-grid > :nth-child(9) { animation-delay: 0.45s; }
 
 @keyframes paReveal {
     to {
