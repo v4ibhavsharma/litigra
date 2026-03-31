@@ -1,4 +1,4 @@
 ---
 title: "PEOPLE"
-description: "Meet the team at Litigra. Advocates practising before the Supreme Court of India, Punjab and Haryana High Court, NCLT, and tribunals."
+description: "The leadership team at Litigra. The firm is supported by a wider team of associates and staff across its offices."
 ---
