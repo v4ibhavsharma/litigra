@@ -28,6 +28,9 @@
                 <span>{{ .Params.author }}</span>
             {{ end }}
             <span class="article-hero-readtime">{{ .ReadingTime }} min read</span>
+            {{ if .Params.judgment_pdf }}
+                <a href="{{ .Params.judgment_pdf }}" target="_blank" rel="noopener" class="article-hero-download">Download Judgment</a>
+            {{ end }}
         </div>
     </div>
 </section>

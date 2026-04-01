@@ -27,18 +27,6 @@
         </div>
 
         {{ $paginator := .Paginate (.Pages.ByDate.Reverse) 8 }}
-        {{ $totalArticles := len .Pages }}
-
-        <div class="blog-article-count">
-            {{ if gt $paginator.TotalPages 1 }}
-                {{ $start := add (mul (sub $paginator.PageNumber 1) 8) 1 }}
-                {{ $end := mul $paginator.PageNumber 8 }}
-                {{ if gt $end $totalArticles }}{{ $end = $totalArticles }}{{ end }}
-                Showing {{ $start }}&ndash;{{ $end }} of {{ $totalArticles }} articles
-            {{ else }}
-                {{ $totalArticles }} {{ if eq $totalArticles 1 }}article{{ else }}articles{{ end }}
-            {{ end }}
-        </div>
 
         <div class="blog-grid-cards">
             {{ range $index, $page := $paginator.Pages }}
