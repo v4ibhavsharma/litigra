@@ -16,7 +16,7 @@ roles:
 draft: false
 ---
 
-Vaibhav Sharma is the founding partner of Litigra, a litigation and advisory law firm with offices in Chandigarh and Mohali. He has over 16 years of experience across corporate, commercial, and litigation matters. He holds a Master of Laws degree and is an alumnus of the Army Institute of Law, Mohali.
+Vaibhav Sharma is the founding partner of Litigra, a litigation and advisory law firm. He has over 17 years of experience across corporate, commercial, and litigation matters. He holds a Master of Laws degree and is an alumnus of the Army Institute of Law, Mohali.
 
 From 2013 to 2017, he served as Deputy Advocate General for the State of Punjab, representing the state in matters before the Supreme Court and the Punjab and Haryana High Court. His work in that role covered writs, taxation, criminal, and service law. From 2020 to 2022, he served as Standing Counsel for the Comptroller and Auditor General of India in Haryana. He has been bestowed with the privilege and prestige of being appointed by the Punjab and Haryana High Court to defend the Court in cases filed against it. He is also an Empanelled Counsel for the Punjab State Agricultural Marketing Board.
 
