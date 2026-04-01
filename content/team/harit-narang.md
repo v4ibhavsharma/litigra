@@ -1,6 +1,6 @@
 ---
 title: "Harit Narang"
-designation: "Lead Associate"
+designation: "Lead Associate, Chandigarh Office"
 role_group: "lead_associate"
 weight: 1
 brief: "Corporate, commercial, and litigation practice before the NCLT, NCLAT, and the Punjab and Haryana High Court."

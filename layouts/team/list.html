@@ -71,7 +71,7 @@
         {{ $lead_associates := where $pages ".Params.role_group" "lead_associate" }}
         {{ if $lead_associates }}
         <div class="team-group">
-            <h2 class="team-group-label">LEAD ASSOCIATES</h2>
+            <h2 class="team-group-label">LEAD ASSOCIATE</h2>
             {{ range $lead_associates }}
             <a href="{{ .RelPermalink }}" class="team-list-item">
                 <div class="team-list-info">
