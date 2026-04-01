@@ -44,6 +44,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
 }
 
 body {
@@ -1000,20 +1001,7 @@ header {
     color: rgba(255,255,255,0.45);
 }
 
-/* ========================================
-   Drop Cap
-   ======================================== */
-
-.article-body > p:first-of-type::first-letter {
-    font-family: var(--font-primary);
-    float: left;
-    font-size: 3.4rem;
-    line-height: 0.8;
-    font-weight: 800;
-    color: var(--color-black);
-    margin-right: 0.1rem;
-    margin-top: 0.15rem;
-}
+/* Drop cap removed - inconsistent across starting letters and font pairings */
 
 /* ========================================
    Anchor Links on Headings
@@ -1047,44 +1035,7 @@ header {
     color: var(--color-black) !important;
 }
 
-/* ========================================
-   Copy Link / Cite Button
-   ======================================== */
-
-.sidebar-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-}
-
-.sidebar-copy-link {
-    display: block;
-    font-family: var(--font-primary);
-    font-size: 0.68rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-align: center;
-    padding: 0.6rem 0.75rem;
-    background: transparent;
-    color: var(--color-black);
-    border: 1px solid var(--color-black);
-    cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
-    text-decoration: none;
-}
-
-.sidebar-copy-link:hover {
-    background: var(--color-black);
-    color: var(--color-white);
-}
-
-.sidebar-copy-link.copied {
-    background: var(--color-black);
-    color: var(--color-white);
-}
+/* Copy Link button removed */
 
 /* ========================================
    Sidebar Section Progress
@@ -2401,15 +2352,6 @@ footer {
         font-size: 0.68rem;
     }
 
-    .sidebar-actions {
-        flex-direction: row;
-    }
-
-    .sidebar-copy-link {
-        font-size: 0.6rem;
-        padding: 0.35rem 0.6rem;
-    }
-
     .heading-anchor {
         display: none;
     }
@@ -2418,9 +2360,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .article-body > p:first-of-type::first-letter {
-        font-size: 2.8rem;
-    }
+    /* Drop cap removed */
 
     .team-member-header {
         padding: 3rem 1.5rem 2rem;

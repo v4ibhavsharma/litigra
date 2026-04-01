@@ -40,9 +40,6 @@
                 <nav class="sidebar-nav" id="sidebar-nav">
                     <!-- Auto-populated by JS from h2 headings -->
                 </nav>
-                <div class="sidebar-actions">
-                    <button class="sidebar-copy-link" id="copy-link-btn" type="button">Copy Link</button>
-                </div>
                 {{ if .Params.judgment_pdf }}
                     <a href="{{ .Params.judgment_pdf }}" target="_blank" rel="noopener" class="sidebar-download">Download Judgment</a>
                 {{ end }}
@@ -68,10 +65,10 @@
                         {{ end }}
                     {{ end }}
                 {{ end }}
-                {{/* If fewer than 2 from same category, fill with recent posts */}}
-                {{ if lt (len $related) 2 }}
+                {{/* If fewer than 4 from same category, fill with recent posts */}}
+                {{ if lt (len $related) 4 }}
                     {{ range where .Site.RegularPages "Type" "blog" }}
-                        {{ if and (ne .Permalink $currentPage.Permalink) (lt (len $related) 3) }}
+                        {{ if and (ne .Permalink $currentPage.Permalink) (lt (len $related) 4) }}
                             {{ $already := false }}
                             {{ $thisPage := . }}
                             {{ range $related }}
@@ -87,7 +84,7 @@
                 <div class="related-articles">
                     <div class="related-articles-title">Related Articles</div>
                     <div class="related-articles-grid">
-                        {{ range first 3 $related }}
+                        {{ range first 4 $related }}
                             <a href="{{ .RelPermalink }}" class="related-card-link">
                                 <div class="related-card">
                                     {{ if .Params.categories }}
@@ -115,6 +112,9 @@
     var headings = body.querySelectorAll('h2');
     if (headings.length === 0) return;
 
+    /* Scroll offset to clear sticky header */
+    var SCROLL_OFFSET = 140;
+
     headings.forEach(function(h, i) {
         if (!h.id) {
             h.id = 'section-' + (i + 1);
@@ -126,6 +126,11 @@
         anchor.className = 'heading-anchor';
         anchor.textContent = '#';
         anchor.setAttribute('aria-label', 'Link to this section');
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: h.offsetTop - SCROLL_OFFSET, behavior: 'smooth' });
+            history.replaceState(null, '', '#' + h.id);
+        });
         h.insertBefore(anchor, h.firstChild);
 
         /* Add sidebar link */
@@ -152,7 +157,7 @@
 
     /* ---- Active section + section progress ---- */
     function onScroll() {
-        var scrollPos = window.scrollY + 120;
+        var scrollPos = window.scrollY + SCROLL_OFFSET;
 
         /* Reading progress */
         if (progressBar) {
@@ -178,11 +183,8 @@
         links.forEach(function(l, i) {
             if (i === current) {
                 l.classList.add('active');
-                l.style.setProperty('--section-progress', (sectionProgress * 100) + '%');
-                /* Set the ::after height via inline override */
                 l.style.borderLeftColor = 'transparent';
-                var afterHeight = sectionProgress * 100;
-                l.setAttribute('data-progress', afterHeight);
+                l.setAttribute('data-progress', sectionProgress * 100);
             } else {
                 l.classList.remove('active');
                 l.style.borderLeftColor = '';
@@ -190,7 +192,6 @@
             }
         });
 
-        /* Update sidebar link ::after heights using a style injection */
         updateSectionProgress();
     }
 
@@ -216,39 +217,19 @@
             e.preventDefault();
             var target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                window.scrollTo({ top: target.offsetTop - 100, behavior: 'smooth' });
+                window.scrollTo({ top: target.offsetTop - SCROLL_OFFSET, behavior: 'smooth' });
             }
         });
     });
 
-    /* ---- Copy link button ---- */
-    var copyBtn = document.getElementById('copy-link-btn');
-    if (copyBtn) {
-        copyBtn.addEventListener('click', function() {
-            var url = window.location.href.split('#')[0];
-            navigator.clipboard.writeText(url).then(function() {
-                copyBtn.textContent = 'Copied';
-                copyBtn.classList.add('copied');
-                setTimeout(function() {
-                    copyBtn.textContent = 'Copy Link';
-                    copyBtn.classList.remove('copied');
-                }, 2000);
-            }).catch(function() {
-                /* Fallback */
-                var input = document.createElement('input');
-                input.value = url;
-                document.body.appendChild(input);
-                input.select();
-                document.execCommand('copy');
-                document.body.removeChild(input);
-                copyBtn.textContent = 'Copied';
-                copyBtn.classList.add('copied');
-                setTimeout(function() {
-                    copyBtn.textContent = 'Copy Link';
-                    copyBtn.classList.remove('copied');
-                }, 2000);
-            });
-        });
+    /* ---- Handle hash on page load ---- */
+    if (window.location.hash) {
+        var target = document.querySelector(window.location.hash);
+        if (target) {
+            setTimeout(function() {
+                window.scrollTo({ top: target.offsetTop - SCROLL_OFFSET, behavior: 'smooth' });
+            }, 100);
+        }
     }
 })();
 </script>
