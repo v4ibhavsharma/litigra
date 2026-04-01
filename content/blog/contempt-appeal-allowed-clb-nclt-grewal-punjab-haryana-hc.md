@@ -41,4 +41,4 @@ This principle carries particular importance in corporate disputes, where interi
 
 ---
 
-*Ms. Munisha Gandhi, Senior Advocate, assisted by Mr. Vaibhav Sharma, Advocate, and Mr. Adarsh Dubey, Advocate, appeared for the Appellant, that is, Mr. Pritpal Singh Grewal.*
+*Ms. Munisha Gandhi, Senior Advocate, assisted by Mr. Vaibhav Sharma, Advocate, and Mr. Adarsh Dubey, Advocate, appeared for the Appellant, i.e., Mr. Pritpal Singh Grewal.*

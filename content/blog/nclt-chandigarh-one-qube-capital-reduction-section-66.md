@@ -31,4 +31,4 @@ The Tribunal confirmed the reduction, noting that the Company was solvent, no cr
 
 ---
 
-*Mr. Vaibhav Sharma, Advocate, appeared for the Petitioner Company, that is, M/s One Qube Realtors Private Limited.*
+*Mr. Vaibhav Sharma, Advocate, appeared for the Petitioner Company, i.e., M/s One Qube Realtors Private Limited.*

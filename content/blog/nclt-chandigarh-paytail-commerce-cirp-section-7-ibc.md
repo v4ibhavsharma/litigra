@@ -35,4 +35,4 @@ The judgment also underscores that the corporate debtor retains substantial righ
 
 ---
 
-*Mr. Vaibhav Sharma, Advocate, appeared for the Financial Creditor, that is, Mr. Amit Jain.*
+*Mr. Vaibhav Sharma, Advocate, appeared for the Financial Creditor, i.e., Mr. Amit Jain.*

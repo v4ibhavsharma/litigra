@@ -35,4 +35,4 @@ The Court held that in the absence of the requisite State Government sanction, c
 
 ---
 
-*Mr. Vaibhav Sharma, Advocate, appeared for the Petitioner, that is, Smt. Muniya Devi.*
+*Mr. Vaibhav Sharma, Advocate, appeared for the Petitioner, i.e., Smt. Muniya Devi.*

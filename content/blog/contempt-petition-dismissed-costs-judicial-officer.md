@@ -25,4 +25,4 @@ The High Court dismissed the contempt petition with costs of Rs. 1,00,000/-, pay
 
 ---
 
-*Mr. Vaibhav Sharma, Advocate, appeared for the Ld. Judicial Officer, that is, Sh. Ravtesh Inderjit Singh.*
+*Mr. Vaibhav Sharma, Advocate, appeared for the Ld. Judicial Officer, i.e., Sh. Ravtesh Inderjit Singh.*

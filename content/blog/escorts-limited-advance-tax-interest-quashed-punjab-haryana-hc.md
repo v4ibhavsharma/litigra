@@ -37,4 +37,4 @@ The judgment also reflects sensitivity to the timing and procedural regularity o
 
 ---
 
-*Mr. Vaibhav Sharma, Advocate, appeared for the Petitioner, that is, M/s Escorts Limited.*
+*Mr. Vaibhav Sharma, Advocate, appeared for the Petitioner, i.e., M/s Escorts Limited.*

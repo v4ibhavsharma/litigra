@@ -41,4 +41,4 @@ The High Court petition was partly allowed. Sections 376(2)(n), 180 and 506 IPC 
 
 ---
 
-*Mr. Vaibhav Sharma, Advocate, appeared for the Petitioner, that is, Mr. Sanjeet Kumar, before the Punjab and Haryana High Court. Ms. Munisha Gandhi, Senior Advocate, and Mr. Vaibhav Sharma, Advocate, appeared before the Supreme Court of India.*
+*Mr. Vaibhav Sharma, Advocate, appeared for the Petitioner, i.e., Mr. Sanjeet Kumar, before the Punjab and Haryana High Court. Ms. Munisha Gandhi, Senior Advocate, and Mr. Vaibhav Sharma, Advocate, appeared before the Supreme Court of India.*
