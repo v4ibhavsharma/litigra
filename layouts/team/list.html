@@ -68,6 +68,24 @@
         </div>
         {{ end }}
 
+        {{ $lead_associates := where $pages ".Params.role_group" "lead_associate" }}
+        {{ if $lead_associates }}
+        <div class="team-group">
+            <h2 class="team-group-label">LEAD ASSOCIATES</h2>
+            {{ range $lead_associates }}
+            <a href="{{ .RelPermalink }}" class="team-list-item">
+                <div class="team-list-info">
+                    <h3 class="team-list-name">{{ .Title }}</h3>
+                    <span class="team-list-designation">{{ .Params.designation }}</span>
+                </div>
+                {{ with .Params.brief }}
+                    <p class="team-list-brief">{{ . }}</p>
+                {{ end }}
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+
         {{ $associates := where $pages ".Params.role_group" "associate" }}
         {{ if $associates }}
         <div class="team-group">
