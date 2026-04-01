@@ -9,6 +9,6 @@ education:
 draft: false
 ---
 
-Harit Narang is the lead associate at the firm and has been with Litigra since 2024, working across its corporate, commercial, and litigation practice.
+Harit Narang is the lead associate at the Chandigarh office of the firm and has been with Litigra since 2024, working across its corporate, commercial, and litigation practice.
 
 He appears regularly before the National Company Law Tribunal, the National Company Law Appellate Tribunal, and the Punjab and Haryana High Court. His work covers company law proceedings, insolvency and bankruptcy matters, writ petitions, and civil and criminal litigation. He is involved in research, drafting, and case preparation across the firm's practice areas.
