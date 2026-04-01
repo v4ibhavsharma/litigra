@@ -27,26 +27,42 @@
         </div>
 
         {{ $paginator := .Paginate (.Pages.ByDate.Reverse) 8 }}
+        {{ $totalArticles := len .Pages }}
+
+        <div class="blog-article-count">
+            {{ if gt $paginator.TotalPages 1 }}
+                {{ $start := add (mul (sub $paginator.PageNumber 1) 8) 1 }}
+                {{ $end := mul $paginator.PageNumber 8 }}
+                {{ if gt $end $totalArticles }}{{ $end = $totalArticles }}{{ end }}
+                Showing {{ $start }}&ndash;{{ $end }} of {{ $totalArticles }} articles
+            {{ else }}
+                {{ $totalArticles }} {{ if eq $totalArticles 1 }}article{{ else }}articles{{ end }}
+            {{ end }}
+        </div>
 
         <div class="blog-grid-cards">
-            {{ range $paginator.Pages }}
+            {{ range $index, $page := $paginator.Pages }}
                 {{ $cat := "" }}
-                {{ if .Params.categories }}
-                    {{ $cat = index .Params.categories 0 }}
+                {{ if $page.Params.categories }}
+                    {{ $cat = index $page.Params.categories 0 }}
                 {{ end }}
-                <a href="{{ .RelPermalink }}" class="blog-card-link">
+                {{ $isFeatured := $page.Params.featured | default false }}
+                <a href="{{ $page.RelPermalink }}" class="blog-card-link{{ if $isFeatured }} blog-card-featured{{ end }}">
                     <article class="blog-card-item">
                         <div class="blog-card-top">
                             {{ if $cat }}
                                 <span class="blog-card-category">{{ $cat }}</span>
                             {{ end }}
-                            <span class="blog-card-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
+                            <div class="blog-card-meta-right">
+                                <span class="blog-card-readtime">{{ $page.ReadingTime }} min read</span>
+                                <span class="blog-card-date">{{ $page.PublishDate.Format "January 2, 2006" }}</span>
+                            </div>
                         </div>
-                        <h3 class="blog-card-title">{{ .Title }}</h3>
-                        {{ if .Params.abstract }}
-                            <p class="blog-card-abstract">{{ .Params.abstract }}</p>
+                        <h3 class="blog-card-title">{{ $page.Title }}</h3>
+                        {{ if $page.Params.abstract }}
+                            <p class="blog-card-abstract">{{ $page.Params.abstract }}</p>
                         {{ else }}
-                            <p class="blog-card-abstract">{{ .Summary | plainify | truncate 120 }}</p>
+                            <p class="blog-card-abstract">{{ $page.Summary | plainify | truncate 120 }}</p>
                         {{ end }}
                     </article>
                 </a>

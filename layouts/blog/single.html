@@ -1,7 +1,18 @@
 {{ define "main" }}
 
+<div class="reading-progress" id="reading-progress"></div>
+
 <section class="article-hero">
     <div class="article-hero-inner">
+        <nav class="article-breadcrumbs" aria-label="Breadcrumb">
+            <a href="{{ "blog/" | relURL }}">Writing</a>
+            {{ if .Params.categories }}
+                {{ range first 1 .Params.categories }}
+                    <span class="breadcrumb-sep">/</span>
+                    <a href="{{ printf "categories/%s/" (. | urlize) | relURL }}">{{ . }}</a>
+                {{ end }}
+            {{ end }}
+        </nav>
         {{ if .Params.categories }}
             {{ range first 1 .Params.categories }}
                 <span class="article-hero-cat">{{ . }}</span>
@@ -16,6 +27,7 @@
             {{ if .Params.author }}
                 <span>{{ .Params.author }}</span>
             {{ end }}
+            <span class="article-hero-readtime">{{ .ReadingTime }} min read</span>
         </div>
     </div>
 </section>
@@ -28,24 +40,74 @@
                 <nav class="sidebar-nav" id="sidebar-nav">
                     <!-- Auto-populated by JS from h2 headings -->
                 </nav>
+                <div class="sidebar-actions">
+                    <button class="sidebar-copy-link" id="copy-link-btn" type="button">Copy Link</button>
+                </div>
                 {{ if .Params.judgment_pdf }}
                     <a href="{{ .Params.judgment_pdf }}" target="_blank" rel="noopener" class="sidebar-download">Download Judgment</a>
                 {{ end }}
                 <a href="{{ "blog/" | relURL }}" class="sidebar-back">&larr; All Articles</a>
             </aside>
 
-            <div class="article-body" id="article-body">
+            <article class="article-body" id="article-body">
                 {{ .Content }}
                 <div class="article-disclaimer">
                     The above discussion is for informational purposes only and does not constitute legal advice. For advice specific to your situation, please consult a qualified legal professional.
                 </div>
-            </div>
+
+                {{/* Related Articles */}}
+                {{ $currentPage := . }}
+                {{ $related := slice }}
+                {{ if .Params.categories }}
+                    {{ $cat := index .Params.categories 0 }}
+                    {{ range where .Site.RegularPages "Type" "blog" }}
+                        {{ if and (ne .Permalink $currentPage.Permalink) (.Params.categories) }}
+                            {{ if in .Params.categories $cat }}
+                                {{ $related = $related | append . }}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                {{/* If fewer than 2 from same category, fill with recent posts */}}
+                {{ if lt (len $related) 2 }}
+                    {{ range where .Site.RegularPages "Type" "blog" }}
+                        {{ if and (ne .Permalink $currentPage.Permalink) (lt (len $related) 3) }}
+                            {{ $already := false }}
+                            {{ $thisPage := . }}
+                            {{ range $related }}
+                                {{ if eq .Permalink $thisPage.Permalink }}{{ $already = true }}{{ end }}
+                            {{ end }}
+                            {{ if not $already }}
+                                {{ $related = $related | append . }}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                {{ if gt (len $related) 0 }}
+                <div class="related-articles">
+                    <div class="related-articles-title">Related Articles</div>
+                    <div class="related-articles-grid">
+                        {{ range first 3 $related }}
+                            <a href="{{ .RelPermalink }}" class="related-card-link">
+                                <div class="related-card">
+                                    {{ if .Params.categories }}
+                                        <span class="related-card-category">{{ index .Params.categories 0 }}</span>
+                                    {{ end }}
+                                    <h4 class="related-card-title">{{ .Title }}</h4>
+                                </div>
+                            </a>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </article>
         </div>
     </div>
 </section>
 
 <script>
 (function() {
+    /* ---- Sidebar: section links from H2 headings ---- */
     var body = document.getElementById('article-body');
     var nav = document.getElementById('sidebar-nav');
     if (!body || !nav) return;
@@ -54,39 +116,101 @@
     if (headings.length === 0) return;
 
     headings.forEach(function(h, i) {
-        // Ensure each h2 has an id for anchor linking
         if (!h.id) {
             h.id = 'section-' + (i + 1);
         }
+
+        /* Add anchor link to heading */
+        var anchor = document.createElement('a');
+        anchor.href = '#' + h.id;
+        anchor.className = 'heading-anchor';
+        anchor.textContent = '#';
+        anchor.setAttribute('aria-label', 'Link to this section');
+        h.insertBefore(anchor, h.firstChild);
+
+        /* Add sidebar link */
         var a = document.createElement('a');
         a.href = '#' + h.id;
-        a.textContent = h.textContent;
+        a.textContent = h.textContent.replace(/^#\s*/, '');
         a.className = 'sidebar-link';
         nav.appendChild(a);
     });
 
-    // Highlight active section on scroll
     var links = nav.querySelectorAll('.sidebar-link');
+
+    /* ---- Reading progress bar ---- */
+    var progressBar = document.getElementById('reading-progress');
+
+    function getScrollProgress() {
+        var articleTop = body.offsetTop;
+        var articleHeight = body.offsetHeight;
+        var windowHeight = window.innerHeight;
+        var scrollY = window.scrollY;
+        var progress = (scrollY - articleTop + windowHeight * 0.3) / (articleHeight - windowHeight * 0.5);
+        return Math.min(Math.max(progress, 0), 1);
+    }
+
+    /* ---- Active section + section progress ---- */
     function onScroll() {
         var scrollPos = window.scrollY + 120;
+
+        /* Reading progress */
+        if (progressBar) {
+            progressBar.style.width = (getScrollProgress() * 100) + '%';
+        }
+
+        /* Determine current section and section progress */
         var current = 0;
-        headings.forEach(function(h, i) {
-            if (h.offsetTop <= scrollPos) {
+        for (var i = 0; i < headings.length; i++) {
+            if (headings[i].offsetTop <= scrollPos) {
                 current = i;
             }
-        });
+        }
+
+        /* Calculate progress within current section */
+        var sectionStart = headings[current].offsetTop;
+        var sectionEnd = (current + 1 < headings.length)
+            ? headings[current + 1].offsetTop
+            : body.offsetTop + body.offsetHeight;
+        var sectionProgress = (scrollPos - sectionStart) / (sectionEnd - sectionStart);
+        sectionProgress = Math.min(Math.max(sectionProgress, 0), 1);
+
         links.forEach(function(l, i) {
             if (i === current) {
                 l.classList.add('active');
+                l.style.setProperty('--section-progress', (sectionProgress * 100) + '%');
+                /* Set the ::after height via inline override */
+                l.style.borderLeftColor = 'transparent';
+                var afterHeight = sectionProgress * 100;
+                l.setAttribute('data-progress', afterHeight);
             } else {
                 l.classList.remove('active');
+                l.style.borderLeftColor = '';
+                l.setAttribute('data-progress', i < current ? '100' : '0');
             }
         });
+
+        /* Update sidebar link ::after heights using a style injection */
+        updateSectionProgress();
     }
+
+    /* Inject dynamic styles for sidebar progress bars */
+    var progressStyle = document.createElement('style');
+    document.head.appendChild(progressStyle);
+
+    function updateSectionProgress() {
+        var css = '';
+        links.forEach(function(l, i) {
+            var progress = l.getAttribute('data-progress') || '0';
+            css += '#sidebar-nav .sidebar-link:nth-child(' + (i + 1) + ')::after { height: ' + progress + '%; }\n';
+        });
+        progressStyle.textContent = css;
+    }
+
     window.addEventListener('scroll', onScroll);
     onScroll();
 
-    // Smooth scroll on click
+    /* ---- Smooth scroll on sidebar click ---- */
     links.forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -96,6 +220,36 @@
             }
         });
     });
+
+    /* ---- Copy link button ---- */
+    var copyBtn = document.getElementById('copy-link-btn');
+    if (copyBtn) {
+        copyBtn.addEventListener('click', function() {
+            var url = window.location.href.split('#')[0];
+            navigator.clipboard.writeText(url).then(function() {
+                copyBtn.textContent = 'Copied';
+                copyBtn.classList.add('copied');
+                setTimeout(function() {
+                    copyBtn.textContent = 'Copy Link';
+                    copyBtn.classList.remove('copied');
+                }, 2000);
+            }).catch(function() {
+                /* Fallback */
+                var input = document.createElement('input');
+                input.value = url;
+                document.body.appendChild(input);
+                input.select();
+                document.execCommand('copy');
+                document.body.removeChild(input);
+                copyBtn.textContent = 'Copied';
+                copyBtn.classList.add('copied');
+                setTimeout(function() {
+                    copyBtn.textContent = 'Copy Link';
+                    copyBtn.classList.remove('copied');
+                }, 2000);
+            });
+        });
+    }
 })();
 </script>
 

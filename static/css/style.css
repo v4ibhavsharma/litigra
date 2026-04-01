@@ -3,7 +3,7 @@
    Bauhaus/Vignelli-Inspired
    ======================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;800&display=swap');
+/* Font loaded via <link> in baseof.html - no @import needed */
 
 /* ========================================
    Design Tokens & Variables
@@ -942,6 +942,244 @@ header {
 }
 
 /* ========================================
+   Reading Progress Bar
+   ======================================== */
+
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--color-black);
+    z-index: 9999;
+    transition: width 0.1s linear;
+}
+
+/* ========================================
+   Article Breadcrumbs
+   ======================================== */
+
+.article-breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.article-breadcrumbs a {
+    font-family: var(--font-primary);
+    font-size: 0.65rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.article-breadcrumbs a:hover {
+    color: rgba(255,255,255,0.85);
+}
+
+.article-breadcrumbs .breadcrumb-sep {
+    font-size: 0.6rem;
+    color: rgba(255,255,255,0.3);
+}
+
+/* ========================================
+   Article Hero Reading Time
+   ======================================== */
+
+.article-hero-readtime {
+    font-family: var(--font-primary);
+    font-size: 0.75rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255,255,255,0.45);
+}
+
+/* ========================================
+   Drop Cap
+   ======================================== */
+
+.article-body > p:first-of-type::first-letter {
+    font-family: var(--font-primary);
+    float: left;
+    font-size: 3.4rem;
+    line-height: 0.8;
+    font-weight: 800;
+    color: var(--color-black);
+    margin-right: 0.1rem;
+    margin-top: 0.15rem;
+}
+
+/* ========================================
+   Anchor Links on Headings
+   ======================================== */
+
+.article-body h2 {
+    position: relative;
+}
+
+.heading-anchor {
+    position: absolute;
+    right: 100%;
+    padding-right: 0.4rem;
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--color-border);
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.2s ease, color 0.2s ease;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.article-body h2:hover .heading-anchor {
+    opacity: 1;
+    color: var(--color-text-body);
+}
+
+.heading-anchor:hover {
+    color: var(--color-black) !important;
+}
+
+/* ========================================
+   Copy Link / Cite Button
+   ======================================== */
+
+.sidebar-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.sidebar-copy-link {
+    display: block;
+    font-family: var(--font-primary);
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 0.6rem 0.75rem;
+    background: transparent;
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+}
+
+.sidebar-copy-link:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.sidebar-copy-link.copied {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+/* ========================================
+   Sidebar Section Progress
+   ======================================== */
+
+.sidebar-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 0%;
+    background: var(--color-black);
+    transition: height 0.15s linear;
+    z-index: 1;
+}
+
+.sidebar-link.active::after {
+    /* height set dynamically by JS */
+}
+
+/* ========================================
+   Related Articles
+   ======================================== */
+
+.related-articles {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.related-articles-title {
+    font-family: var(--font-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+}
+
+.related-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.related-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.related-card {
+    border: 1px solid var(--color-border);
+    padding: 1.25rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.related-card-link:hover .related-card {
+    border-color: var(--color-black);
+    box-shadow: 3px 3px 0 var(--color-black);
+    transform: translateY(-2px);
+}
+
+.related-card-category {
+    font-family: var(--font-primary);
+    font-size: 0.55rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-white);
+    background: var(--color-black);
+    padding: 0.15rem 0.4rem;
+    display: inline-block;
+    margin-bottom: 0.6rem;
+}
+
+.related-card-title {
+    font-family: var(--font-primary);
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: normal;
+    color: var(--color-black);
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* ========================================
    Team Grid
    ======================================== */
 
@@ -1269,6 +1507,11 @@ header {
 .blog-card-link:hover .blog-card-item {
     border-color: var(--color-black);
     box-shadow: 4px 4px 0 var(--color-black);
+    transform: translateY(-2px);
+}
+
+.blog-card-item {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .blog-card-top {
@@ -1296,6 +1539,48 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--color-text-body);
+}
+
+.blog-card-meta-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.blog-card-readtime {
+    font-family: var(--font-primary);
+    font-size: 0.65rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-body);
+}
+
+/* Article count above grid */
+.blog-article-count {
+    font-family: var(--font-primary);
+    font-size: 0.72rem;
+    font-weight: 300;
+    color: var(--color-text-body);
+    letter-spacing: 0.03em;
+    margin-bottom: 1.25rem;
+}
+
+/* Featured article card (spans full width) */
+.blog-card-featured .blog-card-item {
+    border-width: 2px;
+}
+
+.blog-card-featured {
+    grid-column: 1 / -1;
+}
+
+.blog-card-featured .blog-card-title {
+    font-size: 1.15rem;
+}
+
+.blog-card-featured .blog-card-abstract {
+    -webkit-line-clamp: 4;
 }
 
 .blog-card-title {
@@ -2061,13 +2346,16 @@ footer {
     }
 
     .article-sidebar {
-        position: static;
+        position: sticky;
+        top: 3.5rem;
+        z-index: 50;
+        background: var(--color-white);
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         gap: 0.5rem;
         border-bottom: 1px solid var(--color-border);
-        padding-bottom: 1.25rem;
+        padding: 0.75rem 0;
         margin-bottom: 1.5rem;
     }
 
@@ -2091,6 +2379,10 @@ footer {
         font-size: 0.72rem;
     }
 
+    .sidebar-link::after {
+        display: none;
+    }
+
     .sidebar-link.active {
         border-color: var(--color-black);
         background: var(--color-black);
@@ -2107,6 +2399,27 @@ footer {
         border-top: none;
         padding-top: 0;
         font-size: 0.68rem;
+    }
+
+    .sidebar-actions {
+        flex-direction: row;
+    }
+
+    .sidebar-copy-link {
+        font-size: 0.6rem;
+        padding: 0.35rem 0.6rem;
+    }
+
+    .heading-anchor {
+        display: none;
+    }
+
+    .related-articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-body > p:first-of-type::first-letter {
+        font-size: 2.8rem;
     }
 
     .team-member-header {
@@ -2297,16 +2610,79 @@ footer {
     .hamburger,
     .mobile-nav,
     header,
-    footer {
-        display: none;
+    footer,
+    .reading-progress,
+    .article-sidebar,
+    .article-breadcrumbs,
+    .related-articles,
+    .blog-filter-bar,
+    .blog-pagination,
+    .cta-banner {
+        display: none !important;
     }
 
     body {
         background: var(--color-white);
+        font-size: 12pt;
+    }
+
+    .article-hero {
+        background: var(--color-white) !important;
+        color: var(--color-black) !important;
+        padding: 1rem 0 !important;
+    }
+
+    .article-hero-title {
+        color: var(--color-black) !important;
+        font-size: 1.4rem !important;
+    }
+
+    .article-hero-cat {
+        color: var(--color-black) !important;
+        background: transparent !important;
+        border: 1px solid var(--color-black);
+        padding: 0.1rem 0.3rem;
+    }
+
+    .article-hero-abstract {
+        color: var(--color-text-secondary) !important;
+    }
+
+    .article-hero-meta span {
+        color: var(--color-text-body) !important;
+    }
+
+    .article-layout-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .article-body {
+        max-width: 100% !important;
+        font-size: 11pt;
+    }
+
+    .article-body p {
+        font-size: 11pt;
+        line-height: 1.6;
+        color: var(--color-black);
+    }
+
+    .article-body h2 {
+        break-after: avoid;
+    }
+
+    .article-disclaimer {
+        border-left-color: var(--color-text-body);
+        font-size: 9pt;
     }
 
     a {
         color: var(--color-black);
+        text-decoration: none;
+    }
+
+    .heading-anchor {
+        display: none !important;
     }
 
     .btn {

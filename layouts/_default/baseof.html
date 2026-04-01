@@ -24,10 +24,16 @@
     {{ if .Params.tags }}{{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}{{ end }}
     {{ end }}
 
+    <!-- Open Graph Image -->
+    <meta property="og:image" content="{{ "images/og-default.png" | absURL }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ if .IsHome }}Litigra - Litigation and Advisory Practice{{ else }}{{ .Title }} | Litigra{{ end }}">
     <meta name="twitter:description" content="{{ $description }}">
+    <meta name="twitter:image" content="{{ "images/og-default.png" | absURL }}">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
