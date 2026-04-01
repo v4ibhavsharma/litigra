@@ -3,6 +3,9 @@ title: "CONTACT"
 type: "page"
 layout: "single"
 description: "Contact Litigra at our Chandigarh, High Court, or Mohali offices. Reach us at office@litigra.com."
+sitemap:
+  changefreq: yearly
+  priority: 0.6
 ---
 
 <div class="contact-layout">
@@ -42,6 +45,11 @@ description: "Contact Litigra at our Chandigarh, High Court, or Mohali offices. 
           <input type="email" id="contact-email" name="email" required>
         </div>
       </div>
+      <!-- Honeypot field (hidden from real users, catches bots) -->
+      <div class="form-group" style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+        <label for="contact-website">Website</label>
+        <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
+      </div>
       <div class="form-group">
         <label for="contact-subject">Subject</label>
         <input type="text" id="contact-subject" name="subject">
@@ -68,6 +76,17 @@ description: "Contact Litigra at our Chandigarh, High Court, or Mohali offices. 
     submitBtn.textContent = 'Sending...';
     statusEl.className = 'contact-status';
     statusEl.textContent = '';
+
+    // Honeypot check: if the hidden field has a value, a bot filled it
+    var honeypot = document.getElementById('contact-website').value;
+    if (honeypot) {
+      statusEl.textContent = 'Your message has been sent. We will respond shortly.';
+      statusEl.className = 'contact-status contact-status-success';
+      form.reset();
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+      return;
+    }
 
     var data = {
       name: document.getElementById('contact-name').value.trim(),

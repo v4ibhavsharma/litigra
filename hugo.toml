@@ -36,8 +36,12 @@ title = "Litigra"
     weight = 5
 
 [sitemap]
-  changefreq = "weekly"
+  changefreq = "monthly"
   priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
 
 [markup]
   [markup.goldmark]

@@ -3,6 +3,9 @@ title: "THE FIRM"
 type: "page"
 layout: "single"
 description: "Litigra is a litigation and advisory practice based in Chandigarh with operations in Delhi, handling matters across civil, commercial, corporate, constitutional, and criminal law before the Supreme Court, High Courts, NCLT, NCLAT, and tribunals."
+sitemap:
+  changefreq: yearly
+  priority: 0.7
 ---
 
 ## ABOUT

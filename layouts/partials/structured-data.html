@@ -7,6 +7,7 @@
   "description": "{{ .Site.Params.description }}",
   "url": "https://litigra.com",
   "email": "{{ .Site.Params.email }}",
+  "telephone": "{{ .Site.Params.phone }}",
   "address": [
     {
       "@type": "PostalAddress",
@@ -42,8 +43,7 @@
       "name": "Haryana"
     }
   ],
-  "knowsAbout": ["Civil Litigation", "Corporate Law", "Constitutional Law", "Criminal Defence", "Intellectual Property", "Real Estate Law", "Commercial Arbitration"],
-  "priceRange": "$$"
+  "knowsAbout": ["Civil Litigation", "Corporate Law", "Constitutional Law", "Criminal Defence", "Insolvency and Restructuring", "Service Law", "Taxation", "Arbitration", "Real Estate Law"]
 }
 </script>
 {{ end }}
@@ -77,6 +77,32 @@
 {{ end }}
 {{ end }}
 
+{{ if eq .Type "team" }}
+{{ if not .IsSection }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ .Title }}",
+  {{ with .Params.designation }}"jobTitle": "{{ . }}",{{ end }}
+  "worksFor": {
+    "@type": "LegalService",
+    "name": "Litigra",
+    "url": "https://litigra.com"
+  }{{ if .Params.education }},
+  "alumniOf": [
+    {{ range $i, $e := .Params.education }}{{ if $i }},{{ end }}
+    {
+      "@type": "EducationalOrganization",
+      "name": "{{ . }}"
+    }
+    {{ end }}
+  ]{{ end }}
+}
+</script>
+{{ end }}
+{{ end }}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -88,12 +114,54 @@
       "name": "Home",
       "item": "https://litigra.com/"
     }{{ if not .IsHome }},
-    {
+    {{ if eq .Type "blog" }}{{ if not .IsSection }}{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Writing",
+      "item": "https://litigra.com/blog/"
+    },
+    {{ if .Params.categories }}{{ with index .Params.categories 0 }}{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ . }}",
+      "item": "https://litigra.com/categories/{{ . | urlize }}/"
+    },
+    {{ end }}{{ end }}{
+      "@type": "ListItem",
+      "position": {{ if .Params.categories }}4{{ else }}3{{ end }},
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{ else }}{
       "@type": "ListItem",
       "position": 2,
       "name": "{{ .Title }}",
       "item": "{{ .Permalink }}"
     }{{ end }}
+    {{ else }}{{ if eq .Type "team" }}{{ if not .IsSection }}{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "People",
+      "item": "https://litigra.com/team/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{ else }}{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }{{ end }}
+    {{ else }}{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }{{ end }}{{ end }}{{ end }}
   ]
 }
 </script>

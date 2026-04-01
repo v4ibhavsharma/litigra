@@ -49,7 +49,7 @@
                             {{ end }}
                             <span class="blog-card-date">{{ .PublishDate.Format "January 2, 2006" }}</span>
                         </div>
-                        <h3 class="blog-card-title">{{ .Title }}</h3>
+                        <h2 class="blog-card-title">{{ .Title }}</h2>
                         {{ if .Params.abstract }}
                             <p class="blog-card-abstract">{{ .Params.abstract }}</p>
                         {{ else }}
