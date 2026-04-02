@@ -18,4 +18,4 @@ He holds a Master's degree in International Arbitration and Dispute Resolution f
 
 He is the firm's Associate Partner based in New Delhi. He appears before the Supreme Court of India and the High Courts of Delhi, Bombay, Calcutta, Karnataka, Allahabad, and Jammu and Kashmir, as well as the National Company Law Tribunal and the Central Administrative Tribunal.
 
-He is a proponent of using artificial intelligence in the field of law, and having tested multiple legal AI tools, advises AI companies on how they can design their products for the Indian legal market.
+He is a proponent of using artificial intelligence in the field of law (when done right), and having tested multiple legal AI tools, advises AI companies on how they can design their products for the Indian legal market.
