@@ -17,3 +17,5 @@ Ramkrishna Veerendra has over eight years of experience in commercial arbitratio
 He holds a Master's degree in International Arbitration and Dispute Resolution from the National University of Singapore. He has previously worked with Shardul Amarchand Mangaldas & Co., New Delhi, where he was engaged in international commercial arbitration matters, both ad hoc and institutional.
 
 He is the firm's Associate Partner based in New Delhi. He appears before the Supreme Court of India and the High Courts of Delhi, Bombay, Calcutta, Karnataka, Allahabad, and Jammu and Kashmir, as well as the National Company Law Tribunal and the Central Administrative Tribunal.
+
+He is a proponent of using artificial intelligence in the field of law, and having tested multiple legal AI tools, advises AI companies on how they can design their products for the Indian legal market.
