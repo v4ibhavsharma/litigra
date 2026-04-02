@@ -1,5 +1,5 @@
 ---
-title: "Proclaimed Offender Order Under Section 82 CrPC Quashed Where Mandatory 30-Day Proclamation Period Was Not Complied With; Costs of Rs. 80,000 Imposed: Punjab and Haryana High Court"
+title: "Proclaimed Offender Order Under Section 82 CrPC Quashed Where Mandatory 30-Day Proclamation Period Was Not Complied With: Punjab and Haryana High Court"
 date: 2025-12-27
 categories: ["Criminal"]
 tags: ["Section 82 CrPC", "Section 83 CrPC", "proclaimed offender", "warrant issuance", "procedural compliance"]
@@ -21,13 +21,9 @@ Section 82 of the Criminal Procedure Code provides that when a court issues a pr
 
 The judgment emphasizes that procedural requirements in criminal law are not technical niceties that can be overlooked in the pursuit of substantive justice. Rather, they embody fundamental principles of fairness and protection of individual rights. By insisting on strict compliance with the thirty-day proclamation period, the court reinforced the principle that even administrative or procedural steps must be executed in accordance with statutory requirements.
 
-## Consequences of Procedural Lapses
-
-The trial court's failure to comply with the statutory procedure carried serious consequences. Not only was the proclaimed offender order quashed, but the court also imposed costs of Rs. 80,000 on the trial court for the procedural lapse. While costs are ordinarily imposed against parties rather than courts, this instance reflects the severity with which the High Court viewed the deviation from statutory requirements and its desire to ensure that similar lapses do not recur.
-
 ## Implications for Trial Courts
 
-This decision serves as a reminder to trial courts that the procedural framework of the Criminal Procedure Code must be scrupulously observed. The statutory procedure for declaring proclaimed offenders is designed to balance the state's interest in bringing accused persons to justice with the individual's right to fair treatment and notice. Trial courts cannot shortcut this procedure, however pressing the circumstances may appear to be. The thirty-day period provides the accused with a genuine opportunity to respond to the proclamation and, if they wish, to surrender.
+The statutory procedure for declaring proclaimed offenders is designed to balance the state's interest in bringing accused persons to justice with the individual's right to fair treatment and notice. Trial courts cannot shortcut this procedure, however pressing the circumstances may appear to be. The thirty-day period provides the accused with a genuine opportunity to respond to the proclamation and, if they wish, to surrender. The quashing of the proclaimed offender order in this case underscores the importance of scrupulous compliance with the procedural framework of the Criminal Procedure Code.
 
 ---
 
