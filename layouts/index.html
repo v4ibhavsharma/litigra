@@ -32,9 +32,10 @@
 <section class="home-writing section-padding">
     <div class="container">
         <div class="home-section-header">
-            <h2 class="section-title">LATEST</h2>
+            <h2 class="section-title">WRITING</h2>
             <a href="{{ "/" | relURL }}blog/" class="section-link">All Writing &rarr;</a>
         </div>
+        <p class="home-section-descriptor">Selected notes on recent judgments from our practice.</p>
         <div class="home-article-grid">
             {{ range first 4 (where .Site.RegularPages "Type" "blog") }}
                 <a href="{{ .RelPermalink }}" class="home-article-card">
@@ -56,21 +57,51 @@
     </div>
 </section>
 
-<!-- Practice Strip -->
-<section class="practice-strip">
-    <div class="practice-strip-inner">
-        <h2 class="practice-strip-heading">PRACTICE</h2>
-        <div class="practice-strip-areas">
-            <a href="{{ "categories/civil/" | relURL }}" class="practice-strip-item">Civil Litigation</a>
-            <a href="{{ "categories/company/" | relURL }}" class="practice-strip-item">Mergers & Acquisitions</a>
-            <a href="{{ "categories/insolvency/" | relURL }}" class="practice-strip-item">Insolvency</a>
-            <a href="{{ "categories/criminal/" | relURL }}" class="practice-strip-item">Criminal Defence</a>
-            <a href="{{ "categories/service-law/" | relURL }}" class="practice-strip-item">Service Law</a>
-            <a href="{{ "categories/tax/" | relURL }}" class="practice-strip-item">Taxation</a>
-            <a href="{{ "practice-areas/" | relURL }}" class="practice-strip-item">Arbitration</a>
-            <a href="{{ "practice-areas/" | relURL }}" class="practice-strip-item">Real Estate</a>
+<!-- Practice Preview -->
+<section class="practice-preview section-padding">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="section-title">PRACTICE</h2>
+            <a href="{{ "practice-areas/" | relURL }}" class="section-link">All Areas &rarr;</a>
         </div>
-        <a href="{{ "practice-areas/" | relURL }}" class="practice-strip-link">All Practice Areas &rarr;</a>
+        <div class="practice-grid">
+            <a href="{{ "practice-areas/" | relURL }}" class="practice-card-link">
+                <div class="practice-card">
+                    <h3>Civil Litigation</h3>
+                    <p>Injunctions, title disputes, contempt proceedings, and writ petitions.</p>
+                </div>
+            </a>
+            <a href="{{ "practice-areas/" | relURL }}" class="practice-card-link">
+                <div class="practice-card">
+                    <h3>Mergers & Acquisitions</h3>
+                    <p>Amalgamation schemes, capital reductions, and cross-border mergers.</p>
+                </div>
+            </a>
+            <a href="{{ "practice-areas/" | relURL }}" class="practice-card-link">
+                <div class="practice-card">
+                    <h3>Insolvency & Restructuring</h3>
+                    <p>CIRP proceedings, moratorium disputes, and resolution plans.</p>
+                </div>
+            </a>
+            <a href="{{ "practice-areas/" | relURL }}" class="practice-card-link">
+                <div class="practice-card">
+                    <h3>Criminal Defence</h3>
+                    <p>Quashing petitions, bail applications, and criminal revisions.</p>
+                </div>
+            </a>
+            <a href="{{ "practice-areas/" | relURL }}" class="practice-card-link">
+                <div class="practice-card">
+                    <h3>Service Law</h3>
+                    <p>Pension entitlements, pay fixation, and promotion disputes.</p>
+                </div>
+            </a>
+            <a href="{{ "practice-areas/" | relURL }}" class="practice-card-link">
+                <div class="practice-card">
+                    <h3>Taxation</h3>
+                    <p>Direct and indirect tax challenges and writ petitions.</p>
+                </div>
+            </a>
+        </div>
     </div>
 </section>
 
