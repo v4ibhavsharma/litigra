@@ -49,4 +49,4 @@ All writ petitions were allowed and the impugned orders were set aside.
 
 ---
 
-*Mrs. Munisha Gandhi, Senior Advocate, with Mr. Vaibhav Sharma, Advocate, appeared for the Petitioner, i.e., M/s Edelweiss Asset Reconstruction Company Limited.*
+*Mrs. Munisha Gandhi, Senior Advocate, with Mr. Vaibhav Sharma and Ms. Vedika Gandhi, Advocates, appeared for the Petitioner, i.e., M/s Edelweiss Asset Reconstruction Company Limited.*
