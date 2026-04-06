@@ -550,6 +550,16 @@ header {
     margin-bottom: 2rem;
 }
 
+.home-section-descriptor {
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--color-text-body);
+    margin-top: -1.25rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.01em;
+}
+
 .section-link {
     font-family: var(--font-primary);
     font-size: 0.78rem;
@@ -677,6 +687,12 @@ header {
     margin-bottom: 3rem;
 }
 
+.practice-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .practice-card {
     background-color: var(--color-white);
     border: 1px solid var(--color-border);
@@ -684,8 +700,10 @@ header {
     transition: all var(--transition);
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
+.practice-card-link:hover .practice-card,
 .practice-card:hover {
     background-color: var(--color-black);
     color: var(--color-white);
@@ -706,6 +724,7 @@ header {
     transition: color var(--transition);
 }
 
+.practice-card-link:hover h3,
 .practice-card:hover h3 {
     color: var(--color-white);
 }
@@ -719,6 +738,7 @@ header {
     transition: color var(--transition);
 }
 
+.practice-card-link:hover p,
 .practice-card:hover p {
     color: var(--color-white);
 }
