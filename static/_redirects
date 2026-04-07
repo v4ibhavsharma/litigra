@@ -1,2 +1,9 @@
 /categories/ /blog/ 301
 /categories  /blog/ 301
+/team/                    /people/                    301
+/team/*                   /people/:splat              301
+/people/vaibhav-sharma/work/  /work/vaibhav-sharma/   301
+/cgi-sys/*                              -                               410
+/services/                              /blog/                          301
+/services                               /blog/                          301
+/tags/cross-border-merger/              /blog/                          301

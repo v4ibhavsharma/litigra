@@ -30,6 +30,14 @@ sitemap:
       <h3>EMAIL</h3>
       <p><a href="mailto:office@litigra.com">office@litigra.com</a></p>
     </div>
+    <div class="contact-block">
+      <h3>HOURS</h3>
+      <p>Monday to Saturday<br>10:00 to 19:00</p>
+    </div>
+    <div class="contact-block">
+      <h3>JURISDICTIONS</h3>
+      <p>Litigra accepts engagements in matters before the Supreme Court of India, the High Court of Punjab and Haryana at Chandigarh, the National Company Law Tribunal at Chandigarh and New Delhi, the National Company Law Appellate Tribunal, the Debts Recovery Tribunal, CESTAT, the Armed Forces Tribunal, and trial courts and tribunals across Punjab, Haryana, Himachal Pradesh, and the Delhi National Capital Region.</p>
+    </div>
   </div>
 
   <div class="contact-form-section">
