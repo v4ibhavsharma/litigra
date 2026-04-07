@@ -1,3 +1,4 @@
+<template id="disclaimer-template">
 <div id="disclaimer-splash" class="disclaimer-splash" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
     <div class="disclaimer-inner">
         <div class="disclaimer-mark">LITIGRA</div>
@@ -13,24 +14,24 @@
         </div>
     </div>
 </div>
+</template>
 <script>
 (function() {
-    var splash = document.getElementById('disclaimer-splash');
-    if (!splash) return;
+    var tpl = document.getElementById('disclaimer-template');
+    if (!tpl) return;
     try {
-        if (localStorage.getItem('litigra-disclaimer-ack') === '1') {
-            splash.parentNode.removeChild(splash);
-            return;
-        }
+        if (localStorage.getItem('litigra-disclaimer-ack') === '1') return;
     } catch (e) {}
+    var node = tpl.content.firstElementChild.cloneNode(true);
     document.documentElement.classList.add('disclaimer-active');
-    var btn = document.getElementById('disclaimer-agree');
+    document.body.appendChild(node);
+    var btn = node.querySelector('#disclaimer-agree');
     btn.addEventListener('click', function() {
         try { localStorage.setItem('litigra-disclaimer-ack', '1'); } catch (e) {}
         document.documentElement.classList.remove('disclaimer-active');
-        splash.classList.add('disclaimer-fading');
+        node.classList.add('disclaimer-fading');
         setTimeout(function() {
-            if (splash.parentNode) splash.parentNode.removeChild(splash);
+            if (node.parentNode) node.parentNode.removeChild(node);
         }, 300);
     });
 })();
