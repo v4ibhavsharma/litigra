@@ -2,7 +2,7 @@
 title: "THE FIRM"
 type: "page"
 layout: "single"
-description: "Litigra is a litigation and advisory practice based in Chandigarh with operations in Delhi, handling matters across civil, commercial, corporate, constitutional, and criminal law before the Supreme Court, High Courts, NCLT, NCLAT, and tribunals."
+description: "Litigra is a Chandigarh-based litigation and advisory practice founded in 2016, with operations in Delhi. The firm appears before the Supreme Court of India, the High Courts of Punjab and Haryana, Himachal Pradesh, and Delhi, the NCLT at Chandigarh and New Delhi, the NCLAT, and civil courts across Punjab and Haryana."
 sitemap:
   changefreq: yearly
   priority: 0.7
@@ -10,7 +10,7 @@ sitemap:
 
 ## ABOUT
 
-Litigra is a Chandigarh-based law firm founded in 2016, with operations in Delhi. The firm serves clients across Punjab, Haryana, Himachal Pradesh, and the Delhi National Capital Region, and appears regularly before the Supreme Court of India, the High Court of Punjab and Haryana at Chandigarh, the National Company Law Tribunal at Chandigarh and New Delhi, the National Company Law Appellate Tribunal, the Debts Recovery Tribunal, the Customs Excise and Service Tax Appellate Tribunal, the Armed Forces Tribunal, and other specialised forums. The firm was established to bring together experienced practitioners across dispute resolution and legal advisory work.
+Litigra is a litigation and advisory practice based in Chandigarh, with operations in Delhi. The firm was founded in 2016 to bring together experienced practitioners across dispute resolution and legal advisory work.
 
 The name is a portmanteau of "litigation" and "grail." It reflects the firm's founding conviction: that principled, thorough advocacy is not merely a professional obligation but a pursuit worth dedicating a practice to.
 
@@ -30,9 +30,29 @@ The name is a portmanteau of "litigation" and "grail." It reflects the firm's fo
 
 **Banking, recovery, and DRT practice.** The firm appears for borrowers, guarantors, and financial institutions before the Debts Recovery Tribunal and the Debts Recovery Appellate Tribunal, and in proceedings under the SARFAESI Act.
 
-**Tax and indirect tax.** The firm handles disputes before the Customs Excise and Service Tax Appellate Tribunal and writ petitions challenging tax demands, search and seizure actions, and adjudication orders.
+**Tax and indirect tax.** The firm handles writ petitions challenging tax demands, search and seizure actions, and adjudication orders before the constitutional courts.
 
 **Appellate practice.** A substantial part of the firm's work is appellate, before the High Court of Punjab and Haryana, the National Company Law Appellate Tribunal, and the Supreme Court of India.
+
+## JURISDICTIONS
+
+The firm's practice is spread across the following forums.
+
+**Supreme Court**
+
+The Supreme Court of India, New Delhi.
+
+**High Courts**
+
+The High Court of Punjab and Haryana at Chandigarh; the High Court of Himachal Pradesh at Shimla; and the High Court of Delhi at New Delhi.
+
+**Company Law Tribunals**
+
+The National Company Law Tribunal at Chandigarh and at New Delhi, and the National Company Law Appellate Tribunal.
+
+**District and Civil Courts**
+
+Civil and commercial courts across the States of Punjab and Haryana.
 
 ## LANGUAGES
 

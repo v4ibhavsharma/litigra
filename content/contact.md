@@ -36,7 +36,7 @@ sitemap:
     </div>
     <div class="contact-block">
       <h3>JURISDICTIONS</h3>
-      <p>Litigra accepts engagements in matters before the Supreme Court of India, the High Court of Punjab and Haryana at Chandigarh, the National Company Law Tribunal at Chandigarh and New Delhi, the National Company Law Appellate Tribunal, the Debts Recovery Tribunal, CESTAT, the Armed Forces Tribunal, and trial courts and tribunals across Punjab, Haryana, Himachal Pradesh, and the Delhi National Capital Region.</p>
+      <p>Litigra accepts engagements in matters before the Supreme Court of India, the High Court of Punjab and Haryana at Chandigarh, the High Court of Himachal Pradesh, the High Court of Delhi, the National Company Law Tribunal at Chandigarh and New Delhi, the National Company Law Appellate Tribunal, and civil and commercial courts across Punjab and Haryana.</p>
     </div>
   </div>
 
