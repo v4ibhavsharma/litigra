@@ -42,7 +42,7 @@
             {{ if ge $total 5 }}
                 <div class="team-section team-work-section">
                     <h3>SELECTED WORK</h3>
-                    <p class="team-work-intro">Judgments and orders in matters where {{ .Title }} has appeared or contributed, as reported on this site. This is a selection of the work and not an exhaustive list.</p>
+                    <p class="team-work-intro">A small sample of the matters handled by {{ .Title }}, drawn from judgments and orders reported on this site. This is not a comprehensive record of the work undertaken.</p>
                     <ul class="team-work-list">
                         {{ range (first 10 ($related.ByDate.Reverse)) }}
                             <li>
@@ -57,7 +57,7 @@
                     </ul>
                     {{ if gt $total 10 }}
                         <div class="team-work-more">
-                            <a href="{{ printf "people/%s/" $slug | relURL }}" class="team-work-more-btn">View all work &rarr;</a>
+                            <a href="{{ printf "people/%s/" $slug | relURL }}" class="team-work-more-btn">View more work &rarr;</a>
                         </div>
                     {{ end }}
                 </div>

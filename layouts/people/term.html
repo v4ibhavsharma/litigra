@@ -17,7 +17,7 @@
 <section class="page-content section-padding">
     <div class="container">
         {{ with $person }}
-            <p class="team-work-intro" style="margin-bottom:2.5rem;">All judgments and orders on this site in matters where {{ .Title }} has appeared or contributed.</p>
+            <p class="team-work-intro" style="margin-bottom:2.5rem;">A small sample of the matters handled by {{ .Title }}, drawn from judgments and orders reported on this site. This is not a comprehensive record of the work undertaken.</p>
         {{ end }}
         <ul class="team-work-list">
             {{ range .Pages.ByDate.Reverse }}
