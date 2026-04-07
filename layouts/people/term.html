@@ -26,7 +26,6 @@
                         <span class="team-work-title">{{ .Title }}</span>
                         <span class="team-work-meta">
                             {{ if .Params.categories }}<span class="team-work-cat">{{ index .Params.categories 0 }}</span>{{ end }}
-                            <span class="team-work-date">{{ .PublishDate.Format "Jan 2006" }}</span>
                         </span>
                     </a>
                 </li>
