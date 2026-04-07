@@ -6,6 +6,7 @@ tags: ["IBC Amendment 2026", "Creditor-Initiated Insolvency Resolution Process",
 author: "Litigra Editorial Team"
 draft: false
 abstract: "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (Act No. 6 of 2026), notified on 06.04.2026, introduces a creditor-initiated resolution process for smaller corporate debtors, a group insolvency framework, cross-border insolvency rulemaking power, mandatory 14-day admission timelines, CoC supervision of liquidation, and civil penalties replacing criminal offences, among other significant changes."
+pdf_label: "Download Amendment Act"
 judgment_pdf: "/images/uploads/IBC-Amendment-Act-2026-Gazette-Notification.pdf"
 ---
 

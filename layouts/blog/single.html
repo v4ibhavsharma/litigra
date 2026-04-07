@@ -29,7 +29,7 @@
             {{ end }}
             <span class="article-hero-readtime">{{ .ReadingTime }} min read</span>
             {{ if .Params.judgment_pdf }}
-                <a href="{{ .Params.judgment_pdf }}" target="_blank" rel="noopener" class="article-hero-download">Download Judgment</a>
+                <a href="{{ .Params.judgment_pdf }}" target="_blank" rel="noopener" class="article-hero-download">{{ .Params.pdf_label | default "Download Judgment" }}</a>
             {{ end }}
         </div>
     </div>
@@ -44,7 +44,7 @@
                     <!-- Auto-populated by JS from h2 headings -->
                 </nav>
                 {{ if .Params.judgment_pdf }}
-                    <a href="{{ .Params.judgment_pdf }}" target="_blank" rel="noopener" class="sidebar-download">Download Judgment</a>
+                    <a href="{{ .Params.judgment_pdf }}" target="_blank" rel="noopener" class="sidebar-download">{{ .Params.pdf_label | default "Download Judgment" }}</a>
                 {{ end }}
                 <a href="{{ "blog/" | relURL }}" class="sidebar-back">&larr; All Articles</a>
             </aside>
