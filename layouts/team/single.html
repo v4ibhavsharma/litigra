@@ -38,12 +38,13 @@
 
             {{ $slug := path.Base .File.ContentBaseName }}
             {{ $related := where (where .Site.RegularPages "Section" "blog") ".Params.people" "intersect" (slice $slug) }}
-            {{ if $related }}
+            {{ $total := len $related }}
+            {{ if ge $total 5 }}
                 <div class="team-section team-work-section">
-                    <h3>SELECTED WORK <span class="team-work-count">{{ len $related }}</span></h3>
+                    <h3>SELECTED WORK</h3>
                     <p class="team-work-intro">Judgments and orders in matters where {{ .Title }} has appeared or contributed, as reported on this site. This is a selection of the work and not an exhaustive list.</p>
                     <ul class="team-work-list">
-                        {{ range (first 100 ($related.ByDate.Reverse)) }}
+                        {{ range (first 10 ($related.ByDate.Reverse)) }}
                             <li>
                                 <a href="{{ .RelPermalink }}">
                                     <span class="team-work-title">{{ .Title }}</span>
@@ -55,6 +56,11 @@
                             </li>
                         {{ end }}
                     </ul>
+                    {{ if gt $total 10 }}
+                        <div class="team-work-more">
+                            <a href="{{ printf "people/%s/" $slug | relURL }}" class="team-work-more-btn">View all work &rarr;</a>
+                        </div>
+                    {{ end }}
                 </div>
             {{ end }}
         </div>

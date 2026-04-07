@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $slug := .Data.Term }}
+{{ $person := "" }}
+{{ range where .Site.RegularPages "Section" "team" }}
+    {{ if eq (path.Base .File.ContentBaseName) $slug }}
+        {{ $person = . }}
+    {{ end }}
+{{ end }}
+
+<section class="page-header">
+    <div class="container">
+        <h1>{{ with $person }}{{ .Title }}{{ else }}{{ .Title }}{{ end }}</h1>
+        <p class="page-subtitle">SELECTED WORK</p>
+    </div>
+</section>
+
+<section class="page-content section-padding">
+    <div class="container">
+        {{ with $person }}
+            <p class="team-work-intro" style="margin-bottom:2.5rem;">All judgments and orders on this site in matters where {{ .Title }} has appeared or contributed.</p>
+        {{ end }}
+        <ul class="team-work-list">
+            {{ range .Pages.ByDate.Reverse }}
+                <li>
+                    <a href="{{ .RelPermalink }}">
+                        <span class="team-work-title">{{ .Title }}</span>
+                        <span class="team-work-meta">
+                            {{ if .Params.categories }}<span class="team-work-cat">{{ index .Params.categories 0 }}</span>{{ end }}
+                            <span class="team-work-date">{{ .PublishDate.Format "Jan 2006" }}</span>
+                        </span>
+                    </a>
+                </li>
+            {{ end }}
+        </ul>
+        <div class="back-link" style="margin-top:3rem;">
+            {{ with $person }}
+                <a href="{{ .RelPermalink }}">&larr; BACK TO PROFILE</a>
+            {{ else }}
+                <a href="{{ "team/" | relURL }}">&larr; BACK TO PEOPLE</a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

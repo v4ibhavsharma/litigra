@@ -61,3 +61,4 @@ title = "Litigra"
 [taxonomies]
   category = "categories"
   tag = "tags"
+  person = "people"
