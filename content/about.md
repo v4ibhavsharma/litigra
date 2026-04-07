@@ -10,13 +10,33 @@ sitemap:
 
 ## ABOUT
 
-Litigra is a litigation and advisory practice based in Chandigarh, with operations in Delhi. The firm was established to bring together experienced practitioners across dispute resolution and legal advisory work.
+Litigra is a Chandigarh-based law firm founded in 2016, with operations in Delhi. The firm serves clients across Punjab, Haryana, Himachal Pradesh, and the Delhi National Capital Region, and appears regularly before the Supreme Court of India, the High Court of Punjab and Haryana at Chandigarh, the National Company Law Tribunal at Chandigarh and New Delhi, the National Company Law Appellate Tribunal, the Debts Recovery Tribunal, the Customs Excise and Service Tax Appellate Tribunal, the Armed Forces Tribunal, and other specialised forums. The firm was established to bring together experienced practitioners across dispute resolution and legal advisory work.
 
 The name is a portmanteau of "litigation" and "grail." It reflects the firm's founding conviction: that principled, thorough advocacy is not merely a professional obligation but a pursuit worth dedicating a practice to.
 
-## PRACTICE
+## PRACTICE AREAS
 
-The firm handles matters across civil, commercial, corporate, constitutional, and criminal law. Areas of particular depth include corporate disputes, insolvency proceedings, regulatory matters, commercial arbitration, and appellate practice before the Supreme Court, High Courts, NCLT, NCLAT, and other tribunals.
+**Civil and commercial litigation.** The firm represents clients in suits for recovery, specific performance, declaration, injunction, and damages, and in commercial disputes arising out of contracts, joint ventures, distributorships, and shareholder arrangements.
+
+**Corporate and insolvency.** The firm appears in proceedings before the National Company Law Tribunal and the National Company Law Appellate Tribunal, including corporate insolvency resolution, liquidation, oppression and mismanagement petitions, and schemes of arrangement.
+
+**Constitutional and writ practice.** The firm regularly files writ petitions before the High Court of Punjab and Haryana and the Supreme Court of India in matters concerning service law, regulatory action, statutory authorities, and the protection of fundamental rights.
+
+**Criminal defence.** The firm appears in white collar matters, economic offences, anticipatory and regular bail, quashing petitions, and trials before sessions courts and special courts, as well as criminal appeals and revisions before the High Court and the Supreme Court.
+
+**Commercial arbitration.** The firm advises on and appears in domestic and international commercial arbitrations, including proceedings under the Arbitration and Conciliation Act, 1996, enforcement of awards, and ancillary proceedings before constitutional courts.
+
+**Service and labour matters.** The firm represents government servants, public sector employees, and private sector workforces in disciplinary proceedings, departmental appeals, and writ petitions arising out of service conditions.
+
+**Banking, recovery, and DRT practice.** The firm appears for borrowers, guarantors, and financial institutions before the Debts Recovery Tribunal and the Debts Recovery Appellate Tribunal, and in proceedings under the SARFAESI Act.
+
+**Tax and indirect tax.** The firm handles disputes before the Customs Excise and Service Tax Appellate Tribunal and writ petitions challenging tax demands, search and seizure actions, and adjudication orders.
+
+**Appellate practice.** A substantial part of the firm's work is appellate, before the High Court of Punjab and Haryana, the National Company Law Appellate Tribunal, and the Supreme Court of India.
+
+## LANGUAGES
+
+The firm advises and conducts proceedings in English, Hindi, and Punjabi.
 
 ## APPROACH
 

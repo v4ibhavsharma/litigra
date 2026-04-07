@@ -1,24 +1,32 @@
-{{ if .IsHome }}
+{{ if or .IsHome (eq .RelPermalink "/about/") (eq .RelPermalink "/contact/") }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LegalService",
+  "@id": "https://litigra.com/#legalservice",
   "name": "Litigra",
-  "description": "{{ .Site.Params.description }}",
+  "alternateName": "Litigra Law Firm",
+  "description": "Chandigarh-based law firm founded in 2016, appearing before the Supreme Court of India, the High Court of Punjab and Haryana, NCLT, NCLAT, DRT, CESTAT, and the Armed Forces Tribunal across Punjab, Haryana, Himachal Pradesh, and Delhi NCR.",
   "url": "https://litigra.com",
   "email": "{{ .Site.Params.email }}",
   "telephone": "{{ .Site.Params.phone }}",
+  "foundingDate": "2016",
+  "priceRange": "$$$",
+  "image": "https://litigra.com/images/og-default.png",
+  "logo": "https://litigra.com/images/og-default.png",
   "address": [
     {
       "@type": "PostalAddress",
       "streetAddress": "{{ .Site.Params.address_chamber }}",
       "addressLocality": "Chandigarh",
+      "addressRegion": "Chandigarh",
       "addressCountry": "IN"
     },
     {
       "@type": "PostalAddress",
       "streetAddress": "{{ .Site.Params.address_chandigarh }}",
       "addressLocality": "Chandigarh",
+      "addressRegion": "Chandigarh",
       "addressCountry": "IN"
     },
     {
@@ -29,21 +37,42 @@
       "addressCountry": "IN"
     }
   ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "10:00",
+    "closes": "19:00"
+  }],
   "areaServed": [
-    {
-      "@type": "AdministrativeArea",
-      "name": "Chandigarh"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Punjab"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Haryana"
-    }
+    { "@type": "City", "name": "Chandigarh" },
+    { "@type": "City", "name": "Mohali" },
+    { "@type": "City", "name": "Panchkula" },
+    { "@type": "City", "name": "New Delhi" },
+    { "@type": "AdministrativeArea", "name": "Punjab" },
+    { "@type": "AdministrativeArea", "name": "Haryana" },
+    { "@type": "AdministrativeArea", "name": "Himachal Pradesh" },
+    { "@type": "AdministrativeArea", "name": "Delhi NCR" }
   ],
-  "knowsAbout": ["Civil Litigation", "Corporate Law", "Constitutional Law", "Criminal Defence", "Insolvency and Restructuring", "Service Law", "Taxation", "Arbitration", "Real Estate Law"]
+  "availableLanguage": ["English", "Hindi", "Punjabi"],
+  "knowsAbout": [
+    "Civil and Commercial Litigation",
+    "Corporate Litigation",
+    "Insolvency and Bankruptcy",
+    "Constitutional and Writ Practice",
+    "Criminal Defence",
+    "White Collar Crime",
+    "Commercial Arbitration",
+    "Service and Labour Law",
+    "Banking and DRT Practice",
+    "SARFAESI",
+    "Indirect Tax",
+    "CESTAT Practice",
+    "Appellate Practice",
+    "Supreme Court of India Practice",
+    "Punjab and Haryana High Court Practice",
+    "NCLT Practice",
+    "NCLAT Practice"
+  ]
 }
 </script>
 {{ end }}
