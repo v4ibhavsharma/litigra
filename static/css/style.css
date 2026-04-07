@@ -3220,3 +3220,323 @@ html.disclaimer-ack .disclaimer-splash { display: none !important; }
     transition: background 0.2s ease, color 0.2s ease;
 }
 .team-work-more-btn:hover { background: #000; color: #fff; }
+
+/* ========================================
+   About Page (dedicated)
+   ======================================== */
+
+.about-hero {
+    background: #000;
+    color: #fff;
+    padding: 7rem 0 5rem;
+    border-bottom: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.about-hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-hero-eyebrow {
+    font-family: var(--font-primary);
+    font-size: 0.72rem;
+    font-weight: 300;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 2rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.about-hero-title {
+    font-family: var(--font-primary);
+    font-size: clamp(4.5rem, 13vw, 10rem);
+    font-weight: 800;
+    line-height: 0.85;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin: 0 0 2rem;
+    color: #fff;
+}
+
+.about-hero-lede {
+    font-family: var(--font-primary);
+    font-size: clamp(1.15rem, 1.9vw, 1.5rem);
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 640px;
+    margin: 0 0 3.5rem;
+}
+
+.about-hero-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.about-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.about-hero-meta-label {
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.about-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .about-hero { padding: 4.5rem 0 3rem; }
+    .about-hero-meta {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Body */
+
+.about-page { background: #fff; }
+
+.about-body {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-section {
+    position: relative;
+    padding: 5rem 0;
+    border-top: 1px solid #000;
+}
+
+.about-section:first-child { border-top: none; padding-top: 4rem; }
+.about-section:last-child { padding-bottom: 2rem; }
+
+.about-section::before {
+    content: attr(data-section);
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    font-family: var(--font-primary);
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    color: #000;
+}
+
+.about-section > h2 {
+    font-family: var(--font-primary);
+    font-size: clamp(2rem, 4.5vw, 3.25rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+    line-height: 1;
+    color: #000;
+    margin: 0 0 2rem;
+    padding-left: 5rem;
+}
+
+.about-section > p,
+.about-section > .about-section-lede {
+    font-family: var(--font-primary);
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 0 0 1.5rem;
+    padding-left: 5rem;
+    max-width: 820px;
+}
+
+.about-section > .about-section-lede {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 3rem;
+    max-width: 720px;
+}
+
+@media (max-width: 800px) {
+    .about-section { padding: 3.5rem 0; }
+    .about-section::before { top: 3.5rem; font-size: 0.65rem; }
+    .about-section > h2,
+    .about-section > p,
+    .about-section > .about-section-lede {
+        padding-left: 0;
+    }
+    .about-section > h2 { margin-top: 1.75rem; }
+}
+
+/* Practice Areas Grid */
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin: 0 0 0 5rem;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.practice-card {
+    padding: 2.25rem 1.75rem 2rem;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: #fff;
+    transition: background 0.25s ease, color 0.25s ease;
+    position: relative;
+}
+
+.practice-card:hover {
+    background: #000;
+    color: #fff;
+}
+
+.practice-card:hover .practice-card-num,
+.practice-card:hover h3,
+.practice-card:hover p { color: #fff; }
+
+.practice-card-num {
+    font-family: var(--font-primary);
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    color: #666;
+    margin-bottom: 1.75rem;
+    transition: color 0.25s ease;
+}
+
+.practice-card h3 {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #000;
+    margin: 0 0 1rem;
+    line-height: 1.25;
+    transition: color 0.25s ease;
+}
+
+.practice-card p {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    transition: color 0.25s ease;
+}
+
+@media (max-width: 900px) {
+    .practice-grid { grid-template-columns: repeat(2, 1fr); margin-left: 0; }
+}
+
+@media (max-width: 600px) {
+    .practice-grid { grid-template-columns: 1fr; }
+}
+
+/* Jurisdictions Grid */
+
+.jurisdictions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin: 0 0 0 5rem;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.jurisdiction-block {
+    padding: 2rem 1.5rem 2rem;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.jurisdiction-label {
+    font-family: var(--font-primary);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #000;
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid #000;
+}
+
+.jurisdiction-block ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jurisdiction-block li {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #333;
+    padding: 0.4rem 0;
+}
+
+@media (max-width: 900px) {
+    .jurisdictions-grid { grid-template-columns: repeat(2, 1fr); margin-left: 0; }
+}
+
+@media (max-width: 520px) {
+    .jurisdictions-grid { grid-template-columns: 1fr; }
+}
+
+/* CTA at bottom */
+
+.about-cta {
+    padding-left: 5rem;
+    margin-top: 2rem !important;
+}
+
+.about-cta-link {
+    display: inline-block;
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px solid #000;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.about-cta-link:hover { background: #000; color: #fff; }
+
+@media (max-width: 800px) {
+    .about-cta { padding-left: 0; }
+}
