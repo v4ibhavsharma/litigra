@@ -7,6 +7,8 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "High Court dismisses anticipatory bail petition in case involving allegations of sexual assault and dowry-related cruelty, holding that prima facie case established and custodial interrogation necessary for investigation."
 judgment_pdf: "/images/uploads/CRM-M-13610-2024-Rahul-v-State-of-Haryana.pdf"
+people:
+  - "vaibhav-sharma"
 ---
 
 The Punjab and Haryana High Court in **Rahul v. State of Haryana** (CRM-M-13610-2024) declined to grant anticipatory bail in a matter involving serious allegations of sexual assault and marital cruelty punishable under Sections 498-A and 376 of the Indian Penal Code. The judgment illustrates the stringent legal standards applied by courts when evaluating anticipatory bail petitions in cases of sexual offences and domestic violence.

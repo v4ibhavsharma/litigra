@@ -7,6 +7,8 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "High Court remands cheque dishonour case for fresh trial after finding trial court failed to properly evaluate evidence of dishonest intent despite acquittal, emphasizing rigorous application of legal principles in NI Act cases."
 judgment_pdf: "/images/uploads/CRA-AS-5977-2018-Abhishek-Gautam-v-Tirupathi-Stainless-Steel.pdf"
+people:
+  - "vaibhav-sharma"
 ---
 
 The Punjab and Haryana High Court in **Abhishek Gautam v. Tirupathi Stainless Steel** (CRA-AS-5977-2018) examined the critical issue of dishonest intent in cheque dishonour prosecutions under Section 138 of the Negotiable Instruments Act. The Court's decision underscores the necessity of meticulous examination of evidence regarding the mental element required to establish culpability in such cases.

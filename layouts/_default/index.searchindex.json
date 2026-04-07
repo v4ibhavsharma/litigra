@@ -1,0 +1,7 @@
+[
+{{- $posts := where .Site.RegularPages "Section" "blog" -}}
+{{- range $i, $p := $posts -}}
+{{- if $i }},{{ end }}
+{"t":{{ $p.Title | jsonify }},"u":{{ $p.RelPermalink | jsonify }},"a":{{ (or $p.Params.abstract ($p.Summary | plainify)) | jsonify }},"c":{{ (or (index $p.Params.categories 0) "") | jsonify }},"d":{{ ($p.PublishDate.Format "Jan 2, 2006") | jsonify }},"b":{{ $p.Plain | jsonify }}}
+{{- end -}}
+]

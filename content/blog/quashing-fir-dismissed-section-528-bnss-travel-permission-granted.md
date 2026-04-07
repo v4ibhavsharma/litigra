@@ -7,6 +7,9 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "High Court dismisses petition to quash FIR but grants conditional travel permission, illustrating discretionary relief available even where main petition fails and balancing between investigation protection and petitioner's mobility."
 judgment_pdf: "/images/uploads/CRM-M-34931-2024-Virender-Kumar-v-State-of-Punjab.pdf"
+people:
+  - "vaibhav-sharma"
+  - "adarsh-dubey"
 ---
 
 The Punjab and Haryana High Court in **Virender Kumar v. State of Punjab** (CRM-M-34931-2024) examined the appropriate exercise of discretion where a petition seeking quashing of an FIR under Section 528 of the Bharatiya Nyaya Sanhita was dismissed, yet the court granted conditional relief permitting the petitioner limited travel permissions. The decision illustrates the spectrum of remedies available to courts and the flexibility with which discretionary relief may be fashioned even where the primary relief sought is declined.

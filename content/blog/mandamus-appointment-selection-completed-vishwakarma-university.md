@@ -7,6 +7,8 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "High Court issues mandamus directing university to appoint candidate who cleared all selection stages, emphasizing duty of public authority to follow through on completed recruitment process and absence of discretion to withhold appointment unreasonably."
 judgment_pdf: "/images/uploads/CWP-8380-2023-Anuradha-v-Vishwakarma-Skill-University.pdf"
+people:
+  - "viraj-gandhi"
 ---
 
 The Punjab and Haryana High Court in **Anuradha v. Vishwakarma Skill University** (CWP-8380-2023) addressed the extraordinary remedy of mandamus in the context of employment and appointed **Ms. Anuradha** to a position after she had successfully completed all stages of the university's selection process but was denied the appointment letter without any substantive justification. The judgment reaffirms the principle that public authorities entrusted with recruitment cannot arbitrarily withhold issuance of appointment letters once selection has been finalized.

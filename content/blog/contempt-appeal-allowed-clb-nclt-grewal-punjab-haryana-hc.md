@@ -7,6 +7,10 @@ author: Litigra Editorial Team
 draft: false
 abstract: The Punjab and Haryana High Court allowed a contempt appeal and discharged the appellant, holding that contempt proceedings should not be initiated when an appeal against the underlying order is pending. The Court emphasized that the outcome of the appeal may render the contempt proceedings redundant or require fresh consideration.
 judgment_pdf: "/images/uploads/Pritpal Singh Grewal v Gurlal Singh Grewal - CACP-7-2018.pdf"
+people:
+  - "munisha-gandhi"
+  - "vaibhav-sharma"
+  - "adarsh-dubey"
 ---
 
 ## The Underlying Dispute

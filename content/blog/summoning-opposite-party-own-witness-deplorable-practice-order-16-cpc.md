@@ -7,6 +7,9 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Punjab and Haryana High Court deprecated the practice of summoning the opposite party as one's own witness, calling it deplorable and an abuse of court's process. The revision petition was allowed and the summoning order was set aside."
 judgment_pdf: "/images/uploads/Civil-Revision-2089-2021-Uma-Shankar-Bhartia-v-Suvidha-Estate-Agency.pdf"
+people:
+  - "munisha-gandhi"
+  - "viraj-gandhi"
 ---
 
 ## Abuse of Process Through Tactical Witness Summoning

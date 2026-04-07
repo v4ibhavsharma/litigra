@@ -7,6 +7,10 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Punjab and Haryana High Court allowed a revision petition and directed the Family Court to permit witness examination via video conferencing in accordance with the 2018 Model Video Conferencing Rules, emphasizing the need for modern technology in judicial proceedings."
 judgment_pdf: "/images/uploads/CR-263-2021-Matrimonial-Video-Conferencing.pdf"
+people:
+  - "munisha-gandhi"
+  - "vaibhav-sharma"
+  - "viraj-gandhi"
 ---
 
 ## Technology as an Enabler of Justice

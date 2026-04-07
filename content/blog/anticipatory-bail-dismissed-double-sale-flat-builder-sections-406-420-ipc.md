@@ -7,6 +7,9 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Punjab and Haryana High Court dismissed anticipatory bail application where prima facie case of double sale of flat by builder's director was established, direct payment received from complainant, and custodial interrogation deemed necessary for investigation."
 judgment_pdf: "/images/uploads/CRM-M-2412-2024-Sawinder-Singh-v-State-of-Punjab.pdf"
+people:
+  - "viraj-gandhi"
+  - "adarsh-dubey"
 ---
 
 ## The Facts of Double Sale and Fraudulent Conduct

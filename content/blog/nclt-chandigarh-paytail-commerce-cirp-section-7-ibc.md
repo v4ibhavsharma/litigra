@@ -7,6 +7,8 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The NCLT Chandigarh admitted a Corporate Insolvency Resolution Proceeding against Paytail Commerce Private Limited upon application by a financial creditor under Section 7 of the Insolvency and Bankruptcy Code. The judgment reinforces that once debt and default are established through credible documentary evidence, the Tribunal is statutorily bound to admit the application, regardless of assertions regarding ongoing negotiations or claimed financial difficulties."
 judgment_pdf: "/images/uploads/Amit Jain v Paytail Commerce Pvt Ltd - CP(IB)-32-2024.pdf"
+people:
+  - "vaibhav-sharma"
 ---
 
 ## The Default

@@ -19,6 +19,11 @@
         {{ end }}
         {{ $uniqueCats := $allCats | uniq | sort }}
 
+        <div class="search-bar">
+            <input type="search" id="blog-search" placeholder="Search judgments, statutes, courts, parties..." autocomplete="off" aria-label="Search writing">
+            <div class="search-meta" id="blog-search-meta"></div>
+        </div>
+
         <div class="blog-filter-bar">
             <a href="{{ "blog/" | relURL }}" class="blog-filter-pill active">All</a>
             {{ range $uniqueCats }}
@@ -28,7 +33,7 @@
 
         {{ $paginator := .Paginate (.Pages.ByDate.Reverse) 8 }}
 
-        <div class="blog-grid-cards">
+        <div class="blog-grid-cards" id="blog-grid-cards">
             {{ range $index, $page := $paginator.Pages }}
                 {{ $cat := "" }}
                 {{ if $page.Params.categories }}
@@ -69,7 +74,80 @@
         </nav>
         {{ end }}
 
+        <div id="blog-search-results" class="blog-grid-cards search-results-hidden"></div>
+
     </div>
 </section>
+
+<script>
+(function() {
+    var input = document.getElementById('blog-search');
+    if (!input) return;
+    var meta = document.getElementById('blog-search-meta');
+    var grid = document.getElementById('blog-grid-cards');
+    var pager = document.querySelector('.blog-pagination');
+    var filter = document.querySelector('.blog-filter-bar');
+    var results = document.getElementById('blog-search-results');
+    var data = null, loading = false;
+
+    function loadIndex() {
+        if (data || loading) return Promise.resolve(data);
+        loading = true;
+        return fetch('{{ "search-index.json" | relURL }}')
+            .then(function(r) { return r.json(); })
+            .then(function(j) { data = j; loading = false; return j; });
+    }
+
+    function escapeHtml(s) {
+        return (s || '').replace(/[&<>"']/g, function(c) {
+            return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+        });
+    }
+
+    function render(matches, q) {
+        results.innerHTML = matches.map(function(m) {
+            return '<a href="' + m.u + '" class="blog-card-link"><article class="blog-card-item">'
+                + '<div class="blog-card-top">'
+                + (m.c ? '<span class="blog-card-category">' + escapeHtml(m.c) + '</span>' : '')
+                + '<div class="blog-card-meta-right"><span class="blog-card-date">' + escapeHtml(m.d) + '</span></div>'
+                + '</div>'
+                + '<h2 class="blog-card-title">' + escapeHtml(m.t) + '</h2>'
+                + '<p class="blog-card-abstract">' + escapeHtml(m.a) + '</p>'
+                + '</article></a>';
+        }).join('');
+        meta.textContent = matches.length + (matches.length === 1 ? ' result' : ' results') + ' for "' + q + '"';
+    }
+
+    function search(q) {
+        q = q.trim().toLowerCase();
+        if (!q) {
+            results.classList.add('search-results-hidden');
+            grid.style.display = '';
+            if (pager) pager.style.display = '';
+            if (filter) filter.style.display = '';
+            meta.textContent = '';
+            return;
+        }
+        loadIndex().then(function(items) {
+            var terms = q.split(/\s+/).filter(Boolean);
+            var matches = items.filter(function(it) {
+                var hay = (it.t + ' ' + it.a + ' ' + it.c + ' ' + it.b).toLowerCase();
+                return terms.every(function(t) { return hay.indexOf(t) !== -1; });
+            });
+            grid.style.display = 'none';
+            if (pager) pager.style.display = 'none';
+            if (filter) filter.style.display = 'none';
+            results.classList.remove('search-results-hidden');
+            render(matches, q);
+        });
+    }
+
+    var timer;
+    input.addEventListener('input', function(e) {
+        clearTimeout(timer);
+        timer = setTimeout(function() { search(e.target.value); }, 120);
+    });
+})();
+</script>
 
 {{ end }}

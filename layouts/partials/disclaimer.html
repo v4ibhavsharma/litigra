@@ -1,0 +1,37 @@
+<div id="disclaimer-splash" class="disclaimer-splash" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+    <div class="disclaimer-inner">
+        <div class="disclaimer-mark">LITIGRA</div>
+        <h1 id="disclaimer-title" class="disclaimer-heading">DISCLAIMER &amp; CONFIRMATION</h1>
+        <div class="disclaimer-body">
+            <p>The Bar Council of India does not permit advertisement or solicitation by advocates in any form or manner. By accessing this website, www.litigra.com, you acknowledge and confirm that you are seeking information relating to Litigra of your own accord and that there has been no form of solicitation, advertisement, or inducement by Litigra or any of its members.</p>
+            <p>The information provided on this website is solely available at your request for informational purposes only. It should not be interpreted as soliciting or advertising. Litigra shall not be liable for the consequences of any action taken by relying on the material or information provided on this website.</p>
+            <p>The contents of this website are the intellectual property of Litigra. No material on this site may be reproduced, distributed, or transmitted in any form without the prior written consent of the firm.</p>
+        </div>
+        <div class="disclaimer-actions">
+            <button type="button" id="disclaimer-agree" class="disclaimer-btn disclaimer-btn-primary">I AGREE</button>
+            <a href="https://www.google.com/" class="disclaimer-btn disclaimer-btn-secondary">DECLINE</a>
+        </div>
+    </div>
+</div>
+<script>
+(function() {
+    var splash = document.getElementById('disclaimer-splash');
+    if (!splash) return;
+    try {
+        if (localStorage.getItem('litigra-disclaimer-ack') === '1') {
+            splash.parentNode.removeChild(splash);
+            return;
+        }
+    } catch (e) {}
+    document.documentElement.classList.add('disclaimer-active');
+    var btn = document.getElementById('disclaimer-agree');
+    btn.addEventListener('click', function() {
+        try { localStorage.setItem('litigra-disclaimer-ack', '1'); } catch (e) {}
+        document.documentElement.classList.remove('disclaimer-active');
+        splash.classList.add('disclaimer-fading');
+        setTimeout(function() {
+            if (splash.parentNode) splash.parentNode.removeChild(splash);
+        }, 300);
+    });
+})();
+</script>

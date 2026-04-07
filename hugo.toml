@@ -31,17 +31,27 @@ title = "Litigra"
     url = "/blog/"
     weight = 4
   [[menus.main]]
+    name = "Careers"
+    url = "/careers/"
+    weight = 5
+  [[menus.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 5
+    weight = 6
 
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "SearchIndex"]
   section = ["HTML", "RSS"]
+
+[outputFormats.SearchIndex]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
 
 [markup]
   [markup.goldmark]

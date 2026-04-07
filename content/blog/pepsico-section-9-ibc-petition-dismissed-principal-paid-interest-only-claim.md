@@ -7,6 +7,9 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The NCLT Chandigarh dismissed a Section 9 IBC petition against PepsiCo India Holdings Pvt Ltd, holding that where the principal debt was paid during the pendency of proceedings and the operational creditor claimed only interest on unsigned invoices, the conditions under Section 9(5)(i)(b) were not satisfied."
 judgment_pdf: "/images/uploads/PepsiCo Final Order.pdf"
+people:
+  - "munisha-gandhi"
+  - "salina-chalana"
 ---
 
 The National Company Law Tribunal, Chandigarh Bench, in **CP (IB) No. 157/Chd/Hry/2021 (SNJ Synthetics Ltd v. PepsiCo India Holdings Pvt Ltd)**, decided on 02.01.2025, dismissed the petition filed under Section 9 of the Insolvency and Bankruptcy Code, 2016 by the Operational Creditor, SNJ Synthetics Ltd, against PepsiCo India Holdings Pvt Ltd.

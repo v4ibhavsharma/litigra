@@ -7,6 +7,10 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The National Company Law Appellate Tribunal upheld an amalgamation scheme between Indiabulls Real Estate Limited and two transferor companies, reversing the NCLT's rejection. The Appellate Tribunal held that it should not interfere with the commercial wisdom of shareholders and creditors who approved the scheme by nearly 100%, provided proper valuation methodologies and regulatory compliance are established."
 judgment_pdf: "/images/uploads/Indiabulls Real Estate Ltd v Dept of Income Tax - NCLAT CA 120-2023.pdf"
+people:
+  - "munisha-gandhi"
+  - "vaibhav-sharma"
+  - "salina-chalana"
 ---
 
 ## Background

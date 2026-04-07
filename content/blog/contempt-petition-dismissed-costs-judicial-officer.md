@@ -7,6 +7,8 @@ tags: ["Contempt", "Punjab and Haryana High Court", "Judicial Officers", "Costs"
 draft: false
 abstract: "The Punjab and Haryana High Court dismissed a contempt petition filed against a Judicial Officer and imposed costs of Rs. 1,00,000/- on the petitioner, holding the petition to be a gross abuse of the process of law."
 judgment_pdf: "/images/uploads/cocp-final-order.pdf"
+people:
+  - "vaibhav-sharma"
 ---
 
 In **Sudhir Kumar @ Sudhir Kumar Gupta v. S. Ravtesh Inderjit Singh** (COCP-928-2026(O&M), decided on 05.03.2026), the Punjab and Haryana High Court dismissed a contempt petition filed against a Judicial Officer and imposed costs of Rs. 1,00,000/- on the petitioner, holding the petition to be a gross abuse of the process of law.

@@ -53,8 +53,18 @@
 
     <!-- Structured Data -->
     {{ partial "structured-data.html" . }}
+
+    <script>
+      // Hide splash immediately if already acknowledged, to avoid flash.
+      try {
+        if (localStorage.getItem('litigra-disclaimer-ack') === '1') {
+          document.documentElement.classList.add('disclaimer-ack');
+        }
+      } catch (e) {}
+    </script>
 </head>
 <body>
+    {{ partial "disclaimer.html" . }}
     {{ partial "header.html" . }}
 
     <main>

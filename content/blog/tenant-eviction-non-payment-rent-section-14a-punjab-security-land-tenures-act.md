@@ -7,6 +7,9 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court, both at the single bench and the division bench stage, upheld the eviction of agricultural tenants for non-payment of rent, holding that tenants who claim rent was paid but no receipt was issued must avail of the statutory remedy under Section 14(A)(iii) of the Punjab Security of Land Tenures Act, 1953, and their failure to do so defeats the plea."
 judgment_pdf: "/images/uploads/Geetan Singh v Financial Commissioner - CWP-19311-2014 (Single Bench).pdf"
+people:
+  - "vaibhav-sharma"
+  - "salina-chalana"
 ---
 
 The Punjab and Haryana High Court dismissed both a writ petition and the subsequent Letters Patent Appeal in the matter of **Geetan Singh @ Geetal Singh and others v. Financial Commissioner (Revenue), Punjab and others**. The single bench (Hon'ble Mr. Justice Vikas Bahl) dismissed the writ petition on 01.05.2023 in CWP-19311-2014, and the division bench (Hon'ble Mr. Justice Deepak Sibal and Hon'ble Mr. Justice Deepak Manchanda) dismissed the LPA on 01.05.2024 in LPA-764-2023. The Court held that tenants who failed to avail themselves of the statutory remedy under Section 14(A)(iii) of the Punjab Security of Land Tenures Act, 1953 could not resist eviction by simply claiming that rent was paid but no receipt was issued by the landlord.

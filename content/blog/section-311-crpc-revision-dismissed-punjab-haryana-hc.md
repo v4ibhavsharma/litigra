@@ -7,6 +7,8 @@ author: Litigra Editorial Team
 draft: false
 abstract: The Punjab and Haryana High Court dismissed a revision petition challenging the trial court's refusal to summon an investigator under Section 311 CrPC. The Court held that the power to summon witnesses must be exercised judiciously to find truth essential for a just decision, not to fill gaps in a party's evidence.
 judgment_pdf: "/images/uploads/Sukhchain Singh v Mridula Bhardwaj - CRR-183-2022.pdf"
+people:
+  - "vaibhav-sharma"
 ---
 
 ## The Facts

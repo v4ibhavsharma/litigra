@@ -7,6 +7,8 @@ tags: ["NCLT", "Companies Act", "Section 66", "Capital Reduction", "Securities P
 draft: false
 abstract: "The NCLT Chandigarh Bench confirmed the reduction of share capital of a foreign-owned private company under Section 66 of the Companies Act, 2013, permitting it to utilise Rs. 99.59 crores from its securities premium account to set off accumulated losses."
 judgment_pdf: "/images/uploads/oqrpl-final-order.pdf"
+people:
+  - "vaibhav-sharma"
 ---
 
 In **CP No. 68/Chd/Hry/2025, In the matter of One Qube Realtors Private Limited** (order dated 26.02.2026), the NCLT Chandigarh Bench confirmed the reduction of share capital of a foreign-owned private company under Section 66 read with Section 52 of the Companies Act, 2013, permitting it to utilise Rs. 99,59,14,810/- from its securities premium account to set off accumulated losses of an equivalent amount.

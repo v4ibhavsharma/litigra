@@ -7,6 +7,9 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court dismissed writ petitions by two PCS (Judicial) officers seeking reinstatement after their acquittal in a criminal case, holding that the Full Bench judgment dismissing their earlier writ petition had attained finality and could not be circumvented."
 judgment_pdf: "/images/uploads/CWP_4468_2018_21_10_2024_FINAL_ORDER.pdf"
+people:
+  - "munisha-gandhi"
+  - "manveen-narang"
 ---
 
 The Punjab and Haryana High Court, in **CWP No. 4468 of 2018 (Anil Kumar Jindal v. State of Punjab) and CWP No. 4470 of 2018 (Rajinder Bansal v. State of Punjab)**, decided on 21.10.2024, dismissed the writ petitions of two former PCS (Judicial) officers who sought reinstatement after their acquittal in FIR No. 64 connected to the Sidhu scam. The Court held that the Full Bench judgment dated 27.05.2008, which had dismissed their earlier writ petition challenging their termination, had attained finality as it was never challenged before the Supreme Court.

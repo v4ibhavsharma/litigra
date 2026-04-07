@@ -7,6 +7,9 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court dismissed a writ petition challenging the minimum marks qualification prescribed under Clause 8.4 of the ADJ recruitment rules, holding that the High Court has the power to prescribe such criteria under Article 233 of the Constitution."
 judgment_pdf: "/images/uploads/CWP_18757_2025_22_09_2025_FINAL_ORDER.pdf"
+people:
+  - "munisha-gandhi"
+  - "manveen-narang"
 ---
 
 The Punjab and Haryana High Court, in **CWP No. 18757 of 2025 (Rushil Jindal v. High Court of Punjab and Haryana and others)**, decided on 22.09.2025, dismissed a writ petition challenging the minimum marks qualification prescribed under Clause 8.4 of the rules governing recruitment to the post of Additional District Judge (ADJ). The Court upheld the High Court's power to prescribe minimum qualifying marks as a valid exercise of its authority under Article 233 of the Constitution.

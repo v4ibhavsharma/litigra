@@ -7,6 +7,8 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Punjab and Haryana High Court quashed FIR under Sections 406/420 IPC in dispute over non-payment of work order dues under NHAI highway concession agreement, holding that non-payment constitutes a purely civil matter."
 judgment_pdf: "/images/uploads/CRM-M-21030-2023-Kaushik-Pal-v-State-of-Haryana-Roadis.pdf"
+people:
+  - "viraj-gandhi"
 ---
 
 ## Background and Factual Matrix

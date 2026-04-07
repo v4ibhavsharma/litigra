@@ -7,6 +7,9 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Punjab and Haryana High Court enhanced motor accident compensation by Rs. 31,66,500 after correcting multiplier from 9 to 12, adding future prospects of 15%, and awarding filial consortium of Rs. 40,000 each to two sons."
 judgment_pdf: "/images/uploads/FAO-4763-2017-New-India-Assurance-v-Shivit-Bansal.pdf"
+people:
+  - "viraj-gandhi"
+  - "adarsh-dubey"
 ---
 
 ## Background of the Accident and the Tribunal Award

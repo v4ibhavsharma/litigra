@@ -35,6 +35,28 @@
                     </ul>
                 </div>
             {{ end }}
+
+            {{ $slug := path.Base .File.ContentBaseName }}
+            {{ $related := where (where .Site.RegularPages "Section" "blog") ".Params.people" "intersect" (slice $slug) }}
+            {{ if $related }}
+                <div class="team-section team-work-section">
+                    <h3>SELECTED WORK <span class="team-work-count">{{ len $related }}</span></h3>
+                    <p class="team-work-intro">Judgments and orders in matters where {{ .Title }} has appeared or contributed, as reported on this site. This is a selection of the work and not an exhaustive list.</p>
+                    <ul class="team-work-list">
+                        {{ range (first 100 ($related.ByDate.Reverse)) }}
+                            <li>
+                                <a href="{{ .RelPermalink }}">
+                                    <span class="team-work-title">{{ .Title }}</span>
+                                    <span class="team-work-meta">
+                                        {{ if .Params.categories }}<span class="team-work-cat">{{ index .Params.categories 0 }}</span>{{ end }}
+                                        <span class="team-work-date">{{ .PublishDate.Format "Jan 2006" }}</span>
+                                    </span>
+                                </a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
         </div>
 
         <div class="back-link">

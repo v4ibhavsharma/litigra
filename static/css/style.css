@@ -2954,3 +2954,254 @@ footer {
         padding: 0.9rem 1.25rem;
     }
 }
+
+/* ========================================
+   Disclaimer Splash (BCI compliance)
+   ======================================== */
+
+html.disclaimer-active { overflow: hidden; }
+html.disclaimer-ack .disclaimer-splash { display: none !important; }
+
+.disclaimer-splash {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    animation: disclaimer-fade-in 0.4s ease;
+}
+.disclaimer-splash.disclaimer-fading {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+@keyframes disclaimer-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.disclaimer-inner {
+    max-width: 720px;
+    width: 100%;
+}
+.disclaimer-mark {
+    font-size: 0.75rem;
+    letter-spacing: 0.5em;
+    font-weight: 300;
+    color: #888;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.disclaimer-heading {
+    font-size: 0.85rem;
+    letter-spacing: 0.35em;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 2.5rem 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.disclaimer-heading::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    margin: 1.25rem auto 0;
+}
+.disclaimer-body p {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    font-weight: 300;
+    color: #bbb;
+    margin-bottom: 1.25rem;
+}
+.disclaimer-actions {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.disclaimer-btn {
+    font-family: inherit;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.95rem 2.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+.disclaimer-btn-primary:hover {
+    background: #fff;
+    color: #000;
+}
+.disclaimer-btn-secondary {
+    color: #888;
+    border-color: #444;
+}
+.disclaimer-btn-secondary:hover {
+    color: #fff;
+    border-color: #fff;
+}
+@media (max-width: 640px) {
+    .disclaimer-splash { padding: 1.5rem; }
+    .disclaimer-body p { font-size: 0.9rem; }
+    .disclaimer-actions { flex-direction: column; gap: 1rem; }
+    .disclaimer-btn { width: 100%; text-align: center; }
+}
+
+/* ========================================
+   Team — Selected Work list
+   ======================================== */
+
+.team-work-section { margin-top: 3.5rem; }
+.team-work-section h3 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+.team-work-count {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #999;
+    letter-spacing: 0.15em;
+}
+.team-work-intro {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 300;
+    margin: 0.75rem 0 1.5rem 0;
+    max-width: 640px;
+}
+.team-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #eee;
+}
+.team-work-list li { border-bottom: 1px solid #eee; }
+.team-work-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 1.1rem 0;
+    text-decoration: none;
+    color: #000;
+    transition: padding 0.2s ease;
+}
+.team-work-list a:hover {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    background: #fafafa;
+}
+.team-work-title {
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    flex: 1;
+}
+.team-work-meta {
+    display: flex;
+    gap: 1.25rem;
+    align-items: baseline;
+    flex-shrink: 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 400;
+}
+.team-work-cat { color: #000; }
+@media (max-width: 640px) {
+    .team-work-list a { flex-direction: column; gap: 0.5rem; }
+    .team-work-meta { gap: 0.75rem; }
+}
+
+/* ========================================
+   Site Search
+   ======================================== */
+
+.search-bar {
+    margin: 0 0 2.5rem 0;
+    position: relative;
+}
+.search-bar input {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    color: #000;
+    outline: none;
+}
+.search-bar input::placeholder {
+    color: #999;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+.search-meta {
+    font-size: 0.7rem;
+    color: #999;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    min-height: 1rem;
+}
+.search-results-hidden { display: none; }
+
+/* ========================================
+   Careers page
+   ======================================== */
+
+.careers-intro {
+    max-width: 720px;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    font-weight: 300;
+    color: #333;
+}
+.careers-intro p { margin-bottom: 1.25rem; }
+.careers-block {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    max-width: 720px;
+}
+.careers-block h3 {
+    font-size: 0.8rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.careers-block p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.careers-email {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+    margin-top: 0.5rem;
+}
+.careers-email:hover { color: #666; border-color: #666; }

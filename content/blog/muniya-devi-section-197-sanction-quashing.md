@@ -7,6 +7,8 @@ author: "Vaibhav Sharma"
 draft: false
 abstract: "The Punjab and Haryana High Court quashed a criminal complaint filed against a serving Sub-Inspector of Haryana Police, holding that prior sanction of the State Government under Section 197 Cr.P.C. had not been obtained before filing the complaint or taking cognizance."
 judgment_pdf: "/images/uploads/Muniya_Devi_Vs_State_of_Haryana.pdf"
+people:
+  - "vaibhav-sharma"
 ---
 
 In **Muniya Devi v. State of Haryana** (CRM-M-44680-2021, decided on 08.12.2023), the Punjab and Haryana High Court quashed a criminal complaint filed under Section 195(1)(a) Cr.P.C. against a serving Sub-Inspector of Haryana Police on the ground that prior sanction of the State Government under Section 197 Cr.P.C. had not been obtained before filing the complaint or taking cognizance. The Court held that since the petitioner's act of filing a reply in bail proceedings was reasonably connected with her official duties, the Haryana Government's notification dated 25.07.1980 extending the protection of Section 197(2) to all serving police officials squarely applied.

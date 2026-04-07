@@ -7,6 +7,9 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The NCLT Chandigarh dismissed an oppression and mismanagement petition, holding that a counter-offer to a pre-emption offer constitutes its rejection and no concluded contract arises. The Tribunal further applied the Doctrine of Ratification to cure procedural irregularities in board resolutions concerning a debt-restructuring loan, and held that a shareholder who benefited from the transaction is estopped from challenging it."
 judgment_pdf: "/images/uploads/Ojas.pdf"
+people:
+  - "munisha-gandhi"
+  - "manveen-narang"
 ---
 
 The National Company Law Tribunal, Chandigarh Bench, in **CP No. 8/Chd/Hry/2022 (Tarsem K. Ruby v. OJAS Medical Services Pvt Ltd and 13 others)**, decided on 20.01.2026, dismissed the petition under Sections 241, 242, and 244 of the Companies Act, 2013. The Petitioner, a minority shareholder, had alleged oppression and mismanagement in the affairs of a healthcare company based in Panchkula. The Tribunal found that none of the allegations were substantiated.

@@ -7,6 +7,8 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court reverses a Single Bench decision awarding salary benefits for current duty charge period, holding that employees must possess actual eligibility for promotion to claim equivalent pay, and that a rational legal basis for denying such benefits precludes judicial intervention."
 judgment_pdf: "/images/uploads/Punjab State Agricultural Marketing Board v Jaswinder Pal Singh - LPA-498-2018.pdf"
+people:
+  - "vaibhav-sharma"
 ---
 
 ## The Facts

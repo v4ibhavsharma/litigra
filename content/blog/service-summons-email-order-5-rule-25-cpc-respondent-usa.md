@@ -7,6 +7,10 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Punjab and Haryana High Court permitted service of summons via electronic mail on respondent residing in USA, finding that ordinary and dasti process had failed and email service was authorized under Order 5 Rule 25 CPC and High Court Rules."
 judgment_pdf: "/images/uploads/CR-2837-2019-Shilpa-Khanna-Service-by-Email.pdf"
+people:
+  - "munisha-gandhi"
+  - "viraj-gandhi"
+  - "adarsh-dubey"
 ---
 
 ## Background and the Challenge of International Service

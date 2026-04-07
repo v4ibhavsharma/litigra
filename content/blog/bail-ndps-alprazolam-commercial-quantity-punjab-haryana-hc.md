@@ -7,6 +7,8 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "High Court grants regular bail in NDPS case where recovered quantity marginally exceeds commercial threshold, emphasizing consideration of narrow margin and clean antecedents in bail assessment."
 judgment_pdf: "/images/uploads/CRM-M-14012-2024-Ankit-Agrawal-v-State-of-Punjab.pdf"
+people:
+  - "viraj-gandhi"
 ---
 
 The Punjab and Haryana High Court in **Ankit Agrawal v. State of Punjab** (CRM-M-14012-2024) considered the grant of bail in a Narcotic Drugs and Psychotropic Substances Act case where the quantity of drug recovered marginally exceeded the prescribed commercial threshold. The decision illustrates the court's nuanced approach to bail assessment in drug cases where the quantity differential is minimal and personal circumstances of the accused warrant consideration.

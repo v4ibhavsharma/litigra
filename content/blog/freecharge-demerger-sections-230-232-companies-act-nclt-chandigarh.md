@@ -7,6 +7,9 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The NCLT Chandigarh allowed the first motion petition for demerger of FreeCharge Payment Technologies Pvt Ltd (an Axis Bank subsidiary) into FreeCharge Business and Technology Services Ltd, dispensing with meetings of shareholders and creditors and imposing RBI-mandated conditions."
 judgment_pdf: "/images/uploads/FREECHARGE FINAL ORDER.pdf"
+people:
+  - "munisha-gandhi"
+  - "salina-chalana"
 ---
 
 The National Company Law Tribunal, Chandigarh Bench, in **CA (CAA) No. 31/Chd/Hry/2024 (First Motion)**, decided on 23.04.2025, allowed the first motion petition for the proposed demerger of the Business Correspondent and Technology Service Provider undertaking of FreeCharge Payment Technologies Pvt Ltd (FPTPL) into FreeCharge Business and Technology Services Ltd (FBTSL). Both companies are subsidiaries of Axis Bank Limited. The Tribunal dispensed with meetings of equity shareholders, secured creditors, and unsecured creditors, and imposed conditions stipulated by the Reserve Bank of India.

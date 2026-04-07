@@ -7,6 +7,8 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court clarifies that a Magistrate cannot order further investigation merely because a complainant is dissatisfied with a police cancellation report. The Court's own satisfaction remains the proper legal standard for such orders."
 judgment_pdf: "/images/uploads/Amarpreet Singh v State of Punjab - CRM-M-38274-2025.pdf"
+people:
+  - "vaibhav-sharma"
 ---
 
 ## The FIR and Investigation
