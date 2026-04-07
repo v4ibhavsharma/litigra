@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<section class="about-hero">
+    <div class="container">
+        <div class="about-hero-inner">
+            <div class="about-hero-eyebrow">LITIGATION &amp; ADVISORY PRACTICE</div>
+            <h1 class="about-hero-title">THE<br>FIRM</h1>
+            <p class="about-hero-lede">Principled, thorough advocacy, treated as a pursuit worth dedicating a practice to.</p>
+            <div class="about-hero-meta">
+                <div class="about-hero-meta-item"><span class="about-hero-meta-label">Founded</span><span class="about-hero-meta-value">2016</span></div>
+                <div class="about-hero-meta-item"><span class="about-hero-meta-label">Seat</span><span class="about-hero-meta-value">Chandigarh</span></div>
+                <div class="about-hero-meta-item"><span class="about-hero-meta-label">Operations</span><span class="about-hero-meta-value">Delhi</span></div>
+                <div class="about-hero-meta-item"><span class="about-hero-meta-label">Languages</span><span class="about-hero-meta-value">EN / HI / PA</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-page section-padding">
+    <div class="container">
+        <div class="about-body">
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+
+{{ end }}
