@@ -3225,104 +3225,7 @@ html.disclaimer-ack .disclaimer-splash { display: none !important; }
    About Page (dedicated)
    ======================================== */
 
-.about-hero {
-    background: #000;
-    color: #fff;
-    padding: 7rem 0 5rem;
-    border-bottom: 2px solid #000;
-    position: relative;
-    overflow: hidden;
-}
-
-.about-hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.about-hero-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.about-hero-eyebrow {
-    font-family: var(--font-primary);
-    font-size: 0.72rem;
-    font-weight: 300;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.55);
-    margin-bottom: 2rem;
-    padding-bottom: 1.25rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.about-hero-title {
-    font-family: var(--font-primary);
-    font-size: clamp(4.5rem, 13vw, 10rem);
-    font-weight: 800;
-    line-height: 0.85;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    margin: 0 0 2rem;
-    color: #fff;
-}
-
-.about-hero-lede {
-    font-family: var(--font-primary);
-    font-size: clamp(1.15rem, 1.9vw, 1.5rem);
-    font-weight: 300;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.82);
-    max-width: 640px;
-    margin: 0 0 3.5rem;
-}
-
-.about-hero-meta {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    padding-top: 2.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.about-hero-meta-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.about-hero-meta-label {
-    font-size: 0.7rem;
-    font-weight: 300;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.about-hero-meta-value {
-    font-size: 1.1rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-@media (max-width: 700px) {
-    .about-hero { padding: 4.5rem 0 3rem; }
-    .about-hero-meta {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-}
-
-/* Body */
-
-.about-page { background: #fff; }
+.about-page { background: #fff; padding-top: 2rem; padding-bottom: 2rem; }
 
 .about-body {
     max-width: 1100px;
@@ -3331,34 +3234,34 @@ html.disclaimer-ack .disclaimer-splash { display: none !important; }
 
 .about-section {
     position: relative;
-    padding: 5rem 0;
+    padding: 3.5rem 0;
     border-top: 1px solid #000;
 }
 
-.about-section:first-child { border-top: none; padding-top: 4rem; }
+.about-section:first-child { border-top: none; padding-top: 3rem; }
 .about-section:last-child { padding-bottom: 2rem; }
 
 .about-section::before {
     content: attr(data-section);
     position: absolute;
-    top: 5rem;
+    top: 3.65rem;
     left: 0;
     font-family: var(--font-primary);
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 400;
-    letter-spacing: 0.3em;
-    color: #000;
+    letter-spacing: 0.25em;
+    color: #666;
 }
 
 .about-section > h2 {
     font-family: var(--font-primary);
-    font-size: clamp(2rem, 4.5vw, 3.25rem);
-    font-weight: 800;
+    font-size: 1.15rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: -0.005em;
-    line-height: 1;
+    letter-spacing: 0.12em;
+    line-height: 1.2;
     color: #000;
-    margin: 0 0 2rem;
+    margin: 0 0 1.75rem;
     padding-left: 5rem;
 }
 
