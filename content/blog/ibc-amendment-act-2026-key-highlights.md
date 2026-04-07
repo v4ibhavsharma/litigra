@@ -1,6 +1,6 @@
 ---
 title: "Insolvency and Bankruptcy Code (Amendment) Act, 2026: Key Highlights Including Creditor-Initiated Resolution Process, Group Insolvency, Cross-Border Framework, and Strict Timelines"
-date: 2026-04-10
+date: 2026-04-07
 categories: ["Insolvency"]
 tags: ["IBC Amendment 2026", "Creditor-Initiated Insolvency Resolution Process", "Group Insolvency", "Cross-Border Insolvency", "Section 7 IBC", "Section 12A IBC", "Section 28A IBC", "Section 30 IBC", "Section 31 IBC", "Section 33 IBC", "Section 34A IBC", "Section 47 IBC", "Section 58A IBC", "Section 59A IBC", "Section 240C IBC", "NCLT", "Committee of Creditors", "Liquidation", "Resolution Plan"]
 author: "Litigra Editorial Team"
