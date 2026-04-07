@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court dismissed 16 Letters Patent Appeals filed by truck and bus body builders occupying land on GT Road, Patiala-Sirhind, which had been acquired for a grain market. The Court upheld the eviction orders under the Punjab Public Premises and Land (Eviction and Rent Recovery) Act, 1973."
 judgment_pdf: "/images/uploads/LPA_596_2016_28_11_2025_FINAL_ORDER.pdf"
-people:
+work:
   - "manveen-narang"
 ---
 

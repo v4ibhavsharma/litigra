@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The NCLT Chandigarh dismissed a Section 9 IBC petition against PepsiCo India Holdings Pvt Ltd, holding that where the principal debt was paid during the pendency of proceedings and the operational creditor claimed only interest on unsigned invoices, the conditions under Section 9(5)(i)(b) were not satisfied."
 judgment_pdf: "/images/uploads/PepsiCo Final Order.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "salina-chalana"
 ---

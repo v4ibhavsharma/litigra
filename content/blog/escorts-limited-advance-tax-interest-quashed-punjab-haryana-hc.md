@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court quashes a notice demanding interest on excess sales tax payment, holding that interest and penalties cannot be imposed absent deliberate defiance of law or tax evasion, especially where the taxpayer acted on the assessing authority's own instructions."
 judgment_pdf: "/images/uploads/Escorts Limited v State of Haryana - CWP-10380-2001.pdf"
-people:
+work:
   - "vaibhav-sharma"
 ---
 

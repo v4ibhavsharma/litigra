@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court held that a complainant's first appeal against acquittal under Section 138 of the Negotiable Instruments Act now lies before the Court of Sessions under Section 372 CrPC (now Section 413 BNSS), rather than requiring leave to appeal before the High Court, and remitted the matter accordingly."
 judgment_pdf: "/images/uploads/CRM-A_825_2022_10_11_2025_FINAL_ORDER.pdf"
-people:
+work:
   - "viraj-gandhi"
 ---
 

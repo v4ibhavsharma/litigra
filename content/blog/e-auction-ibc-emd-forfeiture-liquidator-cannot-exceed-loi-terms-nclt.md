@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "NCLT Chandigarh held that the liquidator cannot unilaterally impose forfeiture conditions beyond what is stipulated in the Letter of Intent during e-auction of insolvency assets. Amount paid beyond EMD was ordered to be refunded."
 judgment_pdf: "/images/uploads/IA-433-2022-RA-Enterprises-OSIL-Exports-NCLT-Chandigarh.pdf"
-people:
+work:
   - "viraj-gandhi"
 ---
 

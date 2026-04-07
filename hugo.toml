@@ -24,7 +24,7 @@ title = "Litigra"
     weight = 2
   [[menus.main]]
     name = "People"
-    url = "/team/"
+    url = "/people/"
     weight = 3
   [[menus.main]]
     name = "Writing"
@@ -61,4 +61,4 @@ title = "Litigra"
 [taxonomies]
   category = "categories"
   tag = "tags"
-  person = "people"
+  person = "work"

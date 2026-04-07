@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court dismissed a batch of 13 writ petitions challenging PSIEC's withdrawal of an industrial plot allotment advertisement at Phase 8-B, Mohali, holding that mere submission of an application does not create a vested right to allotment."
 judgment_pdf: "/images/uploads/CWP_12959_2011_20_02_2025_FINAL_ORDER.pdf"
-people:
+work:
   - "munisha-gandhi"
 ---
 

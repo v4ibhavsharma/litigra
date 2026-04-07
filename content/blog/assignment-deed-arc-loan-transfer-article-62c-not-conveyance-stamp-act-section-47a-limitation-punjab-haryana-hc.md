@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court held that assignment deeds executed by an ARC for transfer of loan recovery rights fall under Article 62(c) (mortgage instruments) of the Indian Stamp Act, not Article 23 (conveyance), and that proceedings for recovery of deficient stamp duty initiated beyond the three-year limitation under Section 47-A are time-barred."
 judgment_pdf: "/images/uploads/CWP-13346-2020-Edelweiss-ARC-v-State-of-Punjab.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "vaibhav-sharma"
 ---

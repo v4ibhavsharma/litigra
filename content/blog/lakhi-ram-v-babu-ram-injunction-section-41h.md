@@ -7,7 +7,7 @@ author: "Vaibhav Sharma"
 draft: false
 abstract: "The Punjab and Haryana High Court allowed a second appeal and dismissed a suit for permanent injunction simpliciter, holding it barred under Section 41(h) of the Specific Relief Act where both title and possession were in dispute."
 judgment_pdf: "/images/uploads/lakhi-ram-v-babu-ram-rsa-893-1991.pdf"
-people:
+work:
   - "vaibhav-sharma"
   - "harit-narang"
 ---

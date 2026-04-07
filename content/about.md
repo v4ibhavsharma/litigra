@@ -38,4 +38,4 @@ Litigra is committed to building a practice where litigation skill and advisory 
 
 ## TEAM
 
-The firm's practitioners bring together decades of collective legal experience, having held roles as Additional Advocate General and Deputy Advocate General, served as standing counsel for statutory bodies, and practised across the Supreme Court, High Courts, NCLT, NCLAT, and various tribunals. Our [leadership team](../team/) and their profiles can be viewed on the People page.
+The firm's practitioners bring together decades of collective legal experience, having held roles as Additional Advocate General and Deputy Advocate General, served as standing counsel for statutory bodies, and practised across the Supreme Court, High Courts, NCLT, NCLAT, and various tribunals. Our [leadership team](../people/) and their profiles can be viewed on the People page.

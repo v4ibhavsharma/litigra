@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "High Court grants regular bail in NDPS case where recovered quantity marginally exceeds commercial threshold, emphasizing consideration of narrow margin and clean antecedents in bail assessment."
 judgment_pdf: "/images/uploads/CRM-M-14012-2024-Ankit-Agrawal-v-State-of-Punjab.pdf"
-people:
+work:
   - "viraj-gandhi"
 ---
 

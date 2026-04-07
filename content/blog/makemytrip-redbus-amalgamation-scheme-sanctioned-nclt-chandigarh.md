@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The NCLT Chandigarh sanctioned the scheme of amalgamation of Redbus India Pvt Ltd with MakeMyTrip (India) Pvt Ltd under Sections 230 to 232 read with Section 66 of the Companies Act, 2013, involving capital reduction and a share exchange ratio of 3,333 shares of the Transferee Company for every 1,00,000 shares of the Transferor Company."
 judgment_pdf: "/images/uploads/MAKE MY TRIP MERGER JUDGMENT 2.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "salina-chalana"
 ---

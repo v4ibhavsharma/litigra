@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court held that Section 14 moratorium under the Insolvency and Bankruptcy Code does not prevent the High Court from directing refund of auction bid money to a purchaser whose SARFAESI sale was set aside, as the bid amount is not money for the benefit of the corporate debtor."
 judgment_pdf: "/images/uploads/CWP-22367-2021-Central-Bank-of-India-v-Union-of-India.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "salina-chalana"
 ---

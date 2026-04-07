@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "ITAT Chandigarh upheld Section 12-AA registration for HRDF Administration Board, recognizing its activities in promoting education and rural development in Haryana as qualifying charitable purposes under the Income Tax Act."
 judgment_pdf: "/images/uploads/ITA-591-2008-CIT-Panchkula-v-HRDF-Administration-Board.pdf"
-people:
+work:
   - "viraj-gandhi"
 ---
 

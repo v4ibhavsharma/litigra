@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Punjab and Haryana High Court quashed a proclaimed offender order for non-compliance with the mandatory 30-day proclamation period under Section 82 CrPC, emphasizing that procedural safeguards cannot be circumvented."
 judgment_pdf: "/images/uploads/CRM-M-42933-2019-Kamlesh-Sharma-v-State-of-Punjab.pdf"
-people:
+work:
   - "viraj-gandhi"
 ---
 

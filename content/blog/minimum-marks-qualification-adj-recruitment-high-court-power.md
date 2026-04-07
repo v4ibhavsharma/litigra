@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court dismissed a writ petition challenging the minimum marks qualification prescribed under Clause 8.4 of the ADJ recruitment rules, holding that the High Court has the power to prescribe such criteria under Article 233 of the Constitution."
 judgment_pdf: "/images/uploads/CWP_18757_2025_22_09_2025_FINAL_ORDER.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "manveen-narang"
 ---

@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The NCLT Chandigarh allowed the first motion petition for demerger of FreeCharge Payment Technologies Pvt Ltd (an Axis Bank subsidiary) into FreeCharge Business and Technology Services Ltd, dispensing with meetings of shareholders and creditors and imposing RBI-mandated conditions."
 judgment_pdf: "/images/uploads/FREECHARGE FINAL ORDER.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "salina-chalana"
 ---

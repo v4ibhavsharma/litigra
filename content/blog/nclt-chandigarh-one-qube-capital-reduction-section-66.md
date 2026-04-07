@@ -7,7 +7,7 @@ tags: ["NCLT", "Companies Act", "Section 66", "Capital Reduction", "Securities P
 draft: false
 abstract: "The NCLT Chandigarh Bench confirmed the reduction of share capital of a foreign-owned private company under Section 66 of the Companies Act, 2013, permitting it to utilise Rs. 99.59 crores from its securities premium account to set off accumulated losses."
 judgment_pdf: "/images/uploads/oqrpl-final-order.pdf"
-people:
+work:
   - "vaibhav-sharma"
 ---
 

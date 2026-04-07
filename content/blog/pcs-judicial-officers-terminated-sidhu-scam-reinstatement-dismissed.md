@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court dismissed writ petitions by two PCS (Judicial) officers seeking reinstatement after their acquittal in a criminal case, holding that the Full Bench judgment dismissing their earlier writ petition had attained finality and could not be circumvented."
 judgment_pdf: "/images/uploads/CWP_4468_2018_21_10_2024_FINAL_ORDER.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "manveen-narang"
 ---

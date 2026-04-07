@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Civil court rejects plaint seeking injunction against bank auction on dual grounds of lack of territorial jurisdiction and statutory bar under Section 41(h) SRA, illustrating interplay between procedural and substantive limitations."
 judgment_pdf: "/images/uploads/CS-327-2019-Amarjit-Singh-Chatha-v-Punjab-Sind-Bank.pdf"
-people:
+work:
   - "viraj-gandhi"
 ---
 

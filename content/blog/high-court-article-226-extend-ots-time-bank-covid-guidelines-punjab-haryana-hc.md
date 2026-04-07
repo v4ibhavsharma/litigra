@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The Punjab and Haryana High Court held that the High Court, in exercise of its jurisdiction under Article 226 of the Constitution, can extend the time for payment under a One Time Settlement by a bank, and laid down detailed guidelines for courts to consider when deciding such extension requests."
 judgment_pdf: "/images/uploads/CWP-7097-2022-Hardyal-Singh-Cheema-v-State-Bank-of-India.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "vaibhav-sharma"
 ---

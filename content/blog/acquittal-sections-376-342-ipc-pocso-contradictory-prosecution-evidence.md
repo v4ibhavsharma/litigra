@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Special Court Chandigarh acquitted accused under Sections 376/342 IPC and Section 4 POCSO Act where prosecution evidence was contradictory, victim and mother gave conflicting accounts, and age proof documents showed inconsistencies."
 judgment_pdf: "/images/uploads/Sessions-Case-49-2018-State-v-Ram-Swarth-Thakur.pdf"
-people:
+work:
   - "viraj-gandhi"
 ---
 

@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Punjab and Haryana High Court held that the NI Act confers overriding jurisdiction on criminal courts for cheque dishonour complaints under Section 138, even when a company is in winding up. The Companies Act cannot override the special law."
 judgment_pdf: "/images/uploads/CRM-M-21382-2018-Ashwani-Chawla-v-Impulse-Overseas.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "viraj-gandhi"
 ---

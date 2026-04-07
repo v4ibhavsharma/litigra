@@ -7,7 +7,7 @@ tags: ["IBC", "Section 96", "SARFAESI", "NCLT", "Personal Guarantor", "Moratoriu
 draft: false
 abstract: "The NCLT Chandigarh Bench held that where an e-auction has been conducted and sale confirmed before the filing of an application under Section 94 of the IBC, the interim moratorium under Section 96 cannot reverse or stall the concluded sale."
 judgment_pdf: "/images/uploads/section96-sarfaesi-nclt-chandigarh-order.pdf"
-people:
+work:
   - "munisha-gandhi"
 ---
 

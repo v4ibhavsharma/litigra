@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "High Court issues mandamus directing university to appoint candidate who cleared all selection stages, emphasizing duty of public authority to follow through on completed recruitment process and absence of discretion to withhold appointment unreasonably."
 judgment_pdf: "/images/uploads/CWP-8380-2023-Anuradha-v-Vishwakarma-Skill-University.pdf"
-people:
+work:
   - "viraj-gandhi"
 ---
 

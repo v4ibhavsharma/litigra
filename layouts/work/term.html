@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $slug := .Data.Term }}
 {{ $person := "" }}
-{{ range where .Site.RegularPages "Section" "team" }}
+{{ range where .Site.RegularPages "Section" "people" }}
     {{ if eq (path.Base .File.ContentBaseName) $slug }}
         {{ $person = . }}
     {{ end }}
@@ -35,7 +35,7 @@
             {{ with $person }}
                 <a href="{{ .RelPermalink }}">&larr; BACK TO PROFILE</a>
             {{ else }}
-                <a href="{{ "team/" | relURL }}">&larr; BACK TO PEOPLE</a>
+                <a href="{{ "people/" | relURL }}">&larr; BACK TO PEOPLE</a>
             {{ end }}
         </div>
     </div>

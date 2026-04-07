@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "High Court dismisses petition to quash FIR but grants conditional travel permission, illustrating discretionary relief available even where main petition fails and balancing between investigation protection and petitioner's mobility."
 judgment_pdf: "/images/uploads/CRM-M-34931-2024-Virender-Kumar-v-State-of-Punjab.pdf"
-people:
+work:
   - "vaibhav-sharma"
   - "adarsh-dubey"
 ---

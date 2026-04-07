@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "High Court dismisses anticipatory bail petition in case involving allegations of sexual assault and dowry-related cruelty, holding that prima facie case established and custodial interrogation necessary for investigation."
 judgment_pdf: "/images/uploads/CRM-M-13610-2024-Rahul-v-State-of-Haryana.pdf"
-people:
+work:
   - "vaibhav-sharma"
 ---
 

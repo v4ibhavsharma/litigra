@@ -7,7 +7,7 @@ author: "Vaibhav Sharma"
 draft: false
 abstract: "The Punjab and Haryana High Court quashed a criminal complaint filed against a serving Sub-Inspector of Haryana Police, holding that prior sanction of the State Government under Section 197 Cr.P.C. had not been obtained before filing the complaint or taking cognizance."
 judgment_pdf: "/images/uploads/Muniya_Devi_Vs_State_of_Haryana.pdf"
-people:
+work:
   - "vaibhav-sharma"
 ---
 

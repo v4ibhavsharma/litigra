@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The NCLT Chandigarh approved a cross-border amalgamation scheme between Mauritian companies FIM Holdco I Limited and Ariston Investments Sub A Limited with Indian company One World Center Private Limited. The judgment demonstrates how procedural defects in merger applications can be cured through subsequent motions and the regulatory approvals required for inbound cross-border mergers under Section 234 of the Companies Act."
 judgment_pdf: "/images/uploads/FIM Holdco v One World Center - CP(CAA)-30-2024.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "vaibhav-sharma"
   - "salina-chalana"

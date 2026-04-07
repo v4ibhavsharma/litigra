@@ -37,7 +37,7 @@
             {{ end }}
 
             {{ $slug := path.Base .File.ContentBaseName }}
-            {{ $related := where (where .Site.RegularPages "Section" "blog") ".Params.people" "intersect" (slice $slug) }}
+            {{ $related := where (where .Site.RegularPages "Section" "blog") ".Params.work" "intersect" (slice $slug) }}
             {{ $total := len $related }}
             {{ if ge $total 5 }}
                 <div class="team-section team-work-section">
@@ -57,7 +57,7 @@
                     </ul>
                     {{ if gt $total 10 }}
                         <div class="team-work-more">
-                            <a href="{{ printf "people/%s/" $slug | relURL }}" class="team-work-more-btn">View more work &rarr;</a>
+                            <a href="{{ printf "work/%s/" $slug | relURL }}" class="team-work-more-btn">View more work &rarr;</a>
                         </div>
                     {{ end }}
                 </div>
@@ -65,7 +65,7 @@
         </div>
 
         <div class="back-link">
-            <a href="{{ "team/" | relURL }}">← BACK TO PEOPLE</a>
+            <a href="{{ "people/" | relURL }}">← BACK TO PEOPLE</a>
         </div>
     </div>
 </section>

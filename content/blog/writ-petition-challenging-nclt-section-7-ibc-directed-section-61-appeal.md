@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Division Bench of Punjab and Haryana High Court declined to entertain writ petition challenging NCLT order admitting Section 7 IBC application, directing petitioners to avail statutory remedy of appeal under Section 61 IBC before NCLAT."
 judgment_pdf: "/images/uploads/CWP-9131-2018-SEL-Manufacturing-v-Union-of-India.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "vaibhav-sharma"
   - "viraj-gandhi"

@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "The NCLT Chandigarh dismissed an oppression and mismanagement petition, holding that a counter-offer to a pre-emption offer constitutes its rejection and no concluded contract arises. The Tribunal further applied the Doctrine of Ratification to cure procedural irregularities in board resolutions concerning a debt-restructuring loan, and held that a shareholder who benefited from the transaction is estopped from challenging it."
 judgment_pdf: "/images/uploads/Ojas.pdf"
-people:
+work:
   - "munisha-gandhi"
   - "manveen-narang"
 ---

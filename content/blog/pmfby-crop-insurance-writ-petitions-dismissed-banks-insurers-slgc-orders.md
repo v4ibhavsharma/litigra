@@ -7,7 +7,7 @@ author: "Litigra Editorial Team"
 draft: false
 abstract: "Punjab and Haryana High Court dismissed 12 writ petitions by banks and insurance companies challenging SLGC orders under PMFBY, holding that minor discrepancies cannot absolve liability and hyper-technical approaches cannot deprive farmers of statutory benefits."
 judgment_pdf: "/images/uploads/CWP-2282-2022-SBI-General-Insurance-PMFBY.pdf"
-people:
+work:
   - "viraj-gandhi"
 ---
 

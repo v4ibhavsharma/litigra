@@ -7,7 +7,7 @@ author: Litigra Editorial Team
 draft: false
 abstract: The Punjab and Haryana High Court dismissed a petition seeking family pension where the deceased employee had served only 43 days before suspension and absence. The Court held that pension entitlements are statutory rights requiring compliance with prescribed service conditions, not discretionary grants or bounties.
 judgment_pdf: "/images/uploads/Narinder Kaur v State of Punjab - CWP-7475-2020.pdf"
-people:
+work:
   - "vaibhav-sharma"
 ---
 
