@@ -1,5 +1,5 @@
 ---
-title: "Justice Anupinder Singh Grewal Appointed President of the National Company Law Tribunal (NCLT): Appointments Committee of the Cabinet Approves Five-Year Term"
+title: "Justice Anupinder Singh Grewal Appointed President of the National Company Law Tribunal (NCLT)"
 date: 2026-04-29
 categories: ["Company", "Insolvency"]
 tags: ["NCLT", "Justice Anupinder Singh Grewal", "NCLT President", "Companies Act 2013", "Appointments Committee of the Cabinet", "Punjab and Haryana High Court", "Insolvency and Bankruptcy Code"]
