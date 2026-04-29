@@ -9,7 +9,7 @@ abstract: "By order dated 29.04.2026, the Appointments Committee of the Cabinet 
 judgment_pdf: "/images/uploads/anupinder-grewal-nclt-president-appointment.pdf"
 ---
 
-By order No.18/13/2026-EO(SM.II) dated 29.04.2026 issued by the Secretariat of the Appointments Committee of the Cabinet, the Government of India has approved the proposal of the Ministry of Corporate Affairs for the appointment of **Justice (Retd.) Anupinder Singh Grewal**, former Judge of the High Court of Punjab and Haryana, as President of the **National Company Law Tribunal (NCLT)**. The appointment is for a period of five years with effect from the date of assumption of charge, or till he attains the age of 67 years, whichever is earlier, in the pre-revised pay scale of Rs.80,000 (fixed).
+By order No.18/13/2026-EO(SM.II) dated 29.04.2026 issued by the Secretariat of the Appointments Committee of the Cabinet, the Government of India has approved the proposal of the Ministry of Corporate Affairs for the appointment of **Justice (Retd.) Anupinder Singh Grewal**, former Judge of the High Court of Punjab and Haryana, as President of the **National Company Law Tribunal (NCLT)**. The appointment is for a period of five years with effect from the date of assumption of charge, or till he attains the age of 67 years, whichever is earlier.
 
 ## The Appointment
 
