@@ -27,6 +27,6 @@ In a [farewell interview to Bar and Bench](https://www.barandbench.com/interview
 
 ## The Office of President, NCLT
 
-The NCLT, constituted by the Central Government under Section 408 of the Companies Act, 2013, is the principal forum of original jurisdiction in matters arising under the Companies Act, 2013, the Limited Liability Partnership Act, 2008 and, since 2016, the Insolvency and Bankruptcy Code, 2016. The President of the Tribunal exercises administrative superintendence over its principal bench and benches, and along with the Acting Chairperson and the Member(s) of the Selection Committee plays a role in the constitution of benches and the assignment of work. The post had been the subject of considerable interest at the Bar pending the present appointment.
+The NCLT, constituted by the Central Government under Section 408 of the Companies Act, 2013, is the principal forum of original jurisdiction in matters arising under the Companies Act, 2013, the Limited Liability Partnership Act, 2008 and, since 2016, the Insolvency and Bankruptcy Code, 2016. The President of the Tribunal exercises administrative superintendence over its principal bench and benches. The post had been the subject of considerable interest at the Bar pending the present appointment.
 
 The order takes effect from the date Justice Grewal assumes charge.
