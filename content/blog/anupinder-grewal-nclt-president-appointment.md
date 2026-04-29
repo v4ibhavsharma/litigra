@@ -13,7 +13,7 @@ By order No.18/13/2026-EO(SM.II) dated 29.04.2026 issued by the Secretariat of t
 
 ## The Appointment
 
-The order, signed by Sh. Kundan Nath, Under Secretary (EO-SM.II), is addressed to the Secretary, Ministry of Corporate Affairs, with copies to the Prime Minister's Office and the Cabinet Secretariat. The President of the NCLT is appointed by the Central Government under Section 412 of the Companies Act, 2013, on the recommendation of the Selection Committee constituted under that provision, and presides over the principal bench of the Tribunal at New Delhi as well as superintends the work of the eleven other benches across the country.
+The President of the NCLT is appointed by the Central Government under Section 412 of the Companies Act, 2013, on the recommendation of the Selection Committee constituted under that provision, and presides over the principal bench of the Tribunal at New Delhi as well as superintends the work of the eleven other benches across the country.
 
 ## At the Bar
 
