@@ -6,7 +6,7 @@ tags: ["Demerger", "Scheme of Arrangement", "Sections 230 to 232", "Special Econ
 author: "Litigra Editorial Team"
 draft: false
 abstract: "NCLT Chandigarh sanctioned the demerger of an SEZ developer's Phase-II business undertaking without first requiring SEZ approval, accepting that the approval under Instruction No. 109 may be obtained after sanction, with the Scheme taking effect on the later of the ROC filing and receipt of that approval."
-judgment_pdf: "/images/uploads/itpg-demerger-second-motion-order.pdf"
+judgment_pdf: "/images/uploads/ITPG%20Final%20Order.pdf"
 work:
   - "vaibhav-sharma"
 ---
