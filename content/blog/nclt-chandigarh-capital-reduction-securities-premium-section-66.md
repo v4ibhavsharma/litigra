@@ -6,7 +6,7 @@ tags: ["Capital Reduction", "Section 66", "Section 52", "Securities Premium", "A
 author: "Litigra Editorial Team"
 draft: false
 abstract: "NCLT Chandigarh confirmed a reduction of share capital under which a solvent company set off accumulated losses of Rs. 42.59 crore against its securities premium account, holding that a pure accounting adjustment involving no payout, no cancellation of shares and no reduction in any creditor's dues causes no prejudice to creditors."
-judgment_pdf: "/images/uploads/csj-capital-reduction-order.pdf"
+judgment_pdf: "/images/uploads/CSJ%20Infrastructure%20Private%20Limited%20-%20Order.pdf"
 work:
   - "vaibhav-sharma"
 ---
